@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1400" />
+<link rel="stylesheet" href="./assets/css/style.css" />
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
+<title></title>
+<style type="text/css">
+*{margin:0;padding:0;font-size:14px;}
+ul{list-style: none;margin:0;padding:0;}
+table {border-collapse:collapse; border-spacing:0;}
+table th, strong {font-weight:normal;}
+body{margin:20px;}
+h1{margin:0 0 10px 0;color:#000;font-size:30px;font-family:'Pretendard';font-weight:700;}
+a {text-decoration:none;color:#000;}
+a:hover {text-decoration:underline;}
+.list_w table {	width: 100%;	margin: 20px auto;	border-top: solid 2px #555;	border-collapse: collapse;	border-spacing: 0;	font-size: 13px; text-align:center;}
+.list_w table tr:hover {background:#f3f3f3;}
+.list_w table th {	padding: 10px 0;	border: solid 1px #ddd;	background: #efefef;vertical-align:middle;font-weight:400;font-size:13px;}
+.list_w table td {	padding: 5px 3px;	border: solid 1px #ccc;vertical-align:middle;}
+.lastmdate {color: #1155CC;}
+.stand_by {color:#777;}
+.stop {color:#787878;}
+.ing {color:blue;}
+.bgo{text-align:left;}
+.end {background:green;color:#fff;}
+.else{color:red;}
+.modify{color:#ff5400;}
+.else2{color:#ff5400;}
+.list_w table td.link,
+.list_w table td.td_url,
+.list_w table td.etc{text-align: left; padding-left:10px;}
+.ing_w{border:1px solid #000;margin:0 0 20px;padding:5px 10px;}
+.t_tit{margin:20px 0 10px ;font-size:20px;}
+.ing_w .inglist{}
+.ing_w .inglist li{padding:10px;border-bottom:1px solid #999;}
+.ing_w .inglist li:last-child{border-bottom:0;}
+.ing_w .inglist .date{font-weight:bold;}
+.ing_w .inglist .text{}
+.ing_w .inglist .text .ingtext{font-weight:bold;}
+.guidelist{padding:8px 0;}
+.guidelist li{padding:2px 10px;}
+.alignleft{text-align:left;padding-left:10px !important;}
+.depth td{background:#047a73;color:#fff;text-align:left;font-size:20px;padding:10px 20px !important;}
+.depth2 td{background:#e2dbfb;color:#000;text-align:left;font-size:16px;padding:10px 20px !important;}
+.dev_notice{border-top:1px solid #000;border-bottom:1px solid #000;padding:10px;margin:30px 0;}
+</style>
+<script>
+	function procedure(w,h,url) {
+	 cw=screen.availWidth;     //화면 넓이
+	 ch=screen.availHeight;    //화면 높이
+	 sw=w;    //띄울 창의 넓이
+	 sh=h;    //띄울 창의 높이
+	 ml=(cw-sw)/2;        //가운데 띄우기위한 창의 x위치
+	 mt=(ch-sh)/2;         //가운데 띄우기위한 창의 y위치
+	 test=window.open(url,'tst','width='+sw+',height='+sh+',top='+mt+',left='+ml+',resizable=no,scrollbars=yes');
+	}
+</script>
+
+</head>
+<body id="guide">
+
+<!-- eniter wrap -->
+<div id="guide_wrap">
+	<div class="header">
+		<h1>복지위기 알림서비스 프론트</h1>
+	</div>
+   <div class="list_w">
+		<table class="codinglist">
+			<colgroup>
+				<col width="3%" />
+				<col />
+				<col width="25%" />
+				<col width="12%" />
+				<col width="25%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>no.</th>
+					<th>filename/link</th>
+					<th>HTML 파일명</th>
+					<th>현황</th>
+					<th>전달사항</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="depth">
+					<td colspan="5">샘플</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="layout.html" target="_blank">레이아웃 샘플 - 로그인 전</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="layout_02.html" target="_blank">레이아웃 샘플 - 로그인 후</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="popup.html" target="_blank">팝업 샘플</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr class="depth">
+					<td colspan="5">페이지</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="main.html" target="_blank">홈</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="neighbor_step_01.html" target="_blank">이웃 알림 - 신고내용</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="neighbor_step_02.html" target="_blank">이웃 알림 - 정보입력</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="neighbor_step_03.html" target="_blank">이웃 알림 - 내 정보</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="neighbor_step_04.html" target="_blank">이웃 알림 - 접수완료</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="notice_list.html" target="_blank">공지사항 - 리스트</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="notice_view.html" target="_blank">공지사항 - 뷰</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="survey_list.html" target="_blank">설문 조사 - 리스트</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="survey_result_before.html" target="_blank">설문 조사 - 결과 01</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td class="link"><a href="survey_result_after.html" target="_blank">설문 조사 - 결과 02</a></td>
+					<td class="td_url"></td>
+					<td class="work ing"></td>
+					<td class="bgo"></td>
+				</tr>
+			</tbody>
+		</table>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+	chkList();
+});
+
+function chkList(){
+	var tatal_n = $(".codinglist tr").length - $(".depth,.depth2").length-1;
+	var curr_n = 0;
+	var $ctd = $(".codinglist td.work"),
+		$ctr = $(".codinglist tr");
+
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+	var yyyy = today.getFullYear();
+
+	if(dd<10) {
+		dd = '0'+dd
+	} 
+
+	if(mm<10) {
+		mm = '0'+mm
+	} 
+
+	today = yyyy + '-' + mm + '-' + dd;
+	
+	$ctr.each(function(index) {
+		var $this = $(this),
+			$td = $this.find("td.work");
+		if($td.hasClass("end")){
+			curr_n++
+			$td.text("완료");
+		} else {
+			if($td.hasClass("ing")){
+				$td.text(today+" 작업중").addClass('ing');
+			}else if($td.hasClass("else")){
+				$td.text("보류").addClass('else');
+			}else if($td.hasClass("else2")){
+				$td.text("예외").addClass('else2');
+			}else{
+				$td.text("대기중").addClass('stand_by');
+			}
+		}
+	});
+	$(".codinglist tr").each(function() {
+		var index = $(".codinglist tr").not('.depth').index(this);
+		$(this).children(".codinglist td.no").text(index);
+	});
+	$("td.link > a").each(function(){
+		var $this = $(this),
+			$t_href = $this.attr("href");
+		
+		if($this.parent(".link").hasClass("type2")){
+			$this.parent("td").next(".td_url").append('<a href='+$t_href+'>'+$t_href+'</a>');
+		}else{
+			$this.parent("td").next(".td_url").append('<a href='+$t_href+' target="_blank">'+$t_href+'</a>');
+		}
+		
+	});
+	$('.total_n').text(tatal_n);
+	$('.curr_n').text(curr_n);
+	$('.per').text(Math.floor((curr_n/tatal_n)*100) + '%');
+}
+</script>
+</body>
+</html>
