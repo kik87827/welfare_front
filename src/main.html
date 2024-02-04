@@ -4,8 +4,27 @@
         "title" : "메인 | 복지위기알림"
     })
 <body class="front_body">
-    <div class="page_wrap">
-        
+    <!-- skip menu -->
+    @@include('./include/_skip.html')
+    <!-- //skip menu -->
+    <div class="page_wrap main">
+        <div class="bg_full"><img src="./assets/images/bg_main.jpg" alt="" aria-hidden="true"></div>
+        <header class="header_wrap">
+            <h1 class="toplogo">
+                <a href="#" class="toplogo_link">
+                    <span class="hdtext">복지위기알림</span>
+                </a>
+            </h1>
+            <div class="header_layer pos_right">
+                <a href="javascript:;" class="btn_gnb_opener"><span class="hdtext">메인메뉴 열기</span></a>
+            </div>
+        </header>
+        <section class="middle_wrap" id="contents">
+            내용이 들어갑니다.
+        </section>
+        <!-- mobile -->
+        @@include('./include/_gnb_before.html')
+        <!-- // mobile -->
     </div>
 </body>
 </html>

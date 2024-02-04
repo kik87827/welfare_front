@@ -1,8 +1,9 @@
 window.addEventListener("DOMContentLoaded", () => {
   commonInit();
+  layoutFunc();
 });
 window.addEventListener("load", () => {
-  layoutFunc();
+  bottomLayer();
 });
 
 
@@ -55,7 +56,63 @@ function resizeAction(callback) {
  * 레이아웃
  */
 function layoutFunc() {
+  function mbMenu() {
+    var touchstart = "ontouchstart" in window;
+    var btn_gnb_opener = document.querySelector(".btn_gnb_opener"),
+      mobile_mainmenu_zone = document.querySelector(".mobile_mainmenu_zone"),
+      mainmenu_dim = document.querySelector(".mainmenu_dim"),
+      btn_mbmenuclose = document.querySelector(".btn_mbmenuclose"),
+      mobile_mainmenu_wrap = document.querySelector(".mobile_mainmenu_wrap");
+    domHtml = document.querySelector("html"),
+      domBody = document.querySelector("body");
 
+    // init 
+    if (mobile_mainmenu_zone === null) {
+      return;
+    }
+    btn_gnb_opener.addEventListener("click", function(e) {
+      e.preventDefault();
+      totalOpen();
+    }, false);
+    btn_mbmenuclose.addEventListener("click", function(e) {
+      e.preventDefault();
+      totalClose();
+    }, false);
+    mainmenu_dim.addEventListener("click", function(e) {
+      e.preventDefault();
+      totalClose();
+    }, false);
+    resizeAction(() => {
+      if (window.innerWidth > 1023) {
+        totalClose();
+      }
+    });
+
+    function totalOpen() {
+      mobile_mainmenu_zone.classList.add("active")
+      setTimeout(function() {
+        mobile_mainmenu_zone.classList.add("motion");
+        setTimeout(function() {
+          if (!!mobile_mainmenu_wrap) {
+            setTabControl(".mobile_mainmenu_wrap");
+          }
+        }, 500);
+        if (touchstart) {
+          domHtml.classList.add("touchDis");
+        }
+      }, 30);
+    }
+
+    function totalClose() {
+      mobile_mainmenu_zone.classList.remove("motion");
+      setTimeout(function() {
+        mobile_mainmenu_zone.classList.remove("active");
+        domHtml.classList.remove("touchDis");
+        btn_gnb_opener.focus();
+      }, 500);
+    }
+  }
+  mbMenu();
 }
 
 /* rock */
@@ -169,4 +226,64 @@ class DesignPopup {
       }
     }
   }
+}
+
+
+function bottomLayer() {
+  const page_wrap = document.querySelector(".page_wrap");
+  const bottom_layer_wrap = document.querySelector(".bottom_layer_wrap");
+  action();
+  window.addEventListener("resize", () => {
+    action();
+  });
+
+  function action() {
+    if (!!bottom_layer_wrap && !!page_wrap) {
+      page_wrap.style.paddingBottom = bottom_layer_wrap.getBoundingClientRect().height + 'px';
+    }
+  }
+}
+
+
+
+/* 레이어 포커스 머물게 하는 함수 */
+function setTabControl(element) {
+  let focusable = [];
+  let el_firstFocus = null;
+  let el_lastFocus = null;
+  let targetElement = typeof element == "object" ? element : document.querySelector(element);
+  const targetElementAll = targetElement.querySelectorAll("*");
+  targetElement.setAttribute("tabIndex", "0");
+  if (!!targetElementAll) {
+    targetElementAll.forEach((item) => {
+      if (item.tagName.match(/^A$|AREA|INPUT|TEXTAREA|SELECT|BUTTON/gim) && parseInt(item.getAttribute("tabIndex")) !== -1) {
+        focusable.push(item);
+      }
+      if ((item.getAttribute("tabIndex") !== null) && (parseInt(item.getAttribute("tabIndex")) >= 0) && (item.getAttribute("tabIndex", 2) !== 32768)) {
+        focusable.push(item);
+      }
+    });
+  }
+
+  el_firstFocus = focusable[0];
+  el_lastFocus = focusable[focusable.length - 1];
+  el_firstFocus.addEventListener("keydown", (e) => {
+    let keyCode = e.keyCode || e.which;
+    if (keyCode == 9) {
+      if (e.shiftKey) {
+        el_lastFocus.focus();
+        e.preventDefault();
+      }
+    }
+  });
+  el_lastFocus.addEventListener("keydown", (e) => {
+    let keyCode = e.keyCode || e.which;
+    if (keyCode == 9) {
+      if (!e.shiftKey) {
+        el_firstFocus.focus();
+        e.preventDefault();
+      }
+    }
+  });
+  el_firstFocus.focus();
 }
