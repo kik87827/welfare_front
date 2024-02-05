@@ -55,9 +55,156 @@
                     </div>
                 </div>
                 <div class="form_step_contents_wrap">
-                    <h3 class="form_step_title">위기상황 선택</h3>
-                    <div class="form_step_contents">
-                        내용이 들어갑니다.
+                    <div class="form_step_block">
+                        <h3 class="form_step_title">위기상황 선택</h3>
+                        <div class="form_step_contents">
+                            <ul class="props_block_list">
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_01">
+                                        <label for="case_01" class="props_label">생계지원</label>
+                                    </div>
+                                    <p class="props_item_summary">식비, 주거비, 공과금 지원 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_02">
+                                        <label for="case_02" class="props_label">돌봄 · 보호</label>
+                                    </div>
+                                    <p class="props_item_summary">간병, 시설보호, 주야간 보호 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_03">
+                                        <label for="case_03" class="props_label">건강 · 의료</label>
+                                    </div>
+                                    <p class="props_item_summary">질병, 진단 · 치료, 임신 · 출산 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_04">
+                                        <label for="case_04" class="props_label">일상생활</label>
+                                    </div>
+                                    <p class="props_item_summary">가사, 식사, 이동, 위생 지원 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_05">
+                                        <label for="case_05" class="props_label">안전위기</label>
+                                    </div>
+                                    <p class="props_item_summary">폭력, 학대, 자해 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_06">
+                                        <label for="case_06" class="props_label">주거지원</label>
+                                    </div>
+                                    <p class="props_item_summary">거처 마련, 주거환경 개선 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_07">
+                                        <label for="case_07" class="props_label">일자리</label>
+                                    </div>
+                                    <p class="props_item_summary">구직, 자활, 직업능력개발 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_08">
+                                        <label for="case_08" class="props_label">보육 · 교육</label>
+                                    </div>
+                                    <p class="props_item_summary">양육상담, 보육, 인지발달 ∙ 학습 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_09">
+                                        <label for="case_09" class="props_label">채무 · 법률</label>
+                                    </div>
+                                    <p class="props_item_summary">채무 ∙ 법률 상담 등</p>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="case_10">
+                                        <label for="case_10" class="props_label">기타</label>
+                                    </div>
+                                    <div class="props_add_form">
+                                        <label for="addform_01" class="hdtext">기타</label>
+                                        <input type="text" class="form_input" id="addform_01" placeholder="기타 입력" value="모르는 사람이 자주 찾아옵니다.">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form_step_block">
+                        <h3 class="form_step_title">가구 유형 선택</h3>
+                        <div class="form_step_contents">
+                            <ul class="props_flex_list">
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_01">
+                                        <label for="home_type_01" class="props_label">독거 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_02">
+                                        <label for="home_type_02" class="props_label">조손 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_03">
+                                        <label for="home_type_03" class="props_label">한부모 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_04">
+                                        <label for="home_type_04" class="props_label">장애우 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_05">
+                                        <label for="home_type_05" class="props_label">다문화 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_06">
+                                        <label for="home_type_06" class="props_label">소년소녀 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_07">
+                                        <label for="home_type_07" class="props_label">노인부부 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_08">
+                                        <label for="home_type_08" class="props_label">미혼모/부 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_09">
+                                        <label for="home_type_09" class="props_label">탈북민 가구</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="home_type_10">
+                                        <label for="home_type_10" class="props_label">기타</label>
+                                    </div>
+                                    <div class="props_add_form">
+                                        <label for="addform_02" class="hdtext">기타</label>
+                                        <input type="text" class="form_input" id="addform_02" placeholder="기타 입력">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

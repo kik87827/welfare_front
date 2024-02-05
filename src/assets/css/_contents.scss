@@ -73,3 +73,17 @@
 .form_step_contents_wrap{padding:12px 20px 20px}
 .form_step_title{font-size:18px;color:#333333;font-weight:700;line-height:1.3;}
 .form_step_contents{padding:20px 0 0}
+.form_step_block{
+    .form_step_title{}
+    .form_step_contents{}
+    &:last-of-type{}
+}
+
+.finish_copy_zone{}
+.finish_copy_img{
+    img{}
+}
+.finish_copy_group{}
+.finish_copy{
+    strong{}
+}

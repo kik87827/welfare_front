@@ -66,6 +66,20 @@ input.props_form{
     }
 }
 .props_label{font-size:14px;color:$primary;font-weight:500;line-height:1.3;display:inline-block;cursor: pointer;}
+.props_item_summary{}
+.props_block_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+.props_flex_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+.props_add_form{
+    input.form_input{}
+}
 
 .btn_submit{
     display:flex;min-height:60px;align-items:center;justify-content:center;border-radius:6px;background-color:$secondary;
