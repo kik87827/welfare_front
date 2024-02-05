@@ -141,3 +141,40 @@
 .data_chart_number_group{}
 .data_chart_number{}
 .data_chart_unit{}
+
+.board_sort_field_wrap{}
+.board_sort_field_cols{
+    &.short_wid{}
+}
+select.board_select{}
+.input_sort_wrap{}
+input.input_sort{}
+.btn_board_sort{}
+
+.board_data_list_wrap{}
+.board_data_list{
+    > li{
+        &:last-of-type{}
+        &.nodata_li{
+            .nodata_para{}
+        }
+    }
+}
+.nodata_para{}
+
+.board_data_item{
+    &.type2{
+        .board_data_long_cols{}
+        .board_data_short_cols{
+            .current_text{}
+        }
+        .board_data_title{}
+        .board_data_else{}
+    }
+}
+.board_data_long_cols{}
+.board_data_short_cols{
+    .current_text{}
+}
+.board_data_title{}
+.board_data_else{}
