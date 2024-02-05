@@ -108,3 +108,36 @@
 .props_else_group{
     .btn_text_link{}
 }
+
+.emp_tape_copy_box{}
+.emp_tape_copy{}
+.emp_tape_else_wrap{
+    .current_text{}
+}
+
+.bar_chart_group{
+    &.before{
+        .current_fraction{}
+        .indent_chart_item{}
+        .indent_chart_num{}
+        .indent_chart_value{}
+        .data_chart_number_group{}
+    }
+}
+.bar_chart_item{
+    &:last-of-type{}
+
+    &.type2{
+        .current_fraction{}
+        .indent_chart_item{}
+        .data_chart_number_group{}
+    }
+}
+.current_fraction{}
+.bar_chart_cols{}
+.indent_chart_item{}
+.indent_chart_num{}
+.indent_chart_value{}
+.data_chart_number_group{}
+.data_chart_number{}
+.data_chart_unit{}
