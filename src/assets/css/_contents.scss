@@ -87,3 +87,24 @@
 .finish_copy{
     strong{}
 }
+
+.form_column_container{}
+.form_column_table{
+    >li{}
+}
+.form_column_item{}
+.form_column_label{}
+.form_column_field_row{
+    input.form_input{}
+}
+
+.clauses_form_container{}
+.clauses_form_list{
+    >li{
+        &:last-of-type{}
+        .props_item{}
+    }
+}
+.props_else_group{
+    .btn_text_link{}
+}

@@ -10,6 +10,12 @@
             .bg_dim{opacity:.6;}
         }
     }
+
+    &.full_type{
+        .popup_item{}
+        .popup_title_row{}
+        .popup_contents_row{}
+    }
 }
 .popup_item{
     box-sizing: border-box;z-index:20; max-width:908px;margin:30px auto; max-height:calc(100% - 60px); background:#fff; border-radius:16px; border:1px solid #BBBBBB; position:relative; display:flex; flex-direction: column;
@@ -45,6 +51,8 @@
 input.quad_checkbox{box-sizing: border-box;border:1.5px solid #999;border-radius:4px;width:24px;appearance: none;width:24px;height:24px; cursor: pointer;
     &:checked{background:#fff url("../images/ico_checkbox_active.png") no-repeat 50% 50%/16px auto;}
 }
+
+.btn_text_link{}
 
 .props_item_group{display:flex;flex-wrap:wrap;gap:16px;}
 .props_item{display:flex; gap:6px;}
@@ -164,8 +172,20 @@ input.props_form{
 }
 /* // paging */
 
+.btn_submit_box{display:flex;justify-content: center;align-items: center;min-height:60px;box-sizing: border-box;padding:15px;background:$primary;}
+.btn_submit_box_text{display:inline-block;font-size:16px;font-weight:700;color:#333;line-height:1;}
 
-input.form_input{font-size:18px;line-height:1; box-sizing:border-box;height:24px;border:0;appearance: none;width:100%;font-weight:500;color:#0F2139;}
+.btn_action_box_group{}
+.btn_action_box{
+    &.type2{
+        .btn_action_box_text{}
+    }
+}
+.btn_action_box_text{}
+
+input.form_input{font-size:18px;line-height:1; box-sizing:border-box;height:24px;border:0;appearance: none;width:100%;font-weight:500;color:#0F2139;
+    &.number{}
+}
 
 
 .form_textarea_wrap{}
