@@ -49,6 +49,10 @@ $warn : #e84854;
     font-family: 'Rubik Bold','Pretendard',dotum;
 }
 
+@mixin roboto {
+    font-family: 'Roboto','Pretendard',dotum;
+}
+
 @mixin cont_center {
     max-width:1280px;padding:0 30px; margin:0 auto;
 }

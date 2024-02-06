@@ -104,6 +104,7 @@ input.props_form{
 
 .flag_box{display:inline-flex;white-space: nowrap;align-items: center;height:24px;border-radius:100px;background:#0CA99F;color:#fff;font-size:12px;padding:0 12px;
     &.type2{background:#FFC35E;}
+    &.skin2{height:26px;padding:0 10px;border-radius:4px;font-size:12px;font-weight:900;}
 }
 
 
@@ -203,3 +204,12 @@ input.form_input{font-size:14px;line-height:1; box-sizing:border-box;height:35px
 
 .form_textarea_wrap{}
 textarea.form_textarea{vertical-align: top;width:100%;height:395px;padding:0;box-sizing: border-box;border:0;font-size:18px;line-height:1;color:#0F2139;font-weight:600;}
+
+
+
+
+select.board_select{color:#333;cursor:pointer;font-size:14px; font-weight:500; border:0;height: 45px;padding: 0 24px 0 8px;border-radius:0;box-sizing:border-box;
+    background: #fff url("../images/ico_select.svg") no-repeat 100% 50%/24px auto;line-height:45px;-webkit-appearance:none;-moz-appearance:none;appearance:none;
+    &::-ms-value {background: none; color:#333;}
+    &::-ms-expand {display: none;}
+}
