@@ -738,7 +738,6 @@ body {
   position: relative;
   z-index: 5;
 }
-
 @media (max-width: 1023px) {
   .page_wrap {
     max-width: 100%;

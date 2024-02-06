@@ -178,3 +178,73 @@ input.input_sort{}
 }
 .board_data_title{}
 .board_data_else{}
+
+
+.board_item_list_wrap{}
+.board_item_list{
+    >li{
+        &.nodata_li{
+            .nodata_para{}
+        }
+    }
+}
+.board_item{
+
+}
+.board_flag_row{
+    .flag_box{}
+}
+
+.board_main_title{}
+.board_else_row{}
+.board_else_data_list{
+    >li{
+        &.type2{
+
+        }
+    }
+}
+.board_else_data{}
+.board_else_count{}
+.board_else_count_text{}
+.ico_board{
+    &.eye{}
+}
+
+.view_contents_wrap{
+}
+.view_top_group{}
+.view_top_flag_row{
+    .flag_box{}
+}
+.view_top_title{}
+.view_top_else{}
+.view_data_render{
+    *{}
+}
+
+.view_linkage_row{
+
+}
+.view_count_item{
+    &:before{}
+}
+.view_count_text{}
+
+.view_neighbor_row{
+
+}
+
+.view_neighbor_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+
+.view_neighbor_cols{
+    &.define_th{}
+    &.define_td{}
+}
+
+.view_neighbor_key{}
+.view_neighbor_title{}

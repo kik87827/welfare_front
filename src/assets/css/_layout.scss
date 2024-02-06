@@ -96,7 +96,12 @@ body{overflow-x:hidden;}
 
 .bottom_layer_wrap{position:fixed;bottom:0;left:50%;width:720px;transform: translateX(-50%);z-index:20;}
 
-.middle_wrap{flex:1;min-height:0;position:relative;z-index:5;}
+.middle_wrap{flex:1;min-height:0;position:relative;z-index:5;
+    &.view_middle_wrap{
+        .middle_title_row{}
+        .view_contents_wrap{}
+    }
+}
 @media (max-width:1023px){
     .page_wrap{max-width:100%;}
     .bottom_layer_wrap,
