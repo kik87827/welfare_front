@@ -96,7 +96,51 @@
 .form_column_label{}
 .form_column_field_row{
     input.form_input{}
+    .form_note_list{}
 }
+
+.form_props_list{
+    > li{}
+}
+.form_props_box{
+
+}
+input.form_props_element{
+    &:checked{
+
+        & + .form_props_elabel{
+            &:after{}
+        }
+    }
+}
+.form_props_elabel{
+    &:after{}
+}
+
+.field_sub_form_wrap{
+    .props_item{}
+}
+
+.btn_upload{
+    &.btn_file_upload{}
+    &.btn_camera{}
+}
+
+.form_note_list{
+    >li{
+        &:before{}
+        &:last-of-type{}
+    }
+}
+
+
+.upload_item_box_list{
+    > li{}
+}
+.upload_item_box{
+    img{}
+}
+.btn_upload_delete{}
 
 .clauses_form_container{}
 .clauses_form_list{
@@ -248,3 +292,7 @@ input.input_sort{}
 
 .view_neighbor_key{}
 .view_neighbor_title{}
+
+
+.form_textarea_wrap{}
+.form_textarea{}

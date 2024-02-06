@@ -56,9 +56,118 @@
                     </div>
                 </div>
                 <div class="form_step_contents_wrap">
-                    <h3 class="form_step_title">위기상황 선택</h3>
+                    <h3 class="form_step_title">도움이 필요한 분</h3>
                     <div class="form_step_contents">
-                        내용이 들어갑니다.
+                        <div class="form_column_container">
+                            <ul class="form_column_table">
+                                <li>
+                                    <div class="form_column_item">
+                                        <span class="form_column_label">성별</span>
+                                        <div class="form_column_field_row">
+                                            <ul class="form_props_list">
+                                                <li>
+                                                    <div class="form_props_box">
+                                                        <input type="checkbox" class="form_props_element" id="gender_01" checked>
+                                                        <label for="gender_01" class="form_props_elabel">여</label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form_props_box">
+                                                        <input type="checkbox" class="form_props_element" id="gender_02" checked>
+                                                        <label for="gender_02" class="form_props_elabel">남</label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="help_form_02" class="form_column_label">이름</label>
+                                        <div class="form_column_field_row">
+                                            <input type="text" class="form_input" id="help_form_02" value="김지민">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="help_form_03" class="form_column_label">전화번호</label>
+                                        <div class="form_column_field_row">
+                                            <input type="text" class="form_input number" id="help_form_03" value="010-5623-0520">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="help_form_04" class="form_column_label">생년월일</label>
+                                        <div class="form_column_field_row">
+                                            <input type="text" class="form_input calendar" id="help_form_04">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="help_form_05" class="form_column_label">신고 위치 및 대상자 주소</label>
+                                        <div class="form_column_field_row">
+                                            <input type="text" class="form_input" id="help_form_05">
+                                            <div class="field_sub_form_wrap">
+                                                <div class="props_item">
+                                                    <input type="checkbox" class="props_form" id="same_pos_form">
+                                                    <label for="same_pos_form" class="props_label">등록 위치가 대상자 주소와 동일</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <span class="form_column_label">사진 등록</span>
+                                        <div class="form_column_field_row">
+                                            <ul class="upload_item_box_list">
+                                                <li>
+                                                    <div class="upload_item_box">
+                                                        <img src="./assets/images/temp_100x100.png" alt="" aria-hidden="true">
+                                                        <button class="btn_upload_delete"><span class="hdtext">삭제</span></button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="btn_upload btn_file_upload">
+                                                        <input type="file" title="파일 업로드">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <button class="btn_upload btn_camera">
+                                                        <span class="hdtext">사진 찍고 업로드</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <ul class="form_note_list">
+                                                <li>사진 및 동영상은 총 6장까지 60MB 이하로 등록 가능합니다.</li>
+                                                <li>초상권에 침해가 확인될 경우 사진 활용이 제한될 수 있습니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="help_form_07" class="form_column_label">신고내용</label>
+                                        <div class="form_column_field_row">
+                                            <div class="form_textarea_wrap">
+                                                <textarea rows="10" cols="10" class="form_textarea">
+    저희 아랫집 5~6세 가량 아동의 가정 내 폭력이 의심됩니다. 주 1회 정도 아빠로 추정되는 어른의 큰 목소리가 들리며, 아이 울음 소리도 가끔 들립니다.
+    가끔 마주치는 아이의 모습을 보면 항상 주눅들어있는 상태로 보이며, 간혹 목이나 팔에 멍 자국도 발견되었습니다.
+    10분 전에도 벽이 울리는 진동과 함께 뭔가 부서지는 소리가 들렸고, 뒤이어 곧 아이 울음 소리가 크게 들렸습니다. 빠른 방문 및 아동 보호를 요청드립니다.
+                                                </textarea>
+                                            </div>
+                                            <ul class="form_note_list">
+                                                <li>신고 내용은 20~300자로 작성하실 수 있습니다.</li>
+                                                <li>저장 후 수정이나 취소가 가능합니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
