@@ -185,8 +185,10 @@ class DesignPopup {
     }
     this.domHtml.classList.add("touchDis");
     this.selector.classList.add("active");
+
     setTimeout(() => {
       this.selector.classList.add("motion_end");
+      setTabControl(this.selector);
     }, 30);
     if ("beforeCallback" in this.option) {
       this.option.beforeCallback();
