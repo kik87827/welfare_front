@@ -12,12 +12,12 @@ var gulp = require("gulp"),
 gulp.task('default', ['scss','fileinclude','beautify','watch']);
 
 gulp.task('scss', function () {
-	gulp.src('./src/assets/css/*.scss')
+	gulp.src('./src/resources/css/*.scss')
 	.pipe(sourcemaps.init())
 	.pipe(scss().on('error', scss.logError))
 	.pipe(autoprefixer())
 	.pipe(sourcemaps.write('.'))
-	.pipe(gulp.dest('./dist/assets/css/'))
+	.pipe(gulp.dest('./dist/resources/css/'))
 });
 
 gulp.task('htmlbeautify', function () {
@@ -37,9 +37,9 @@ gulp.task('connect', function() {
 
 
 gulp.task('beautify',function(){
-	gulp.src('./src/assets/js/*.js')
+	gulp.src('./src/resources/js/*.js')
 	.pipe(beautify.js({indent_size: 2}))
-	.pipe(gulp.dest('./dist/assets/js/'))
+	.pipe(gulp.dest('./dist/resources/js/'))
 });
 
 gulp.task('fileinclude',function(){
@@ -56,6 +56,6 @@ gulp.task('fileinclude',function(){
 
 gulp.task('watch', function () {
 	gulp.watch(['./src/**.html', './src/*/**.html'], ["fileinclude"]);
-	gulp.watch(['./src/assets/css/**/*.scss'], ["scss"]);
-	gulp.watch(['./src/assets/js/*.js'], ["beautify"]);
+	gulp.watch(['./src/resources/css/**/*.scss'], ["scss"]);
+	gulp.watch(['./src/resources/js/*.js'], ["beautify"]);
 });
