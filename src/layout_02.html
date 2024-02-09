@@ -3,37 +3,39 @@
     @@include('./include/_head.html',{
         "title" : "레이아웃 | 복지위기알림"
     })
-<body class="front_body">
-    <!-- skip menu -->
-    @@include('./include/_skip.html')
-    <!-- //skip menu -->
-    <div class="page_wrap">
-        <header class="header_wrap">
-            <h1 class="toplogo">
-                <a href="#" class="toplogo_link">
-                    <span class="hdtext">복지위기알림</span>
-                </a>
-            </h1>
-            <div class="header_layer pos_left">
-                <a href="javascript:;" class="btn_back"><span class="hdtext">이전 페이지 보기</span></a>
+<body>
+    <main class="front_body">
+        <!-- skip menu -->
+        @@include('./include/_skip.html')
+        <!-- //skip menu -->
+        <div class="page_wrap">
+            <header class="header_wrap">
+                <h1 class="toplogo">
+                    <a href="#" class="toplogo_link">
+                        <span class="hdtext">복지위기알림</span>
+                    </a>
+                </h1>
+                <div class="header_layer pos_left">
+                    <a href="javascript:;" class="btn_back"><span class="hdtext">이전 페이지 보기</span></a>
+                </div>
+                <div class="header_layer pos_right">
+                    <a href="javascript:;" class="btn_gnb_opener"><span class="hdtext">메인메뉴 열기</span></a>
+                </div>
+            </header>
+            <!-- mobile --> 
+            @@include('./include/_gnb_after.html')
+            <!-- // mobile -->
+            <section class="middle_wrap" id="contents">
+                <div class="middle_title_row">
+                    <h2 class="middle_title">공지사항</h2>
+                </div>
+                내용이 들어갑니다.
+            </section>
+    
+            <div class="bottom_layer_wrap">
+                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">더보기</span></a>
             </div>
-            <div class="header_layer pos_right">
-                <a href="javascript:;" class="btn_gnb_opener"><span class="hdtext">메인메뉴 열기</span></a>
-            </div>
-        </header>
-        <!-- mobile --> 
-        @@include('./include/_gnb_after.html')
-        <!-- // mobile -->
-        <section class="middle_wrap" id="contents">
-            <div class="middle_title_row">
-                <h2 class="middle_title">공지사항</h2>
-            </div>
-            내용이 들어갑니다.
-        </section>
-
-        <div class="bottom_layer_wrap">
-            <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">더보기</span></a>
         </div>
-    </div>
+    </main>
 </body>
 </html>

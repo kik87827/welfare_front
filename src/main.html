@@ -3,73 +3,75 @@
     @@include('./include/_head.html',{
         "title" : "메인 | 복지위기알림"
     })
-<body class="front_body">
-    <!-- skip menu -->
-    @@include('./include/_skip.html')
-    <!-- //skip menu -->
-    <div class="page_wrap main">
-        <div class="bg_full"><img src="./resources/images/bg_main.jpg" alt="" aria-hidden="true"></div>
-        <header class="header_wrap">
-            <h1 class="toplogo">
-                <a href="#" class="toplogo_link">
-                    <span class="hdtext">복지위기알림</span>
-                </a>
-            </h1>
-            <div class="header_layer pos_right">
-                <a href="javascript:;" class="btn_gnb_opener"><span class="hdtext">메인메뉴 열기</span></a>
-            </div>
-        </header>
-        <section class="middle_wrap main_contents_wrap" id="contents">
-            <h2 class="hdtext">메인 컨텐츠</h2>
-            <div class="mc_liquid_row">
-                <p class="mc_main_copy">
-                    나와 이웃에게<br>
-                    도움이 필요할 때<br>
-                    언제든지 알려주세요
-                </p>
-            </div>
-            <div class="mc_pixed_row">
-                <ul class="mc_card_banner_list">
-                    <li>
-                        <a href="#" class="mc_card_banner">
-                            <div class="mc_card_copy_cols">
-                                <div class="mc_card_copy">나에게<br>도움이 필요해요</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mc_card_banner type2">
-                            <div class="mc_card_copy_cols">
-                                <div class="mc_card_copy">이웃에게<br>도움이 필요해요</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="mc_quad_menu_list">
-                    <li>
-                        <a href="#" class="mc_quad_menu">
-                            <i class="ico ico_docu"></i>
-                            <div class="mc_quad_text">공지사항</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mc_quad_menu">
-                            <i class="ico ico_chart"></i>
-                            <div class="mc_quad_text">신고현황</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="mc_quad_menu">
-                            <i class="ico ico_notice"></i>
-                            <div class="mc_quad_text">나의 알림</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- mobile -->
-        @@include('./include/_gnb_before.html')
-        <!-- // mobile -->
-    </div>
+<body>
+    <main class="front_body">
+        <!-- skip menu -->
+        @@include('./include/_skip.html')
+        <!-- //skip menu -->
+        <div class="page_wrap main">
+            <div class="bg_full"><img src="./resources/images/bg_main.jpg" alt="" aria-hidden="true"></div>
+            <header class="header_wrap">
+                <h1 class="toplogo">
+                    <a href="#" class="toplogo_link">
+                        <span class="hdtext">복지위기알림</span>
+                    </a>
+                </h1>
+                <div class="header_layer pos_right">
+                    <a href="javascript:;" class="btn_gnb_opener"><span class="hdtext">메인메뉴 열기</span></a>
+                </div>
+            </header>
+            <section class="middle_wrap main_contents_wrap" id="contents">
+                <h2 class="hdtext">메인 컨텐츠</h2>
+                <div class="mc_liquid_row">
+                    <p class="mc_main_copy">
+                        나와 이웃에게<br>
+                        도움이 필요할 때<br>
+                        언제든지 알려주세요
+                    </p>
+                </div>
+                <div class="mc_pixed_row">
+                    <ul class="mc_card_banner_list">
+                        <li>
+                            <a href="#" class="mc_card_banner">
+                                <div class="mc_card_copy_cols">
+                                    <div class="mc_card_copy">나에게<br>도움이 필요해요</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="mc_card_banner type2">
+                                <div class="mc_card_copy_cols">
+                                    <div class="mc_card_copy">이웃에게<br>도움이 필요해요</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mc_quad_menu_list">
+                        <li>
+                            <a href="#" class="mc_quad_menu">
+                                <i class="ico ico_docu"></i>
+                                <div class="mc_quad_text">공지사항</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="mc_quad_menu">
+                                <i class="ico ico_chart"></i>
+                                <div class="mc_quad_text">신고현황</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="mc_quad_menu">
+                                <i class="ico ico_notice"></i>
+                                <div class="mc_quad_text">나의 알림</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- mobile -->
+            @@include('./include/_gnb_before.html')
+            <!-- // mobile -->
+        </div>
+    </main>
 </body>
 </html>
