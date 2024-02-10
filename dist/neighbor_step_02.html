@@ -231,6 +231,72 @@
 				<a href="#" class="btn_submit_box"><span class="btn_submit_box_text">다음</span></a>
 			</div>
 		</div>
+		<!-- layer -->
+		<div class="popup_wrap" id="formAlertPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_box_item">
+				<div class="popup_box_contents_row">
+					<p class="popup_box_message_para">
+						대상자 전화번호가 정확하게 <br>
+						입력되지 않았습니다.<br>
+						다시 한번 확인해 주세요.
+					</p>
+				</div>
+				<div class="popup_box_btn_row">
+					<!-- close_trigger 클릭시 팝업 닫기 -->
+					<a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">확인</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="popup_wrap" id="btnAlertPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_box_item type2">
+				<div class="popup_box_btn_row type2">
+					<!-- close_trigger 클릭시 팝업 닫기 -->
+					<a href="#" class="btn_popup_submit primary"><span class="btn_popup_submit_text">사진촬영</span></a>
+					<a href="#" class="btn_popup_submit type3"><span class="btn_popup_submit_text">갤러리에서 불러오기</span></a>
+				</div>
+			</div>
+		</div>
+		<!-- // layer -->
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				// 인스턴스 선언
+				let formAlertPopup = new DesignPopup({
+					selector: "#formAlertPopup",
+					beforeCallback() {
+
+					},
+					callback() {
+
+					},
+					closeCallback() {}
+				});
+				let btnAlertPopup = new DesignPopup({
+					selector: "#btnAlertPopup",
+					beforeCallback() {
+
+					},
+					callback() {
+
+					},
+					closeCallback() {}
+				});
+
+
+				// 퍼블확인용
+				let url = window.location.href.split('?')[1];
+				let url_2 = url !== undefined ? url.split('#')[0] : null;
+				if (url_2 === "popup") {
+					formAlertPopup.popupShow(); // show
+					// formAlertPopup.popupShow(); // hide
+				} else if (url_2 === "popup2") {
+					btnAlertPopup.popupShow(); // show
+					// btnAlertPopup.popupShow(); // hide
+				}
+			});
+		</script>
 	</main>
 </body>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "메인 | 복지위기알림"
+        "title" : "회원가입 | 복지위기알림"
     })
 <body>
     <main class="front_body">
@@ -15,7 +15,7 @@
             <!-- // mobile -->
             <section class="middle_wrap" id="contents">
                 <div class="middle_title_row">
-                    <h2 class="middle_title">이웃 알림</h2>
+                    <h2 class="middle_title">회원가입</h2>
                 </div>
                 <div class="middle_contents_row">
                     <div class="form_step_list_wrap">
@@ -25,7 +25,7 @@
                                 <li>
                                     <div class="form_step_item current">
                                         <span class="form_step_number">1</span>
-                                        <span class="form_step_text">신고내용</span>
+                                        <span class="form_step_text">본인인증</span>
                                         <span class="hdtext">활성화 / 현재 단계</span>
                                     </div>
                                 </li>
@@ -37,37 +37,76 @@
                                 <li>
                                     <div class="form_step_item">
                                         <span class="form_step_number">2</span>
-                                        <span class="form_step_text">정보입력</span>
+                                        <span class="form_step_text">약관동의</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form_step_item">
                                         <span class="form_step_number">3</span>
-                                        <span class="form_step_text">내 정보</span>
+                                        <span class="form_step_text">회원정보 입력</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form_step_item">
                                         <span class="form_step_number">4</span>
-                                        <span class="form_step_text">접수완료</span>
+                                        <span class="form_step_text">회원가입 완료</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="form_step_contents_wrap">
-                        <h3 class="form_step_title">위기상황 선택</h3>
-                        <div class="form_step_contents">
-                            내용이 들어갑니다.
-                        </div>
+                        내용이 들어갑니다.
                     </div>
                 </div>
             </section>
     
             <div class="bottom_layer_wrap">
-                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">더보기</span></a>
+                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">휴대폰 인증</span></a>
             </div>
         </div>
+        <!-- popup -->
+        <div class="popup_wrap" id="idpwAlertPopup">
+            <div class="bg_dim"></div>
+            <div class="popup_box_item">
+                <div class="popup_box_contents_row">
+                    <p class="popup_box_message_para">
+                        회원가입이 되어 있습니다.<br>
+                        아이디/비밀번호 찾기 화면으로 <br>
+                        이동하시겠습니까?
+                    </p>
+                </div>
+                <div class="popup_box_btn_row type2">
+                    <!-- close_trigger 클릭시 팝업 닫기 -->
+                    <a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">이동하기</span></a>
+                    <a href="#" class="btn_popup_submit close_trigger"><span class="btn_popup_submit_text">취소</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- // popup -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // 인스턴스 선언
+                let idpwAlertPopup = new DesignPopup({
+                    selector: "#idpwAlertPopup",
+                    beforeCallback(){
+
+                    },
+                    callback(){
+
+                    },
+                    closeCallback(){
+                    }
+                });
+
+                // 퍼블확인용
+                let url = window.location.href.split('?')[1];
+                let url_2 = url !== undefined ? url.split('#')[0] : null;
+                if(url_2 === "popup"){
+                    idpwAlertPopup.popupShow(); // show
+                }
+            });
+        </script>
     </main>
 </body>
 </html>

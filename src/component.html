@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "인터렉션 | 복지위기알림"
+    })
+
+<body>
+    <main class="front_body">
+        <div class="page_wrap guide">
+            <header class="guide_header">
+                <hgroup class="header_pix_inner">
+                    <h1 class="guide_toplogo">
+                        <a href="#" class="guide_toplogo_item">
+                            <span class="guide_toplogo_img"><img src="./resources/images/toplogo2.svg" alt="복지위기알림"></span>
+                            <div class="guide_toplogo_text">컴포넌트 가이드</div>
+                        </a>
+                    </h1>
+                    <div class="guide_util_group">
+                        <ul class="guide_util_list">
+                            <li><a href="codinglist.html" class="guide_util_menu">퍼블리싱 리스트</a></li>
+                        </ul>
+                    </div>
+                </hgroup>
+            </header>
+            <section class="guide_middle">
+                <div class="guide_contents_item">
+                    <div class="guide_contents_title_row">
+                        <h3 class="guide_contents_title">Button</h3>
+                        <p class="guide_contents_title_copy">Button 컴포넌트 가이드입니다.</p>
+                    </div>
+                    <div class="guide_contents_content_row">
+                        <div class="vertical_cont_item">
+                            <p class="vertical_cont_title">Default</p>
+                            <p class="vertical_cont_copy">Primary 컬러를 default로 스타일링 되었습니다.</p>
+                            <ul class="vertical_cont_copy_list">
+                                <li>Primary 컬러를 default로 스타일링 되었습니다.</li>
+                                <li>다른 타입의 디자인이 있을 시 addClass로 추가정의합니다.</li>
+                            </ul>
+                            <div class="vertical_render_wrap">
+                               
+                            </div>
+                            <div class="vertical_code_wrap">
+                                <textarea rows="10" cols="10" class="textarea">
+                                </textarea>
+                                <a href="#" class="btn_copyitem"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script>
+            var htmlArray = [],
+                reverseArray = [];
+            $(window).on("load",function(){
+                
+                cmaTextareaSize();
+            });
+
+            scrollDrag(["#tab_menu_container","#tab_menu_container2"]);
+        
+            function cmaTextareaSize(obj, bsize) { // 객체명, 기본사이즈
+                var sTextarea = $(".textarea");
+                sTextarea.each(function(){
+                    $(this).css("height",$(this)[0].scrollHeight);
+                });
+            }
+
+
+            const vertical_cont_item = document.querySelectorAll(".vertical_cont_item");
+            vertical_cont_item.forEach((item) => {
+                const textarea = item.querySelector(".textarea");
+                const btn_copy = item.querySelector(".btn_copyitem");
+                btn_copy.addEventListener("click",(e)=>{
+                    // textarea의 내용을 복사한다.
+                    e.preventDefault();
+                    window.navigator.clipboard.writeText(textarea.value).then(() => {
+                        // 복사가 완료되면 호출된다.
+                        btn_copy.classList.add("active");
+                        setTimeout(()=>{
+                            btn_copy.classList.remove("active");
+                        },1000);
+                    });
+                });
+            });
+        </script>
+    </main>
+</body>
+
+</html>

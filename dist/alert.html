@@ -19,37 +19,31 @@
 <body>
 	<main class="front_body">
 		<div class="page_wrap">
-			<a href="#" class="btn_box size_submit" id="btnCall"><span class="btn_box_text">팝업 호출</span></a>
+			<section class="middle_wrap" id="contents">
+				<div style="padding:20px;">
+					<a href="#" class="btn_box size_submit" id="btnCall"><span class="btn_box_text">팝업 호출</span></a>
+				</div>
+			</section>
 
 			<!-- popup -->
-			<div class="popup_wrap full_type" id="samplePopup">
-				<!-- <div class="bg_dim"></div> -->
-				<div class="popup_item">
-					<div class="popup_title_row">
-						<h3 class="popup_title">개인정보 수집 · 이용 동의</h3>
+			<div class="popup_wrap" id="sampleAlertPopup">
+				<div class="bg_dim"></div>
+				<div class="popup_box_item">
+					<div class="popup_box_contents_row">
+						<p class="popup_box_message_para">24시간동안 팝업 공지를 열지 않습니다.</p>
 					</div>
-					<div class="popup_contents_row">
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.<br>
-						내용이 들어갑니다.
+					<div class="popup_box_btn_row">
+						<!-- close_trigger 클릭시 팝업 닫기 -->
+						<a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">확인</span></a>
 					</div>
-					<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
 				</div>
 			</div>
 			<!-- // popup -->
 			<script>
 				document.addEventListener("DOMContentLoaded", function() {
 					// 인스턴스 선언
-					let designPopup = new DesignPopup({
-						selector: "#samplePopup",
+					let sampleAlertPopup = new DesignPopup({
+						selector: "#sampleAlertPopup",
 						beforeCallback() {
 
 						},
@@ -61,12 +55,12 @@
 						}
 					});
 
-					designPopup.popupShow(); // show
-					// designPopup.popupShow(); // hide
+					sampleAlertPopup.popupShow(); // show
+					// sampleAlertPopup.popupShow(); // hide
 
 					// event
 					document.querySelector("#btnCall").addEventListener("click", () => {
-						designPopup.popupShow(); // show
+						sampleAlertPopup.popupShow(); // show
 					});
 				});
 			</script>

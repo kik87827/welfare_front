@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "회원가입 | 복지위기알림"
+        "title" : "14세 미만 회원가입 | 복지위기알림"
     })
 <body>
     <main class="front_body">
@@ -15,7 +15,7 @@
             <!-- // mobile -->
             <section class="middle_wrap" id="contents">
                 <div class="middle_title_row">
-                    <h2 class="middle_title">회원가입</h2>
+                    <h2 class="middle_title">14세 미만 회원가입</h2>
                 </div>
                 <div class="middle_contents_row">
                     <div class="form_step_list_wrap">
@@ -23,16 +23,10 @@
                             <p class="hdtext">활성화 단계</p>
                             <ul class="form_step_active_list">
                                 <li>
-                                    <div class="form_step_item">
+                                    <div class="form_step_item current">
                                         <span class="form_step_number">1</span>
                                         <span class="form_step_text">본인인증</span>
                                         <span class="hdtext">활성화 / 현재 단계</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form_step_item current">
-                                        <span class="form_step_number">2</span>
-                                        <span class="form_step_text">약관동의</span>
                                     </div>
                                 </li>
                             </ul>
@@ -40,7 +34,12 @@
                         <div class="form_step_list_cols">
                             <p class="hdtext">비활성화 단계</p>
                             <ul class="form_step_beactive_list">
-                                
+                                <li>
+                                    <div class="form_step_item">
+                                        <span class="form_step_number">2</span>
+                                        <span class="form_step_text">약관동의</span>
+                                    </div>
+                                </li>
                                 <li>
                                     <div class="form_step_item">
                                         <span class="form_step_number">3</span>
@@ -63,47 +62,9 @@
             </section>
     
             <div class="bottom_layer_wrap">
-                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">다음</span></a>
+                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">휴대폰 인증</span></a>
             </div>
         </div>
-        <!-- popup -->
-        <div class="popup_wrap" id="agreeAlertPopup">
-            <div class="bg_dim"></div>
-            <div class="popup_box_item">
-                <div class="popup_box_contents_row">
-                    <p class="popup_box_message_para">동의란에 선택을 해주세요.</p>
-                </div>
-                <div class="popup_box_btn_row type2">
-                    <!-- close_trigger 클릭시 팝업 닫기 -->
-                    <a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">확인</span></a>
-                    <a href="#" class="btn_popup_submit close_trigger"><span class="btn_popup_submit_text">취소</span></a>
-                </div>
-            </div>
-        </div>
-        <!-- // popup -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                // 인스턴스 선언
-                let agreeAlertPopup = new DesignPopup({
-                    selector: "#agreeAlertPopup",
-                    beforeCallback(){
-
-                    },
-                    callback(){
-
-                    },
-                    closeCallback(){
-                    }
-                });
-
-                // 퍼블확인용
-                let url = window.location.href.split('?')[1];
-                let url_2 = url !== undefined ? url.split('#')[0] : null;
-                if(url_2 === "popup"){
-                    agreeAlertPopup.popupShow(); // show
-                }
-            });
-        </script>
     </main>
 </body>
 </html>
