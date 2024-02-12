@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "알림하기 | 복지위기알림"
+        "title" : "회원가입 | 복지위기알림"
     })
 <body>
     <main class="front_body">
@@ -15,15 +15,34 @@
             <!-- // mobile -->
             <section class="middle_wrap" id="contents">
                 <div class="middle_title_row">
-                    <h2 class="middle_title">알림하기</h2>
+                    <h2 class="middle_title">회원가입</h2>
                 </div>
-                <div class="middle_contents_row">
+                <div class="middle_contents_row type2">
+                   <div class="gate_message_group">
+                        <p class="gate_message_main">해당하는 <strong>회원가입 방식</strong>을 <br>선택해 주세요.</p>
+                        <p class="gate_message_sub">회원구분에 따라 가입절차에 차이가 있으니 반드시 본인에 해당하는 경우를 선택해 주시기 바랍니다.</p>
+                   </div>
                    <div class="gate_item_wrap">
                         <ul class="btn_gate_box_list">
-                            <li><a href="#" class="btn_gate_box"><span class="btn_gate_box_text">로그인 하기</span></a></li>
-                            <li><a href="#" class="btn_gate_box"><span class="btn_gate_box_text">바로 알림하기</span></a></li>
+                            <li>
+                                <a href="#" class="btn_gate_box type2">
+                                    <div class="btn_gate_box_primary">14세 미만</div>
+                                    <div class="btn_gate_box_secondary">만 14세 미만 가입 희망자</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn_gate_box type2">
+                                    <div class="btn_gate_box_primary">일반 회원</div>
+                                    <div class="btn_gate_box_secondary">만 14세 이상 가입 희망자</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn_gate_box type2">
+                                    <div class="btn_gate_box_primary">외국인 회원</div>
+                                    <div class="btn_gate_box_secondary">Foreign member</div>
+                                </a>
+                            </li>
                         </ul>
-                        <div class="gate_note_row"><p class="gate_note_para">바로 알림하기를 진행하실 경우 휴대폰 인증이 필요하며, 알림 이후 로그인화면에서 비회원(휴대폰 인증) 로그인 후 알림 진행상황을 확인할 수 있습니다.</p></div>
                    </div>
                 </div>
             </section>
