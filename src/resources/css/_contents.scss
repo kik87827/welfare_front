@@ -165,7 +165,12 @@
     }
     .step_guide_copy_zone{margin:0;padding: 0 0 0 0;}
 }
-.form_column_container{text-align: left;}
+.form_column_container{text-align: left;
+    &.form_column_block{
+        border-bottom:1px solid #eee; padding:40px 20px; margin:0 -20px;
+        &:last-of-type{border-bottom:0;}
+    }
+}
 .form_column_table{
     >li{
         margin-bottom:32px;
@@ -430,7 +435,7 @@ input.input_sort{appearance: none;width:100%;box-sizing: border-box; line-height
     }
 }
 .board_item{
-
+    display:block;
 }
 .board_flex_item{
 }

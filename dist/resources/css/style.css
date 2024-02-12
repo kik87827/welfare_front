@@ -5443,6 +5443,14 @@ select.combo_select:hover {
 .form_column_container {
   text-align: left;
 }
+.form_column_container.form_column_block {
+  border-bottom: 1px solid #eee;
+  padding: 40px 20px;
+  margin: 0 -20px;
+}
+.form_column_container.form_column_block:last-of-type {
+  border-bottom: 0;
+}
 
 .form_column_table > li {
   margin-bottom: 32px;
@@ -6022,6 +6030,10 @@ input.input_sort {
 }
 .nodata_para_img_wrap img.nodata_img.img_bell {
   max-width: 88px;
+}
+
+.board_item {
+  display: block;
 }
 
 .board_indent_item {
