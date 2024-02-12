@@ -19,45 +19,85 @@
                 </div>
                 <div class="middle_contents_row">
                     <div class="form_step_list_wrap">
-                        <div class="form_step_list_cols">
-                            <p class="hdtext">활성화 단계</p>
-                            <ul class="form_step_active_list">
-                                <li>
-                                    <div class="form_step_item">
-                                        <span class="form_step_number">1</span>
-                                        <span class="form_step_text">본인인증</span>
-                                        <span class="hdtext">활성화 / 현재 단계</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form_step_item current">
-                                        <span class="form_step_number">2</span>
-                                        <span class="form_step_text">약관동의</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="form_step_list_cols">
-                            <p class="hdtext">비활성화 단계</p>
-                            <ul class="form_step_beactive_list">
-                                
-                                <li>
-                                    <div class="form_step_item">
-                                        <span class="form_step_number">3</span>
-                                        <span class="form_step_text">회원정보 입력</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form_step_item">
-                                        <span class="form_step_number">4</span>
-                                        <span class="form_step_text">회원가입 완료</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="form_step_list">
+                            <li>
+                                <div class="form_step_item">
+                                    <span class="form_step_number">1</span>
+                                    <span class="form_step_text">본인인증</span>
+                                </div>
+                            </li>
+                            <li class="active">
+                                <div class="form_step_item">
+                                    <span class="form_step_number">2</span>
+                                    <span class="form_step_text">약관동의</span>
+                                    <span class="hdtext">활성화</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form_step_item">
+                                    <span class="form_step_number">3</span>
+                                    <span class="form_step_text">회원정보 입력</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form_step_item">
+                                    <span class="form_step_number">4</span>
+                                    <span class="form_step_text">회원가입 완료</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="form_step_contents_wrap">
-                        내용이 들어갑니다.
+                        <div class="clauses_form_container mtype2">
+                            <ul class="clauses_form_list">
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="clauses_01">
+                                        <label for="clauses_01" class="props_label">이용 약관 동의 <span class="props_sub_emp">(필수)</span></label>
+                                    </div>
+                                    <div class="props_else_group">
+                                        <a href="#" class="btn_text_link">원문보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="clauses_02">
+                                        <label for="clauses_02" class="props_label">개인정보 수집∙ 이용 동의 <span class="props_sub_emp">(필수)</span></label>
+                                    </div>
+                                    <div class="props_else_group">
+                                        <a href="#" class="btn_text_link">원문보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="clauses_03">
+                                        <label for="clauses_03" class="props_label">제3자 제공 동의 <span class="props_sub_emp">(필수)</span></label>
+                                    </div>
+                                    <div class="props_else_group">
+                                        <a href="#" class="btn_text_link">원문보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="total_agree">
+                                        <label for="total_agree" class="props_label emp">모두동의</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <script>
+                            // 모두 동의
+                            document.addEventListener("DOMContentLoaded",()=>{
+                                document.querySelector("#total_agree").addEventListener("click",(e)=>{
+                                    let thisItem = e.currentTarget;
+                                    document.querySelectorAll(".clauses_form_list .props_form").forEach((item)=>{
+                                        if(item !== thisItem){
+                                            item.checked = thisItem.checked;
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
             </section>
