@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "메인 | 복지위기알림"
+        "title" : "주소찾기 | 복지위기알림"
     })
 <body>
     <main class="front_body">
@@ -15,49 +15,95 @@
             <!-- // mobile -->
             <section class="middle_wrap" id="contents">
                 <div class="middle_title_row">
-                    <h2 class="middle_title">이웃 알림</h2>
+                    <h2 class="middle_title">주소찾기</h2>
+                </div>
+                <div class="board_sort_field_wrap">
+                    <div class="board_sort_field_cols">
+                        <div class="input_sort_wrap">
+                            <label for="keyword_search" class="hdtext">검색어</label>
+                            <input type="text" class="input_sort" id="keyword_search" placeholder="주소를 입력해주세요" value="성미산로">
+                        </div>
+                        <a href="#" class="btn_board_sort"><span class="hdtext">검색</span></a>
+                    </div>
                 </div>
                 <div class="middle_contents_row">
-                    <div class="form_step_list_wrap">
-                        <ul class="form_step_list">
-                            <li class="active">
-                                <div class="form_step_item">
-                                    <span class="form_step_number">1</span>
-                                    <span class="form_step_text">신고내용</span>
-                                    <span class="hdtext">활성화 / 현재 단계</span>
-                                </div>
+                    <div class="board_item_list_wrap">
+                        <ul class="board_item_list">
+                            <li>
+                                <a href="#" class="board_flex_item">
+                                    <div class="board_short_cols">
+                                        <span class="board_item_number">03979</span>
+                                    </div>
+                                    <div class="board_long_cols">
+                                        <div class="board_item_summary_tb">
+                                            <div class="board_item_summary_tr">
+                                                <div class="board_item_summary_th">
+                                                    <span class="board_flag">도로명</span>
+                                                </div>
+                                                <div class="board_item_summary_td">
+                                                    <div class="board_summary_text">서울 마포구 성미산로29길 5 1층</div>
+                                                </div>
+                                            </div>
+                                            <div class="board_item_summary_tr">
+                                                <div class="board_item_summary_th">
+                                                    <span class="board_flag type2">지번</span>
+                                                </div>
+                                                <div class="board_item_summary_td">
+                                                    <div class="board_summary_text">연남동 250-3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </li>
                             <li>
-                                <div class="form_step_item">
-                                    <span class="form_step_number">2</span>
-                                    <span class="form_step_text">정보입력</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form_step_item">
-                                    <span class="form_step_number">3</span>
-                                    <span class="form_step_text">내 정보</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form_step_item">
-                                    <span class="form_step_number">4</span>
-                                    <span class="form_step_text">접수완료</span>
-                                </div>
+                                <a href="#" class="board_flex_item">
+                                    <div class="board_short_cols">
+                                        <span class="board_item_number">03979</span>
+                                    </div>
+                                    <div class="board_long_cols">
+                                        <div class="board_item_summary_tb">
+                                            <div class="board_item_summary_tr">
+                                                <div class="board_item_summary_th">
+                                                    <span class="board_flag">도로명</span>
+                                                </div>
+                                                <div class="board_item_summary_td">
+                                                    <div class="board_summary_text">서울 마포구 성미산로29길 5 1층</div>
+                                                </div>
+                                            </div>
+                                            <div class="board_item_summary_tr">
+                                                <div class="board_item_summary_th">
+                                                    <span class="board_flag type2">지번</span>
+                                                </div>
+                                                <div class="board_item_summary_td">
+                                                    <div class="board_summary_text">연남동 250-3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="form_step_contents_wrap">
-                        <h3 class="form_step_title">위기상황 선택</h3>
-                        <div class="form_step_contents">
-                            내용이 들어갑니다.
+                    <!-- paging -->
+                    <div class="paging_wrap">
+                        <a href="#none" class="paging_control first disabled"><span class="hdtext">처음 목록으로 이동</span></a>
+                        <a href="#none" class="paging_control prev disabled"><span class="hdtext">이전 목록으로 이동</span></a>
+                        <div class="paging_number_group">
+                            <a href="#none" class="paging_number active">1</a>
+                            <a href="#none" class="paging_number">2</a>
+                            <a href="#none" class="paging_number">3</a>
+                            <a href="#none" class="paging_number">4</a>
                         </div>
+                        <a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
+                        <a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
                     </div>
+                    <!-- // paging -->
                 </div>
             </section>
     
             <div class="bottom_layer_wrap">
-                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">더보기</span></a>
+                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">주소검색</span></a>
             </div>
         </div>
     </main>
