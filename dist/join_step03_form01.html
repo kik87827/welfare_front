@@ -14,7 +14,7 @@
 	<script src="./resources/js/swiper.min.js"></script>
 	<script src="./resources/js/ui.js"></script>
 	<script src="./resources/js/main.js"></script>
-	<title>메인 | 복지위기알림</title>
+	<title>회원가입 | 복지위기알림</title>
 </head>
 
 <body>
@@ -88,7 +88,7 @@
 			<!-- // mobile -->
 			<section class="middle_wrap" id="contents">
 				<div class="middle_title_row">
-					<h2 class="middle_title">이웃 알림</h2>
+					<h2 class="middle_title">회원가입</h2>
 				</div>
 				<div class="middle_contents_row">
 					<div class="form_step_list_wrap">
@@ -126,9 +126,9 @@
 								<ul class="form_column_table">
 									<li>
 										<div class="form_column_item">
-											<label for="" class="form_column_label">아이디</label>
+											<label for="form_item01_01" class="form_column_label">아이디</label>
 											<div class="form_column_field_row">
-												<input type="text" class="form_input" id="" placeholder="5자~20자 이내 영문/숫자 조합">
+												<input type="text" class="form_input" id="form_item01_01" placeholder="5자~20자 이내 영문/숫자 조합">
 												<div class="form_column_control_cols">
 													<button class="btn_control_box">중복검사</button>
 												</div>
@@ -140,17 +140,17 @@
 									</li>
 									<li>
 										<div class="form_column_item">
-											<label for="" class="form_column_label">비밀번호</label>
+											<label for="form_item01_02" class="form_column_label">비밀번호</label>
 											<div class="form_column_field_row">
-												<input type="password" class="form_input" id="">
+												<input type="password" class="form_input" id="form_item01_02">
 											</div>
 										</div>
 									</li>
 									<li>
 										<div class="form_column_item">
-											<label for="" class="form_column_label">비밀번호 확인</label>
+											<label for="form_item01_03" class="form_column_label">비밀번호 확인</label>
 											<div class="form_column_field_row">
-												<input type="password" class="form_input" id="">
+												<input type="password" class="form_input" id="form_item01_03">
 											</div>
 										</div>
 										<ul class="form_note_list">
@@ -162,36 +162,49 @@
 							<div class="form_column_container form_column_block">
 								<ul class="form_column_table">
 									<li>
-										<div class="form_column_item">
-											<label for="" class="form_column_label">주소</label>
+										<div class="form_column_item type2">
+											<label for="form_item02_01" class="form_column_label">주소</label>
 											<div class="form_column_field_wrap">
 												<div class="form_column_field_row">
-													<input type="text" class="form_input" id="">
+													<input type="text" class="form_input" value="04933" id="form_item02_01">
+													<div class="form_column_control_cols">
+														<button class="btn_control_box" title="팝업 열림">주소찾기</button>
+													</div>
+												</div>
+												<div class="form_column_field_row">
+													<input type="text" class="form_input" value="서울시 광진구 능동로">
+												</div>
+												<div class="form_column_field_row">
+													<input type="text" class="form_input" value="702호">
 												</div>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div class="form_column_item">
-											<label for="" class="form_column_label">이름</label>
+											<label for="form_item02_02" class="form_column_label">이름</label>
 											<div class="form_column_field_row">
-												<input type="text" class="form_input" id="">
+												<input type="text" class="form_input" value="김덕배" id="form_item02_02">
 											</div>
 										</div>
 									</li>
 									<li>
 										<div class="form_column_item">
-											<label for="" class="form_column_label">휴대폰</label>
+											<label for="form_item02_03" class="form_column_label">휴대폰</label>
 											<div class="form_column_field_row">
-												<input type="text" class="form_input" id="">
+												<input type="text" class="form_input" id="form_item02_03" value="01012345678">
 											</div>
 										</div>
 									</li>
 									<li>
-										<div class="form_column_item">
-											<label for="" class="form_column_label">이메일</label>
+										<div class="form_column_item type2">
+											<label for="form_item02_04" class="form_column_label">이메일</label>
 											<div class="form_column_field_row">
-												<input type="text" class="form_input" id="">
+												<div class="inline_form_container">
+													<div class="inline_form_cols"><input type="text" class="form_input" id="form_item02_04" value="kdb720604"></div>
+													<div class="inline_form_cols else"><span class="inline_form_else_text">@</span></div>
+													<div class="inline_form_cols"><input type="text" class="form_input" value="naver.com"></div>
+												</div>
 											</div>
 										</div>
 									</li>
@@ -200,10 +213,23 @@
 							<div class="form_column_container form_column_block">
 								<ul class="form_column_table">
 									<li>
-										<div class="form_column_item">
+										<div class="form_column_item type2">
 											<label for="" class="form_column_label">알림방식 선택</label>
 											<div class="form_column_field_row">
-												<input type="text" class="form_input" id="">
+												<div class="form_props_wrap">
+													<div class="form_props_cols">
+														<input type="checkbox" id="send_method_01" class="form_props" checked>
+														<label for="send_method_01" class="form_props_label">문자</label>
+													</div>
+													<div class="form_props_cols">
+														<input type="checkbox" id="send_method_02" class="form_props">
+														<label for="send_method_02" class="form_props_label">이메일</label>
+													</div>
+													<div class="form_props_cols">
+														<input type="checkbox" id="send_method_03" class="form_props">
+														<label for="send_method_03" class="form_props_label">SNS</label>
+													</div>
+												</div>
 											</div>
 										</div>
 									</li>

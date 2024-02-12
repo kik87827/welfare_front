@@ -310,7 +310,7 @@ input.props_form{
 }
 .btn_action_box_text{font-size:16px; font-weight:700; color:#333333; display:inline-block; line-height:1; position:relative; top:1px;}
 
-input.form_input{font-size:14px;line-height:1; box-sizing:border-box;height:45px;border:0;appearance: none;width:100%;font-weight:500;color:#333; padding:0 12px;
+input.form_input{font-size:14px;line-height:1; box-sizing:border-box;height:43px;border:0;appearance: none;width:100%;font-weight:500;color:#333; padding:0 12px;
     &.number{@include rubik;}
     &.calendar{}
     &.size2{
@@ -367,8 +367,8 @@ select.board_select{color:#333;cursor:pointer;font-size:14px; font-weight:500; b
 .tab_item_text{font-size:16px; color:#999999; font-weight:500;display:inline-block;}
 
 
-select.combo_select{color:#333;cursor:pointer;font-size:16px; font-weight:500; border:0;height: 45px;padding: 0 28px 0 12px;border-radius:0;box-sizing:border-box; width:100%;
-    background: #fff url("../images/ico_select2.svg") no-repeat calc(100% - 12px) 50%/16px auto;line-height:45px;-webkit-appearance:none;-moz-appearance:none;appearance:none; border-bottom:2px solid #333333;
+select.combo_select{color:#333;cursor:pointer;font-size:16px; font-weight:500; border:0;height: 43px;padding: 0 28px 0 12px;border-radius:0;box-sizing:border-box; width:100%;
+    background: #fff url("../images/ico_select2.svg") no-repeat calc(100% - 12px) 50%/16px auto;line-height:43px;-webkit-appearance:none;-moz-appearance:none;appearance:none; border-bottom:2px solid #333333;
     &::-ms-value {background: none; color:#333;}
     &::-ms-expand {display: none;}
     &.placeholder{color:#ddd;}

@@ -4815,7 +4815,7 @@ input.form_input {
   font-size: 14px;
   line-height: 1;
   box-sizing: border-box;
-  height: 45px;
+  height: 43px;
   border: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4961,13 +4961,13 @@ select.combo_select {
   font-size: 16px;
   font-weight: 500;
   border: 0;
-  height: 45px;
+  height: 43px;
   padding: 0 28px 0 12px;
   border-radius: 0;
   box-sizing: border-box;
   width: 100%;
   background: #fff url("../images/ico_select2.svg") no-repeat calc(100% - 12px) 50%/16px auto;
-  line-height: 45px;
+  line-height: 43px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -5445,11 +5445,24 @@ select.combo_select:hover {
 }
 .form_column_container.form_column_block {
   border-bottom: 1px solid #eee;
-  padding: 40px 20px;
+  padding: 30px 20px;
   margin: 0 -20px;
+}
+.form_column_container.form_column_block:first-of-type {
+  padding-top: 0;
 }
 .form_column_container.form_column_block:last-of-type {
   border-bottom: 0;
+}
+
+.form_column_block_title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+  margin-bottom: 32px;
+}
+.form_column_block_title.type2 {
+  margin-bottom: 10px;
 }
 
 .form_column_table > li {
@@ -5472,6 +5485,10 @@ select.combo_select:hover {
   position: relative;
   overflow: hidden;
 }
+.form_column_item.type2 {
+  border-bottom: 0;
+}
+
 .form_column_label {
   margin: 0 12px;
   font-weight: 600;
@@ -5486,6 +5503,14 @@ select.combo_select:hover {
 .form_column_field_row > input.form_input {
   flex: 1;
 }
+.form_column_field_wrap .form_column_field_row {
+  border-bottom: 2px solid #333333;
+  margin-bottom: 10px;
+}
+.form_column_field_wrap .form_column_field_row:last-of-type {
+  margin-bottom: 0;
+}
+
 .form_column_control_cols {
   padding: 0 12px 0 0;
   position: relative;
@@ -5571,6 +5596,29 @@ select.combo_select:hover {
   margin-top: 5px;
 }
 
+.inline_form_container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.inline_form_cols {
+  flex: 1;
+  border-bottom: 2px solid #333;
+}
+.inline_form_cols.else {
+  border-bottom-color: transparent;
+  flex: 0;
+  padding: 0 12px;
+}
+.inline_form_else_text {
+  font-size: 16px;
+  color: #999999;
+  font-weight: 500;
+  white-space: nowrap;
+  display: inline-block;
+}
+
 .boxform_textarea {
   vertical-align: top;
   font-size: 16px;
@@ -5629,6 +5677,57 @@ select.combo_select:hover {
   top: -1px;
   left: 0;
 }
+.form_props_wrap {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.form_props_cols {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+input.form_props {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+input.form_props:checked + .form_props_label {
+  color: #333;
+  border-color: #333;
+}
+input.form_props:checked + .form_props_label:before {
+  width: 21px;
+  flex-basis: 21px;
+}
+
+.form_props_label {
+  border-bottom: 2px solid #999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 43px;
+  justify-content: center;
+  font-size: 16px;
+  color: #999;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+.form_props_label:before {
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 20px;
+  background: url("../images/ico_only_checkbox.svg") no-repeat 0 0/100% auto;
+  flex: 0;
+}
+
 .clauses_form_container {
   margin-top: 20px;
 }
