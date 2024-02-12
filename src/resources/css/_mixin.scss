@@ -53,6 +53,10 @@ $warn : #e84854;
     font-family: 'Roboto','Pretendard',dotum;
 }
 
+@mixin inter {
+    font-family: 'inter','Pretendard',dotum;
+}
+
 @mixin cont_center {
     max-width:1280px;padding:0 30px; margin:0 auto;
 }

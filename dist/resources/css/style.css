@@ -421,126 +421,126 @@ img.ico_img {
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url("Inter-Thin.woff2") format("woff2");
+  src: url("./webfont/Inter-Thin.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 100;
   font-display: swap;
-  src: url("Inter-ThinItalic.woff2") format("woff2");
+  src: url("./webfont/Inter-ThinItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url("Inter-ExtraLight.woff2") format("woff2");
+  src: url("./webfont/Inter-ExtraLight.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 200;
   font-display: swap;
-  src: url("Inter-ExtraLightItalic.woff2") format("woff2");
+  src: url("./webfont/Inter-ExtraLightItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("Inter-Light.woff2") format("woff2");
+  src: url("./webfont/Inter-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url("Inter-LightItalic.woff2") format("woff2");
+  src: url("./webfont/Inter-LightItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("Inter-Regular.woff2") format("woff2");
+  src: url("./webfont/Inter-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("Inter-Italic.woff2") format("woff2");
+  src: url("./webfont/Inter-Italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("Inter-Medium.woff2") format("woff2");
+  src: url("./webfont/Inter-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  src: url("Inter-MediumItalic.woff2") format("woff2");
+  src: url("./webfont/Inter-MediumItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("Inter-SemiBold.woff2") format("woff2");
+  src: url("./webfont/Inter-SemiBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("Inter-SemiBoldItalic.woff2") format("woff2");
+  src: url("./webfont/Inter-SemiBoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("Inter-Bold.woff2") format("woff2");
+  src: url("./webfont/Inter-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("Inter-BoldItalic.woff2") format("woff2");
+  src: url("./webfont/Inter-BoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("Inter-ExtraBold.woff2") format("woff2");
+  src: url("./webfont/Inter-ExtraBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 800;
   font-display: swap;
-  src: url("Inter-ExtraBoldItalic.woff2") format("woff2");
+  src: url("./webfont/Inter-ExtraBoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("Inter-Black.woff2") format("woff2");
+  src: url("./webfont/Inter-Black.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: url("Inter-BlackItalic.woff2") format("woff2");
+  src: url("./webfont/Inter-BlackItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
@@ -554,119 +554,119 @@ img.ico_img {
   font-style: italic;
   font-weight: 100;
   font-display: swap;
-  src: url("InterDisplay-ThinItalic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-ThinItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url("InterDisplay-ExtraLight.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-ExtraLight.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: italic;
   font-weight: 200;
   font-display: swap;
-  src: url("InterDisplay-ExtraLightItalic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-ExtraLightItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("InterDisplay-Light.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-Light.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url("InterDisplay-LightItalic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-LightItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("InterDisplay-Regular.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("InterDisplay-Italic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-Italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("InterDisplay-Medium.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  src: url("InterDisplay-MediumItalic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-MediumItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("InterDisplay-SemiBold.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-SemiBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("InterDisplay-SemiBoldItalic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-SemiBoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("InterDisplay-Bold.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("InterDisplay-BoldItalic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-BoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("InterDisplay-ExtraBold.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-ExtraBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: italic;
   font-weight: 800;
   font-display: swap;
-  src: url("InterDisplay-ExtraBoldItalic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-ExtraBoldItalic.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("InterDisplay-Black.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-Black.woff2") format("woff2");
 }
 @font-face {
   font-family: "InterDisplay";
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: url("InterDisplay-BlackItalic.woff2") format("woff2");
+  src: url("./webfont/InterDisplay-BlackItalic.woff2") format("woff2");
 }
 /* mixin */ /* layout */
 html:not(.touchmode) ::-webkit-scrollbar {
@@ -779,7 +779,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 62px);
 }
 .page_wrap .bg_full:after {
   display: block;
@@ -910,7 +910,6 @@ body {
   border-radius: 16px 0 0 16px;
   padding-top: 100px;
   box-sizing: border-box;
-  gap: 40px;
   overflow: hidden;
 }
 
@@ -965,7 +964,7 @@ body {
 .mobile_util_list {
   display: flex;
   gap: 16px;
-  padding: 0 0 40px 40px;
+  padding: 40px 0 20px 48px;
 }
 .mobile_util {
   color: #FEB700;
@@ -1041,6 +1040,56 @@ body {
   min-height: 0;
   display: flex;
   flex-direction: column;
+}
+
+.mobile_util_row {
+  background: #eee;
+  padding: 20px 48px;
+  flex: 0;
+}
+
+.mb_util_menu_list {
+  display: flex;
+  gap: 17px;
+}
+.mb_util_menu_list > li {
+  position: relative;
+}
+.mb_util_menu_list > li:after {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  position: absolute;
+  top: 1px;
+  right: -9px;
+  background: #333;
+}
+.mb_util_menu_list > li:last-of-type:after {
+  display: none;
+}
+
+.mb_util_menu {
+  display: inline-block;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1;
+}
+
+.mb_util_copy_wrap {
+  margin-top: 16px;
+}
+
+.mb_util_copy {
+  font-size: 11px;
+  color: #999999;
+  margin-bottom: 16px;
+}
+.mb_util_copy.emp {
+  color: #FEB700;
+}
+.mb_util_copy:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 1023px) {
@@ -4129,6 +4178,46 @@ button.swiper-pagination-bullet {
   font-weight: 700;
 }
 
+.btn_form_submit {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 8px;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.btn_form_submit.primary {
+  background-color: #FEB700;
+  border-color: #FEB700;
+}
+.btn_form_submit.primary .btn_form_submit_text {
+  color: #fff;
+}
+.btn_form_submit.type2 {
+  background-color: #fff;
+  border-color: #999999;
+}
+.btn_form_submit.type2 .btn_form_submit_text {
+  color: #999999;
+}
+.btn_form_submit.type3 {
+  background-color: #00D4E9;
+  border-color: #00D4E9;
+}
+.btn_form_submit.type3 .btn_form_submit_text {
+  color: #fff;
+}
+
+.btn_form_submit_text {
+  font-size: 16px;
+  color: #333;
+  display: inline-block;
+  font-weight: 700;
+}
+
 .popup_btn_row {
   flex: 0;
   padding: 26px;
@@ -4261,6 +4350,13 @@ input.quad_checkbox:checked {
   display: inline-flex;
   gap: 6px;
   min-height: 16px;
+}
+.props_item.size2 input.props_form {
+  position: relative;
+  top: 1px;
+}
+.props_item.size2 .props_label {
+  font-size: 16px;
 }
 
 input.props_form {
@@ -4596,7 +4692,7 @@ input.form_input {
   font-size: 14px;
   line-height: 1;
   box-sizing: border-box;
-  height: 35px;
+  height: 45px;
   border: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4609,6 +4705,30 @@ input.form_input {
 input.form_input.number {
   font-family: "Rubik Regular", "Pretendard", dotum;
 }
+input.form_input.size2 {
+  font-size: 16px;
+}
+input.form_input::-webkit-input-placeholder {
+  color: #ddd;
+  font-family: "Pretendard";
+}
+input.form_input::-moz-input-placeholder {
+  color: #ddd;
+  font-family: "Pretendard";
+}
+input.form_input:-ms-input-placeholder {
+  color: #ddd;
+  font-family: "Pretendard";
+}
+input.form_input::-ms-input-placeholder {
+  color: #ddd;
+  font-family: "Pretendard";
+}
+input.form_input::input-placeholder {
+  color: #ddd;
+  font-family: "Pretendard";
+}
+
 .bottom_layer_wrap .btn_action_box_group {
   padding: 20px;
 }
@@ -4660,13 +4780,50 @@ select.board_select::-ms-expand {
   display: none;
 }
 
+/* tab */
+.tab_list_wrap {
+  margin: 0 20px;
+}
+
+.tab_list {
+  display: flex;
+}
+.tab_list > li {
+  flex: 1;
+}
+
+.tab_item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  min-height: 44px;
+  height: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid #BBBBBB;
+}
+.tab_item.active {
+  border-color: #000000;
+}
+.tab_item.active .tab_item_text {
+  color: #000000;
+}
+
+.tab_item_text {
+  font-size: 16px;
+  color: #999999;
+  font-weight: 500;
+  display: inline-block;
+}
+
 /* contents */
 .main_contents_wrap {
   display: flex;
   flex-direction: column;
   height: 100%;
   box-sizing: border-box;
-  padding: 0 24px 24px;
+  padding: 0 24px 32px;
 }
 
 .mc_liquid_row {
@@ -4786,6 +4943,89 @@ select.board_select::-ms-expand {
   margin-top: 8px;
 }
 
+.mc_bottom_menu_wrap {
+  background: #fff;
+  padding: 0 20px;
+}
+
+.bottom_menu_list {
+  display: flex;
+  text-align: center;
+}
+.bottom_menu_list > li {
+  flex: 1;
+  position: relative;
+  min-width: 0;
+}
+
+.bottom_menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom_menu_text {
+  font-size: 12px;
+  color: #999999;
+  margin-top: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bottom_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  min-height: 62px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.bottom_menu:after {
+  display: block;
+  opacity: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #FEB700;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bottom_menu.active:after {
+  opacity: 1;
+}
+.bottom_menu.active .ico_bottom.ico_home {
+  background-image: url("../images/ico_menu_home_active.svg");
+}
+.bottom_menu.active .ico_bottom.ico_docu {
+  background-image: url("../images/ico_menu_notice_active.svg");
+}
+.bottom_menu.active .ico_bottom.ico_my {
+  background-image: url("../images/ico_menu_my_active.svg");
+}
+.bottom_menu.active .bottom_menu_text {
+  color: #FEB700;
+}
+
+.ico_bottom {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+}
+.ico_bottom.ico_home {
+  background-image: url("../images/ico_menu_home.svg");
+}
+.ico_bottom.ico_docu {
+  background-image: url("../images/ico_menu_notice.svg");
+}
+.ico_bottom.ico_my {
+  background-image: url("../images/ico_menu_my.svg");
+}
+
 .form_step_list_wrap {
   padding: 20px;
   display: flex;
@@ -4873,7 +5113,7 @@ select.board_select::-ms-expand {
 }
 
 .step_guide_copy_group.type2 .step_guide_copy {
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 .step_guide_copy {
@@ -4887,6 +5127,22 @@ select.board_select::-ms-expand {
   font-weight: 700;
 }
 
+.form_column_zone {
+  padding: 20px 20px 60px;
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.form_column_zone.align_type2 {
+  align-items: center;
+  justify-content: center;
+}
+.form_column_zone .step_guide_copy_zone {
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
 .form_column_container {
   text-align: left;
 }
@@ -4895,7 +5151,10 @@ select.board_select::-ms-expand {
   margin-bottom: 32px;
 }
 .form_column_table > li:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+}
+.form_column_table.gap_type2 > li {
+  margin-bottom: 28px;
 }
 
 .form_column_item {
@@ -4912,6 +5171,41 @@ select.board_select::-ms-expand {
   margin: 0 12px;
   font-weight: 600;
   color: #999999;
+}
+
+.form_column_field_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form_column_field_row > input.form_input {
+  flex: 1;
+}
+.form_column_control_cols {
+  padding: 0 12px 0 0;
+  position: relative;
+  text-align: right;
+}
+
+.control_message_para {
+  font-size: 12px;
+  font-weight: 500;
+  color: #00D4E9;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 12px;
+  white-space: nowrap;
+}
+
+.btn_control_box {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 4px;
+  background-color: #FEB700;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .form_each_message_wrap {
@@ -4946,6 +5240,30 @@ select.board_select::-ms-expand {
   letter-spacing: -0.5px;
   color: #FEB700;
   line-height: 1.4;
+}
+
+.result_render_box {
+  text-align: center;
+  border-radius: 8px;
+  background: #EEEEEE;
+  padding: 10px;
+}
+.result_render_box + .form_column_container {
+  margin-top: 16px;
+}
+
+.result_render_key {
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.3;
+}
+
+.result_render_value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
 .boxform_textarea {
@@ -4987,6 +5305,10 @@ select.board_select::-ms-expand {
 .clauses_form_container {
   margin-top: 20px;
 }
+.clauses_form_container.type2 {
+  margin: 20px;
+  flex: 1;
+}
 
 .clauses_form_list > li {
   display: flex;
@@ -5000,6 +5322,30 @@ select.board_select::-ms-expand {
 .clauses_form_list > li .props_item {
   position: relative;
   top: 1px;
+}
+
+.middle_bottom_contents {
+  flex: 0;
+  margin-top: 20px;
+}
+.middle_bottom_contents > .bottom_menu_list_wrap {
+  background: #FFFFFF;
+  box-shadow: 0px -2px 2px rgba(17, 17, 17, 0.1);
+}
+
+.submit_top_message {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+  line-height: 1.4;
+  text-align: center;
+  word-break: keep-all;
+  padding: 0 20px 26px;
+}
+
+.submit_top_cont_group {
+  text-align: center;
+  margin: 0 20px 30px;
 }
 
 .emp_tape_copy_box {
@@ -5275,6 +5621,49 @@ input.input_sort {
   max-width: 88px;
 }
 
+.board_indent_item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.board_indent_liquid {
+  flex: 1;
+  min-width: 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.box_ico_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FEB700;
+  border-radius: 4px;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+}
+.box_ico_text:after {
+  display: block;
+  content: "Q";
+  font-family: "Inter";
+  font-weight: 800;
+  color: #fff;
+}
+.box_ico_text.type2 {
+  background: #00D4E9;
+}
+.box_ico_text.type2:after {
+  content: "A";
+}
+
 .board_main_title {
   font-size: 16px;
   color: #000000;
@@ -5343,6 +5732,9 @@ input.input_sort {
   border-bottom: 1px solid #FEB700;
   padding: 16px 20px;
 }
+.view_top_group.type2 {
+  border-color: #999;
+}
 
 .view_top_flag_row {
   margin-bottom: 5px;
@@ -5378,6 +5770,28 @@ input.input_sort {
   width: auto !important;
   height: auto !important;
   max-width: 100% !important;
+}
+
+.view_article_render {
+  flex: 1;
+  min-height: 0;
+  padding: 20px 20px 50px;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.view_article_render * {
+  word-break: break-all !important;
+}
+.view_article_render img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+.view_article_flag_row {
+  margin-bottom: 5px;
 }
 
 .view_linkage_row {
@@ -5525,6 +5939,127 @@ input.input_sort {
   font-size: 14px;
   color: #999999;
   letter-spacing: -0.5px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.form_props_control_wrap {
+  margin-top: 16px;
+}
+
+.form_props_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.btn_form_submit_wrap {
+  margin-top: 16px;
+}
+.form_etc_menu_zone {
+  margin-top: 20px;
+}
+.hr_line {
+  margin: 16px 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hr_line:before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #EEEEEE;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.hr_text {
+  background: #fff;
+  z-indeX: 2;
+  padding: 0 12px;
+  display: inline-block;
+  color: #DDDDDD;
+  font-family: "inter", "Pretendard", dotum;
+  font-weight: 700;
+}
+
+.form_text_menu_list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.form_text_menu_list > li {
+  position: relative;
+}
+.form_text_menu_list > li:last-of-type:after {
+  display: none;
+}
+.form_text_menu_list > li:after {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #DDDDDD;
+  position: absolute;
+  top: 0;
+  right: -11px;
+}
+
+.form_text_menu {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1;
+}
+
+.form_sns_menu_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.form_sns_menu {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+  display: block;
+}
+.form_sns_menu.ico_kakao {
+  background-image: url("../images/ico_sns_box_kakao.png");
+}
+.form_sns_menu.ico_naver {
+  background-image: url("../images/ico_sns_box_naver.png");
+}
+.form_sns_menu.ico_google {
+  background-image: url("../images/ico_sns_box_google.png");
+  border: 1px solid #DDDDDD;
+}
+.form_sns_menu.ico_face {
+  background-image: url("../images/ico_sns_box_face.png");
+}
+.form_sns_menu.ico_apple {
+  background-image: url("../images/ico_sns_box_apple.png");
+}
+
+.form_note_box {
+  margin-top: 30px;
+  background: #eee;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  color: #999999;
+  letter-spacing: -0.05em;
   line-height: 1.4;
   word-break: keep-all;
 }

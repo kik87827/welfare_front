@@ -18,13 +18,61 @@
                     <h2 class="middle_title">비회원 로그인</h2>
                 </div>
                 <div class="middle_contents_row">
-                    내용이 들어갑니다.
+                    <div class="clauses_form_container type2">
+                        <ul class="clauses_form_list">
+                            <li>
+                                <div class="props_item">
+                                    <input type="checkbox" class="props_form" id="clauses_01">
+                                    <label for="clauses_01" class="props_label">개인정보수집 ∙ 이용 동의 (필수)</label>
+                                </div>
+                                <div class="props_else_group">
+                                    <a href="#" class="btn_text_link" title="팝업 열림" id="btn_term_call_01">원문보기</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="props_item">
+                                    <input type="checkbox" class="props_form" id="clauses_02">
+                                    <label for="clauses_02" class="props_label">제3자 제공 동의 (필수)</label>
+                                </div>
+                                <div class="props_else_group">
+                                    <a href="#" class="btn_text_link" title="팝업 열림" id="btn_term_call_02">원문보기</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="props_item">
+                                    <input type="checkbox" class="props_form" id="total_agree">
+                                    <label for="total_agree" class="props_label emp">모두동의</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="middle_bottom_contents">
+                        <div class="submit_top_cont_group">
+                            <div class="submit_top_cont">
+                                <div class="props_item size2">
+                                    <input type="checkbox" class="props_form" id="active_agree">
+                                    <label for="active_agree" class="props_label emp">익명신고 활성화하기</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="submit_top_message">복지위기알림서비스는 본인이 선택한 인증 수단을 통해 간편하게 로그인 하실 수 있습니다</p>
+                        <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">디지털원패스 로그인</span></a>
+                    </div>
+                    <script>
+                        // 모두 동의
+                        document.addEventListener("DOMContentLoaded",()=>{
+                            document.querySelector("#total_agree").addEventListener("click",(e)=>{
+                                let thisItem = e.currentTarget;
+                                document.querySelectorAll(".clauses_form_list .props_form").forEach((item)=>{
+                                    if(item !== thisItem){
+                                        item.checked = thisItem.checked;
+                                    }
+                                });
+                            });
+                        });
+                    </script>
                 </div>
             </section>
-    
-            <div class="bottom_layer_wrap">
-                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">디지털원패스 로그인</span></a>
-            </div>
         </div>
         <!-- popup -->
         <div class="popup_wrap" id="guidePopup">
