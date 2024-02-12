@@ -95,7 +95,8 @@ body{overflow-x:hidden;}
 }
 .mobile_second_menu_text{font-size:16px; font-weight:600; color:#333333; display:inline-block; line-height:1;}
 
-.middle_title_row{padding:12px 20px;
+.middle_title_row{padding:12px 20px;display:flex; align-items: flex-end;gap:3px;
+    .text_emp_flag{position:relative;top:-2px;}
     &.type2{border-bottom:1px solid #eee;}
 }
 .middle_title{font-size:20px;font-weight:700;color:#333;line-height:1.3;}

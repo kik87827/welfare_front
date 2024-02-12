@@ -1,6 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
     commonInit();
     layoutFunc();
+    formFunc();
 });
 window.addEventListener("load", () => {
   bottomLayer();
@@ -389,4 +390,16 @@ function noticePopup(){
     date.setTime(date.getTime() + exp*24*60*60*1000);      
     document.cookie = name + '=' + value + ';expires=' + date.toUTCString() + ';path=/';  
   };
+}
+
+
+function formFunc(){
+  addDynamicEventListener(document.body, 'change', '.combo_select', function(e) {
+    let thisTarget = e.target;
+    if (thisTarget.value === "") {
+      thisTarget.classList.add("placeholder");
+    } else {
+      thisTarget.classList.remove("placeholder");
+    }
+  });
 }

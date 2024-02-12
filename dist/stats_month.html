@@ -8,12 +8,13 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="./resources/css/style.css" rel="stylesheet">
+	<script src="./resources/js/dynamicListener.min.js"></script><!-- 20240212 추가 -->
 	<script src="./resources/js/jquery-3.4.1.min.js"></script>
 	<script src="./resources/js/jquery-ui.js"></script>
 	<script src="./resources/js/swiper.min.js"></script>
 	<script src="./resources/js/ui.js"></script>
 	<script src="./resources/js/main.js"></script>
-	<title>메인 | 복지위기알림</title>
+	<title>통계 | 복지위기알림</title>
 </head>
 
 <body>
@@ -43,9 +44,9 @@
 				<div class="mainmenu_dim"></div>
 				<div class="mobile_mainmenu_wrap">
 					<div class="mobile_main_menu_row">
-						<!--  <div class="mobile_util_wrap vhidden">
-                <p class="mobile_util_para">안녕하세요.</p>
-            </div> -->
+						<div class="mobile_util_wrap">
+							<p class="mobile_util_para"><strong>유상욱</strong>님 안녕하세요.</p>
+						</div>
 						<nav class="gnb_menu_list_wrap">
 							<ul class="gnb_menu_list">
 								<li><a href="#" class="gnb_menu">신고하기</a></li>
@@ -57,9 +58,9 @@
 						</nav>
 					</div>
 					<div class="mobile_sub_menu_row">
-						<ul class="mobile_util_list">
-							<li><a href="#" class="mobile_util">로그인</a></li>
-							<li><a href="#" class="mobile_util">회원가입</a></li>
+						<ul class="mobile_second_menu_list">
+							<li><a href="#" class="mobile_second_menu"><span class="mobile_second_menu_text">알림 이력</span></a></li>
+							<li><a href="#" class="mobile_second_menu"><span class="mobile_second_menu_text">나의 정보</span></a></li>
 						</ul>
 					</div>
 					<div class="mobile_util_row">
@@ -87,50 +88,107 @@
 			<!-- // mobile -->
 			<section class="middle_wrap" id="contents">
 				<div class="middle_title_row">
-					<h2 class="middle_title">이웃 알림</h2>
+					<h2 class="middle_title">통계</h2>
 				</div>
 				<div class="middle_contents_row">
-					<div class="form_step_list_wrap">
-						<div class="form_step_list_cols">
-							<p class="hdtext">활성화 단계</p>
-							<ul class="form_step_active_list">
-								<li>
-									<div class="form_step_item current">
-										<span class="form_step_number">1</span>
-										<span class="form_step_text">신고내용</span>
-										<span class="hdtext">활성화 / 현재 단계</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="form_step_list_cols">
-							<p class="hdtext">비활성화 단계</p>
-							<ul class="form_step_beactive_list">
-								<li>
-									<div class="form_step_item">
-										<span class="form_step_number">2</span>
-										<span class="form_step_text">정보입력</span>
-									</div>
-								</li>
-								<li>
-									<div class="form_step_item">
-										<span class="form_step_number">3</span>
-										<span class="form_step_text">내 정보</span>
-									</div>
-								</li>
-								<li>
-									<div class="form_step_item">
-										<span class="form_step_number">4</span>
-										<span class="form_step_text">접수완료</span>
-									</div>
-								</li>
-							</ul>
+					<!-- tab -->
+					<div class="tab_list_wrap">
+						<ul class="tab_list">
+							<li><a href="#" class="tab_item"><span class="tab_item_text">나의 통계</span></a></li>
+							<li><a href="#" class="tab_item"><span class="tab_item_text">일별</span></a></li>
+							<li><a href="#" class="tab_item active"><span class="tab_item_text">월별</span> <span class="hdtext">활성화</span></a></li>
+						</ul>
+					</div>
+					<!-- // tab -->
+					<h3 class="hdtext">월별</h3>
+					<div class="sort_field_zone">
+						<div class="sort_field_row">
+							<div class="sort_field_label_row"><label for="month_picker" class="sort_field_label">날짜선택</label></div>
+							<div class="sort_field_container">
+								<div class="sort_field_cols">
+									<select class="combo_select placeholder" id="month_picker">
+										<option value="">월 선택</option>
+										<option value="1">1월</option>
+										<option value="2">2월</option>
+										<option value="3">3월</option>
+										<option value="4">4월</option>
+										<option value="5">5월</option>
+										<option value="6">6월</option>
+										<option value="7">7월</option>
+										<option value="8">8월</option>
+										<option value="9">9월</option>
+										<option value="10">10월</option>
+										<option value="11">11월</option>
+										<option value="12">12월</option>
+									</select>
+								</div>
+								<div class="sort_field_cols">
+									<select class="combo_select placeholder" id="day_picker">
+										<option value="">일 선택</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="form_step_contents_wrap">
-						<h3 class="form_step_title">위기상황 선택</h3>
-						<div class="form_step_contents">
-							내용이 들어갑니다.
+					<div class="data_tb_vitem_wrap">
+						<div class="data_tb_vitem">
+							<table class="data_tb">
+								<caption>나의 통계 월별표</caption>
+								<thead>
+									<tr>
+										<th scope="col"><span class="data_th_text">구분</span></th>
+										<th scope="col"><span class="data_th_text">알림</span></th>
+										<th scope="col"><span class="data_th_text">상담</span></th>
+										<th scope="col"><span class="data_th_text">완료</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><span class="data_td_text">전체</span></td>
+										<td><span class="data_td_text">1,230</span></td>
+										<td><span class="data_td_text">897</span></td>
+										<td><span class="data_td_text">456</span></td>
+									</tr>
+									<tr>
+										<td><span class="data_td_text">서울</span></td>
+										<td><span class="data_td_text">876</span></td>
+										<td><span class="data_td_text">432</span></td>
+										<td><span class="data_td_text">398</span></td>
+									</tr>
+									<tr>
+										<td><span class="data_td_text">부산</span></td>
+										<td><span class="data_td_text">567</span></td>
+										<td><span class="data_td_text">321</span></td>
+										<td><span class="data_td_text">342</span></td>
+									</tr>
+									<tr>
+										<td><span class="data_td_text">인천</span></td>
+										<td><span class="data_td_text">678</span></td>
+										<td><span class="data_td_text">214</span></td>
+										<td><span class="data_td_text">45</span></td>
+									</tr>
+									<tr>
+										<td><span class="data_td_text">광주</span></td>
+										<td><span class="data_td_text">452</span></td>
+										<td><span class="data_td_text">90</span></td>
+										<td><span class="data_td_text">43</span></td>
+									</tr>
+									<tr>
+										<td><span class="data_td_text">대전</span></td>
+										<td><span class="data_td_text">890</span></td>
+										<td><span class="data_td_text">480</span></td>
+										<td><span class="data_td_text">410</span></td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</div>

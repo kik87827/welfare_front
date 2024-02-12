@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "메인 | 복지위기알림"
+        "title" : "통계 | 복지위기알림"
     })
 <body>
     <main class="front_body">
@@ -11,54 +11,79 @@
         <div class="page_wrap">
             @@include('./include/_header.html')
             <!-- mobile --> 
-            @@include('./include/_gnb_before.html')
+            @@include('./include/_gnb_after.html')
             <!-- // mobile -->
             <section class="middle_wrap" id="contents">
                 <div class="middle_title_row">
-                    <h2 class="middle_title">이웃 알림</h2>
+                    <h2 class="middle_title">통계</h2>
                 </div>
                 <div class="middle_contents_row">
-                    <div class="form_step_list_wrap">
-                        <div class="form_step_list_cols">
-                            <p class="hdtext">활성화 단계</p>
-                            <ul class="form_step_active_list">
-                                <li>
-                                    <div class="form_step_item current">
-                                        <span class="form_step_number">1</span>
-                                        <span class="form_step_text">신고내용</span>
-                                        <span class="hdtext">활성화 / 현재 단계</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="form_step_list_cols">
-                            <p class="hdtext">비활성화 단계</p>
-                            <ul class="form_step_beactive_list">
-                                <li>
-                                    <div class="form_step_item">
-                                        <span class="form_step_number">2</span>
-                                        <span class="form_step_text">정보입력</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form_step_item">
-                                        <span class="form_step_number">3</span>
-                                        <span class="form_step_text">내 정보</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form_step_item">
-                                        <span class="form_step_number">4</span>
-                                        <span class="form_step_text">접수완료</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    <!-- tab -->
+                    <div class="tab_list_wrap">
+                        <ul class="tab_list">
+                            <li><a href="#" class="tab_item active"><span class="tab_item_text">나의 통계</span> <span class="hdtext">활성화</span></a></li>
+                            <li><a href="#" class="tab_item"><span class="tab_item_text">일별</span></a></li>
+                            <li><a href="#" class="tab_item"><span class="tab_item_text">월별</span></a></li>
+                        </ul>
                     </div>
-                    <div class="form_step_contents_wrap">
-                        <h3 class="form_step_title">위기상황 선택</h3>
-                        <div class="form_step_contents">
-                            내용이 들어갑니다.
+                    <!-- // tab -->
+                    <h3 class="hdtext">나의 통계</h3>
+                    <div class="count_obj_list_wrap">
+                        <ul class="count_obj_list">
+                            <li>
+                                <div class="count_obj_item">
+                                    <p class="count_obj_key">알림</p>
+                                    <p class="count_obj_value">5</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="count_obj_item">
+                                    <p class="count_obj_key">상담</p>
+                                    <p class="count_obj_value">2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="count_obj_item">
+                                    <p class="count_obj_key">완료</p>
+                                    <p class="count_obj_value">3</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="data_tb_vitem_wrap">
+                        <div class="data_tb_vitem">
+                            <table class="data_tb">
+                                <caption>나의 통계표</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><span class="data_th_text">구분</span></th>
+                                        <th scope="col"><span class="data_th_text">순위</span></th>
+                                        <th scope="col"><span class="data_th_text">전체인원</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span  class="data_td_text">주민센터</span></td>
+                                        <td><span  class="data_td_text">6</span></td>
+                                        <td><span  class="data_td_text">12명</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span  class="data_td_text">노원구</span></td>
+                                        <td><span  class="data_td_text">42</span></td>
+                                        <td><span  class="data_td_text">84명</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span  class="data_td_text">서울특별시</span></td>
+                                        <td><span  class="data_td_text">168</span></td>
+                                        <td><span  class="data_td_text">1,578명</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span  class="data_td_text">전국</span></td>
+                                        <td><span  class="data_td_text">10,345</span></td>
+                                        <td><span  class="data_td_text">34,563명</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
