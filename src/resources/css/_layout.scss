@@ -145,5 +145,5 @@ body{overflow-x:hidden;}
     .bottom_layer_wrap,
     .mobile_mainmenu_zone{left:0;width:100%;transform: translateX(0);}
 
-    .mobile_mainmenu_zone{position:fixed;}
+    .mobile_mainmenu_zone{position:fixed;height:100% !important;}
 }

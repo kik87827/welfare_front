@@ -83,14 +83,21 @@ function layoutFunc() {
       e.preventDefault();
       totalClose();
     }, false);
+    initSetting();
     resizeAction(() => {
       if (window.innerWidth > 1023) {
+        initSetting();
         totalClose();
       }
     });
 
+    function initSetting() {
+      mobile_mainmenu_zone.style.height = window.innerHeight + "px";
+    }
+
     function totalOpen() {
-      mobile_mainmenu_zone.classList.add("active")
+      mobile_mainmenu_zone.classList.add("active");
+
       setTimeout(function() {
         mobile_mainmenu_zone.classList.add("motion");
         setTimeout(function() {
