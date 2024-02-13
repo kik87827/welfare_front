@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   commonInit();
   layoutFunc();
-  formFunc();
+  //formFunc();
 });
 window.addEventListener("load", () => {
   bottomLayer();
