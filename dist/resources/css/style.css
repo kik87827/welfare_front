@@ -1065,6 +1065,11 @@ body {
   flex: none;
 }
 
+.middle_contents {
+  flex: 1;
+  min-height: 0;
+}
+
 .mobile_util_row {
   background: #eee;
   padding: 20px 48px;
@@ -4666,7 +4671,7 @@ input.props_form[type=radio] + .props_label {
 
 /* paging */
 .paging_wrap {
-  margin: 15px 20px 30px;
+  margin: 15px 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6145,7 +6150,7 @@ input.input_sort {
 
 .board_item_list_wrap {
   flex: 1;
-  padding: 0 20px 50px;
+  padding: 0 20px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -6161,6 +6166,7 @@ input.input_sort {
 }
 .board_item_list > li:last-of-type {
   border-bottom: 0;
+  padding-bottom: 0;
 }
 .board_item_list > li.nodata_li {
   /* padding:100px 20px; */
@@ -6683,6 +6689,9 @@ textarea.form_textarea {
 }
 .btn_form_submit_wrap.mtype2 {
   margin-top: 40px;
+}
+.btn_form_submit_wrap.mtype3 {
+  margin-top: 0px;
 }
 .form_etc_menu_zone {
   margin-top: 20px;

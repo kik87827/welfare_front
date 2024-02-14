@@ -250,7 +250,7 @@ input.props_form{
 
 
 /* paging */
-.paging_wrap {margin:15px 20px 30px; display:flex;justify-content: center; align-items: center;gap:8px;}
+.paging_wrap {margin:15px 20px 0; display:flex;justify-content: center; align-items: center;gap:8px;}
 .paging_control,
 .paging_number{display: inline-flex;  align-items:center; justify-content:center; width: 30px;height: 30px;border:1px solid #ddd;border-radius:100%;background: #fff;font-size:12px;}
 .paging_number_group{display:flex;align-items: center;gap:8px;justify-content: center}

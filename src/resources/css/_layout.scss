@@ -121,6 +121,8 @@ body{overflow-x:hidden;}
     &.type2{flex:none;}
 }
 
+.middle_contents{flex:1;min-height:0;}
+
 .mobile_util_row{background:#eee;padding:20px 48px;flex:0;}
 .mobile_util_row{}
 .mb_util_menu_list{

@@ -439,12 +439,12 @@ input.input_sort{appearance: none;width:100%;box-sizing: border-box; line-height
 }
 
 
-.board_item_list_wrap{flex:1;padding:0 20px 50px;display:flex; flex-direction: column;}
+.board_item_list_wrap{flex:1;padding:0 20px 20px;display:flex; flex-direction: column;}
 .board_item_list{
     display:flex; flex-direction: column; flex:1;
     >li{
         border-bottom:1px solid #E1E1E1;padding:20px 0;
-        &:last-of-type{border-bottom:0;}
+        &:last-of-type{border-bottom:0;padding-bottom:0}
         &.nodata_li{
             /* padding:100px 20px; */box-sizing:border-box; flex:1; display:flex; align-items: center; width:100%; justify-content: center; margin-bottom:-38px; box-sizing: border-box;
             /* .nodata_para{text-align: center;font-size:14px;color:#999999;} */
@@ -643,6 +643,7 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
     margin-top:16px; display:flex; flex-direction: column; gap:10px;
     &.bottom_pos{margin:20px;}
     &.mtype2{margin-top:40px;}
+    &.mtype3{margin-top:0px;}
     & + .form_etc_menu_zone{}
 }
 .form_etc_menu_zone{

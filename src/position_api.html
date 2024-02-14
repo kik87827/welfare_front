@@ -21,28 +21,33 @@
                         <a href="#" class="btn_control_quad type2">장소 검색</a>
                     </div>
                 </div>
-                <div class="api_render_wrap">
-                    <div style="flex:1;background:#ddd;width:100%;height:100%; display:flex; justify-content: center; align-items: center;">
-                        API Rendar
-                    </div>
-                    <!-- marker 예시 -->
-                    <span style="display:inline-block;width:24px;height:24px;position:absolute;top:50px;left:50px;"><img src="./resources/images/ico_api_marker.png" alt=""></span>
-                    <span style="display:inline-block;width:68px;height:68px;position:absolute;top:100px;left:150px;"><img src="./resources/images/ico_api_marker2.png" alt=""></span>
-                    <!-- // marker 예시 -->
-
-                    <div class="bottom_toggle_container">
-                        <div class="bottom_toggle_bar_row"><button class="btn_bottom_toggle" aria-expanded="true"><span class="hdtext">닫기</span></button></div>
-                        <div class="bottom_toggle_content_row">
-                            <ul class="api_result_item_list">
-                                <li>
-                                    <a href="#" class="btn_api_result">
-                                        <strong class="api_result_main">올림픽오피스텔</strong>
-                                        <span class="api_result_sub">서울시 방이2동</span>
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="middle_contents_row">
+                    <div class="api_render_wrap">
+                        <div style="flex:1;background:#ddd;width:100%;height:100%; display:flex; justify-content: center; align-items: center;">
+                            API Rendar
+                        </div>
+                        <!-- marker 예시 -->
+                        <span style="display:inline-block;width:24px;height:24px;position:absolute;top:50px;left:50px;"><img src="./resources/images/ico_api_marker.png" alt=""></span>
+                        <span style="display:inline-block;width:68px;height:68px;position:absolute;top:100px;left:150px;"><img src="./resources/images/ico_api_marker2.png" alt=""></span>
+                        <!-- // marker 예시 -->
+    
+                        <div class="bottom_toggle_container">
+                            <div class="bottom_toggle_bar_row"><button class="btn_bottom_toggle" aria-expanded="true"><span class="hdtext">닫기</span></button></div>
+                            <div class="bottom_toggle_content_row">
+                                <ul class="api_result_item_list">
+                                    <li>
+                                        <a href="#" class="btn_api_result">
+                                            <strong class="api_result_main">올림픽오피스텔</strong>
+                                            <span class="api_result_sub">서울시 방이2동</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="btn_form_submit_wrap bottom_pos mtype3">
+                    <a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">위치 검색</span></a>
                 </div>
             </section>
             <script>
@@ -58,9 +63,33 @@
                     });
                 });
             </script>
+            <!-- 바텀 메뉴 -->
             <div class="bottom_layer_wrap">
-                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">위치찾기</span></a>
+                <h3 class="hdtext">바로가기 메뉴</h3>
+                <div class="bottom_menu_list_wrap">
+                    <ul class="bottom_menu_list">
+                        <li>
+                            <a href="#" class="bottom_menu">
+                                <i class="ico_bottom ico_home"></i>
+                                <div class="bottom_menu_text">홈</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bottom_menu active">
+                                <i class="ico_bottom ico_docu"></i>
+                                <div class="bottom_menu_text">알림보기</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="bottom_menu">
+                                <i class="ico_bottom ico_my"></i>
+                                <div class="bottom_menu_text">나의 정보</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!-- // 바텀 메뉴 -->
         </div>
     </main>
 </body>
