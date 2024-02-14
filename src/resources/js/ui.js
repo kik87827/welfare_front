@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
     commonInit();
-    layoutFunc();
+    //layoutFunc();
     //formFunc();
 });
 window.addEventListener("load", () => {
