@@ -4,199 +4,197 @@
         "title" : "비회원 알림 | 복지위기알림"
     })
 <body>
-    <main class="front_body">
-        <!-- skip menu -->
-        @@include('./include/_skip.html')
-        <!-- //skip menu -->
-        <div class="page_wrap">
-            @@include('./include/_header.html')
-            <!-- mobile --> 
-            @@include('./include/_gnb_before.html')
-            <!-- // mobile -->
-            <section class="middle_wrap" id="contents">
-                <div class="middle_title_row">
-                    <h2 class="middle_title">비회원 알림</h2>
-                </div>
-                <div class="middle_contents_row">
-                    <div class="form_step_list_wrap">
-                        <ul class="form_step_list">
-                            <li class="visit_active">
-                                <div class="form_step_item">
-                                    <span class="form_step_number">1</span>
-                                    <span class="form_step_text">신고내용</span>
-                                    <span class="hdtext">활성화</span>
-                                </div>
-                            </li>
-                            <li class="active">
-                                <div class="form_step_item">
-                                    <span class="form_step_number">2</span>
-                                    <span class="form_step_text">정보입력</span>
-                                    <span class="hdtext">활성화 / 현재 단계</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form_step_item">
-                                    <span class="form_step_number">3</span>
-                                    <span class="form_step_text">내 정보</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form_step_item">
-                                    <span class="form_step_number">4</span>
-                                    <span class="form_step_text">접수완료</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="form_step_contents_wrap">
-                        <h3 class="form_step_title">도움이 필요한 분</h3>
-                        <div class="form_step_contents">
-                            <div class="form_column_container">
-                                <ul class="form_column_table">
-                                    <li>
-                                        <div class="form_column_item type2">
-                                            <span class="form_column_label">성별</span>
-                                            <div class="form_column_field_row">
-                                                <div class="form_props_wrap">
-													<div class="form_props_cols">
-														<input type="radio" name="gender" id="gender_01" class="form_props" checked>
-														<label for="gender_01" class="form_props_label">여</label>
-													</div>
-													<div class="form_props_cols">
-														<input type="radio" name="gender" id="gender_02" class="form_props">
-														<label for="gender_02" class="form_props_label">남</label>
-													</div>
-												</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form_column_item">
-                                            <label for="data_form_02" class="form_column_label">이름</label>
-                                            <div class="form_column_field_row">
-                                                <input type="text" class="form_input" id="data_form_02" value="김지민">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form_column_item">
-                                            <label for="data_form_03" class="form_column_label">전화번호</label>
-                                            <div class="form_column_field_row">
-                                                <input type="text" class="form_input number" id="data_form_03" value="010-5623-0520">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form_column_item">
-                                            <label for="data_form_05" class="form_column_label">생년월일</label>
-                                            <div class="form_column_field_row">
-                                                <input type="date" class="form_input calendar" id="data_form_05">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form_column_item">
-                                            <label for="data_form_06" class="form_column_label">신고 위치 및 대상자 주소</label>
-                                            <div class="form_column_field_row">
-                                                <input type="text" class="form_input" id="data_form_06" placeholder="신고 위치 및 대상자 주소">
-                                                <div class="form_column_control_cols">
-                                                    <button class="btn_icoform_control"><span class="hdtext">주소 찾기</span></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form_column_sub_item">
-                                            <div class="props_item">
-                                                <input type="checkbox" class="props_form" id="same_pos_form">
-                                                <label for="same_pos_form" class="props_label">등록 위치가 대상자 주소와 동일</label>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form_column_item type2">
-                                            <span class="form_column_label">사진 등록</span>
-                                            <div class="form_column_field_row type2">
-                                                <ul class="upload_item_box_list">
-                                                    <li>
-                                                        <div class="upload_item_box">
-                                                            <img src="./resources/images/temp_100x100.png" alt="" aria-hidden="true">
-                                                            <button class="btn_upload_delete"><span class="hdtext">삭제</span></button>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="btn_upload btn_file_upload">
-                                                            <input type="file" title="파일 업로드">
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <button class="btn_upload btn_camera">
-                                                            <span class="hdtext">사진 찍고 업로드</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
-                                                <ul class="form_note_list">
-                                                    <li>사진 및 동영상은 총 6장까지 60MB 이하로 등록 가능합니다.</li>
-                                                    <li>초상권에 침해가 확인될 경우 사진 활용이 제한될 수 있습니다.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="form_column_item">
-                                            <label for="help_form_07" class="form_column_label">신고내용</label>
-                                            <div class="form_column_field_row type2">
-                                                <div class="form_textarea_wrap">
-                                                    <textarea rows="10" cols="10" class="form_textarea" placeholder="신고내용 입력">
-저희 아랫집 5~6세 가량 아동의 가정 내 폭력이 의심됩니다. 주 1회 정도 아빠로 추정되는 어른의 큰 목소리가 들리며, 아이 울음 소리도 가끔 들립니다.
-가끔 마주치는 아이의 모습을 보면 항상 주눅들어있는 상태로 보이며, 간혹 목이나 팔에 멍 자국도 발견되었습니다.
-10분 전에도 벽이 울리는 진동과 함께 뭔가 부서지는 소리가 들렸고, 뒤이어 곧 아이 울음 소리가 크게 들렸습니다. 빠른 방문 및 아동 보호를 요청드립니다.
-                                                    </textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <ul class="form_note_list">
-                                            <li>신고 내용은 20~300자로 작성하실 수 있습니다.</li>
-                                            <li>저장 후 수정이나 취소가 가능합니다.</li>
-                                        </ul>
-                                    </li>
-                                </ul>
+    <!-- skip menu -->
+    @@include('./include/_skip.html')
+    <!-- //skip menu -->
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        <!-- mobile --> 
+        @@include('./include/_gnb_before.html')
+        <!-- // mobile -->
+        <main class="middle_wrap" id="contents">
+            <div class="middle_title_row">
+                <h2 class="middle_title">비회원 알림</h2>
+            </div>
+            <div class="middle_contents_row">
+                <div class="form_step_list_wrap">
+                    <ul class="form_step_list">
+                        <li class="visit_active">
+                            <div class="form_step_item">
+                                <span class="form_step_number">1</span>
+                                <span class="form_step_text">신고내용</span>
+                                <span class="hdtext">활성화</span>
                             </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="btn_form_submit_wrap bottom_pos">
-                    <a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">다음</span></a>
-                </div>
-            </section>
-    
-            <!-- 바텀 메뉴 -->
-            <div class="bottom_layer_wrap">
-                <h3 class="hdtext">바로가기 메뉴</h3>
-                <div class="bottom_menu_list_wrap">
-                    <ul class="bottom_menu_list">
-                        <li>
-                            <a href="#" class="bottom_menu">
-                                <i class="ico_bottom ico_home"></i>
-                                <div class="bottom_menu_text">홈</div>
-                            </a>
+                        </li>
+                        <li class="active">
+                            <div class="form_step_item">
+                                <span class="form_step_number">2</span>
+                                <span class="form_step_text">정보입력</span>
+                                <span class="hdtext">활성화 / 현재 단계</span>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" class="bottom_menu active">
-                                <i class="ico_bottom ico_docu"></i>
-                                <div class="bottom_menu_text">알림보기</div>
-                            </a>
+                            <div class="form_step_item">
+                                <span class="form_step_number">3</span>
+                                <span class="form_step_text">내 정보</span>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" class="bottom_menu">
-                                <i class="ico_bottom ico_my"></i>
-                                <div class="bottom_menu_text">나의 정보</div>
-                            </a>
+                            <div class="form_step_item">
+                                <span class="form_step_number">4</span>
+                                <span class="form_step_text">접수완료</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
+                <div class="form_step_contents_wrap">
+                    <h3 class="form_step_title">도움이 필요한 분</h3>
+                    <div class="form_step_contents">
+                        <div class="form_column_container">
+                            <ul class="form_column_table">
+                                <li>
+                                    <div class="form_column_item type2">
+                                        <span class="form_column_label">성별</span>
+                                        <div class="form_column_field_row">
+                                            <div class="form_props_wrap">
+                                                <div class="form_props_cols">
+                                                    <input type="radio" name="gender" id="gender_01" class="form_props" checked>
+                                                    <label for="gender_01" class="form_props_label">여</label>
+                                                </div>
+                                                <div class="form_props_cols">
+                                                    <input type="radio" name="gender" id="gender_02" class="form_props">
+                                                    <label for="gender_02" class="form_props_label">남</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="data_form_02" class="form_column_label">이름</label>
+                                        <div class="form_column_field_row">
+                                            <input type="text" class="form_input" id="data_form_02" value="김지민">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="data_form_03" class="form_column_label">전화번호</label>
+                                        <div class="form_column_field_row">
+                                            <input type="text" class="form_input number" id="data_form_03" value="010-5623-0520">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="data_form_05" class="form_column_label">생년월일</label>
+                                        <div class="form_column_field_row">
+                                            <input type="date" class="form_input calendar" id="data_form_05">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="data_form_06" class="form_column_label">신고 위치 및 대상자 주소</label>
+                                        <div class="form_column_field_row">
+                                            <input type="text" class="form_input" id="data_form_06" placeholder="신고 위치 및 대상자 주소">
+                                            <div class="form_column_control_cols">
+                                                <button class="btn_icoform_control"><span class="hdtext">주소 찾기</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form_column_sub_item">
+                                        <div class="props_item">
+                                            <input type="checkbox" class="props_form" id="same_pos_form">
+                                            <label for="same_pos_form" class="props_label">등록 위치가 대상자 주소와 동일</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item type2">
+                                        <span class="form_column_label">사진 등록</span>
+                                        <div class="form_column_field_row type2">
+                                            <ul class="upload_item_box_list">
+                                                <li>
+                                                    <div class="upload_item_box">
+                                                        <img src="./resources/images/temp_100x100.png" alt="" aria-hidden="true">
+                                                        <button class="btn_upload_delete"><span class="hdtext">삭제</span></button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="btn_upload btn_file_upload">
+                                                        <input type="file" title="파일 업로드">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <button class="btn_upload btn_camera">
+                                                        <span class="hdtext">사진 찍고 업로드</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                            <ul class="form_note_list">
+                                                <li>사진 및 동영상은 총 6장까지 60MB 이하로 등록 가능합니다.</li>
+                                                <li>초상권에 침해가 확인될 경우 사진 활용이 제한될 수 있습니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form_column_item">
+                                        <label for="help_form_07" class="form_column_label">신고내용</label>
+                                        <div class="form_column_field_row type2">
+                                            <div class="form_textarea_wrap">
+                                                <textarea rows="10" cols="10" class="form_textarea" placeholder="신고내용 입력">
+저희 아랫집 5~6세 가량 아동의 가정 내 폭력이 의심됩니다. 주 1회 정도 아빠로 추정되는 어른의 큰 목소리가 들리며, 아이 울음 소리도 가끔 들립니다.
+가끔 마주치는 아이의 모습을 보면 항상 주눅들어있는 상태로 보이며, 간혹 목이나 팔에 멍 자국도 발견되었습니다.
+10분 전에도 벽이 울리는 진동과 함께 뭔가 부서지는 소리가 들렸고, 뒤이어 곧 아이 울음 소리가 크게 들렸습니다. 빠른 방문 및 아동 보호를 요청드립니다.
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="form_note_list">
+                                        <li>신고 내용은 20~300자로 작성하실 수 있습니다.</li>
+                                        <li>저장 후 수정이나 취소가 가능합니다.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
-            <!-- // 바텀 메뉴 -->
+            <div class="btn_form_submit_wrap bottom_pos">
+                <a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">다음</span></a>
+            </div>
+        </main>
+
+        <!-- 바텀 메뉴 -->
+        <div class="bottom_layer_wrap">
+            <h3 class="hdtext">바로가기 메뉴</h3>
+            <div class="bottom_menu_list_wrap">
+                <ul class="bottom_menu_list">
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_home"></i>
+                            <div class="bottom_menu_text">홈</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom_menu active">
+                            <i class="ico_bottom ico_docu"></i>
+                            <div class="bottom_menu_text">알림보기</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_my"></i>
+                            <div class="bottom_menu_text">나의 정보</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </main>
+        <!-- // 바텀 메뉴 -->
+    </div>
 </body>
 </html>

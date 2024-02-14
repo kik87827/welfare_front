@@ -4,66 +4,64 @@
         "title" : "이웃 알림 | 복지위기알림"
     })
 <body>
-    <main class="front_body">
-        <!-- skip menu -->
-        @@include('./include/_skip.html')
-        <!-- //skip menu -->
-        <div class="page_wrap">
-            @@include('./include/_header.html')
-            <!-- mobile --> 
-            @@include('./include/_gnb_before.html')
-            <!-- // mobile -->
-            <section class="middle_wrap" id="contents">
-                <div class="middle_title_row">
-                    <h2 class="middle_title">이웃 알림</h2>
-                </div>
-                <div class="middle_contents_row">
-                    <div class="form_step_list_wrap">
-                        <ul class="form_step_list">
-                            <li class="visit_active">
-                                <div class="form_step_item">
-                                    <span class="form_step_number">1</span>
-                                    <span class="form_step_text">신고내용</span>
-                                    <span class="hdtext">활성화</span>
-                                </div>
-                            </li>
-                            <li class="visit_active">
-                                <div class="form_step_item">
-                                    <span class="form_step_number">2</span>
-                                    <span class="form_step_text">정보입력</span>
-                                    <span class="hdtext">활성화</span>
-                                </div>
-                            </li>
-                            <li class="visit_active">
-                                <div class="form_step_item">
-                                    <span class="form_step_number">3</span>
-                                    <span class="form_step_text">내 정보</span>
-                                    <span class="hdtext">활성화</span>
-                                </div>
-                            </li>
-                            <li class="active">
-                                <div class="form_step_item">
-                                    <span class="form_step_number">4</span>
-                                    <span class="form_step_text">접수완료</span>
-                                    <span class="hdtext">활성화 / 현재 단계</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="step_guide_copy_zone">
-                        <div class="step_guide_copy_img"><img src="./resources/images/ico_message_character.png" alt="" aria-hidden="true"></div>
-                        <div class="step_guide_copy_group">
-                            <p class="step_guide_copy">정상적으로 알림 신고가 접수되었습니다.</p>
-                            <p class="step_guide_copy">진행 상황은 <strong>나의 알림 이력</strong>에서 <br>확인하실 수 있습니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="bottom_layer_wrap">
-                <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">홈으로</span></a>
+    <!-- skip menu -->
+    @@include('./include/_skip.html')
+    <!-- //skip menu -->
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        <!-- mobile --> 
+        @@include('./include/_gnb_before.html')
+        <!-- // mobile -->
+        <main class="middle_wrap" id="contents">
+            <div class="middle_title_row">
+                <h2 class="middle_title">이웃 알림</h2>
             </div>
+            <div class="middle_contents_row">
+                <div class="form_step_list_wrap">
+                    <ul class="form_step_list">
+                        <li class="visit_active">
+                            <div class="form_step_item">
+                                <span class="form_step_number">1</span>
+                                <span class="form_step_text">신고내용</span>
+                                <span class="hdtext">활성화</span>
+                            </div>
+                        </li>
+                        <li class="visit_active">
+                            <div class="form_step_item">
+                                <span class="form_step_number">2</span>
+                                <span class="form_step_text">정보입력</span>
+                                <span class="hdtext">활성화</span>
+                            </div>
+                        </li>
+                        <li class="visit_active">
+                            <div class="form_step_item">
+                                <span class="form_step_number">3</span>
+                                <span class="form_step_text">내 정보</span>
+                                <span class="hdtext">활성화</span>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="form_step_item">
+                                <span class="form_step_number">4</span>
+                                <span class="form_step_text">접수완료</span>
+                                <span class="hdtext">활성화 / 현재 단계</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="step_guide_copy_zone">
+                    <div class="step_guide_copy_img"><img src="./resources/images/ico_message_character.png" alt="" aria-hidden="true"></div>
+                    <div class="step_guide_copy_group">
+                        <p class="step_guide_copy">정상적으로 알림 신고가 접수되었습니다.</p>
+                        <p class="step_guide_copy">진행 상황은 <strong>나의 알림 이력</strong>에서 <br>확인하실 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="bottom_layer_wrap">
+            <a href="#" class="btn_submit_box"><span class="btn_submit_box_text">홈으로</span></a>
         </div>
-    </main>
+    </div>
 </body>
 </html>

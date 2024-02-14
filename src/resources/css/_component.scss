@@ -222,6 +222,7 @@ input.props_form{
 .flag_box{display:inline-flex;white-space: nowrap;align-items: center;height:24px;border-radius:100px;background:#0CA99F;color:#fff;font-size:12px;padding:0 12px;
     &.type2{background:#FFC35E;}
     &.skin2{height:26px;padding:0 10px;border-radius:4px;font-size:12px;font-weight:900;}
+    &.size2{min-width:60px;box-sizing: border-box;text-align: center;justify-content: center;}
 }
 
 
@@ -349,7 +350,9 @@ input.form_input{font-size:16px;line-height:1; box-sizing:border-box;height:43px
         width : 0;
         height: 0;
         }
-          
+        &.type2{
+            border-bottom:2px solid #333333;
+        }
     }
     &.size2{
         font-size:16px;

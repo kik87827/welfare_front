@@ -4,160 +4,158 @@
         "title" : "로그인 | 복지위기알림"
     })
 <body>
-    <main class="front_body">
-        <!-- skip menu -->
-        @@include('./include/_skip.html')
-        <!-- //skip menu -->
-        <div class="page_wrap">
-            @@include('./include/_header.html')
-            <!-- mobile --> 
-            @@include('./include/_gnb_before.html')
-            <!-- // mobile -->
-            <section class="middle_wrap" id="contents">
-                <div class="middle_title_row">
-                    <h2 class="middle_title">로그인</h2>
-                </div>
-                <div class="middle_contents_row">
-                    <div class="form_column_zone">
-                        <div class="form_column_container">
-                            <ul class="form_column_table gap_type2">
+    <!-- skip menu -->
+    @@include('./include/_skip.html')
+    <!-- //skip menu -->
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        <!-- mobile --> 
+        @@include('./include/_gnb_before.html')
+        <!-- // mobile -->
+        <main class="middle_wrap" id="contents">
+            <div class="middle_title_row">
+                <h2 class="middle_title">로그인</h2>
+            </div>
+            <div class="middle_contents_row">
+                <div class="form_column_zone">
+                    <div class="form_column_container">
+                        <ul class="form_column_table gap_type2">
+                            <li>
+                                <div class="form_column_item">
+                                    <label for="login_form_01" class="form_column_label">아이디</label>
+                                    <div class="form_column_field_row">
+                                        <input type="text" class="form_input size2" id="login_form_01" placeholder="아이디를 입력해주세요">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form_column_item">
+                                    <label for="login_form_02" class="form_column_label">비밀번호</label>
+                                    <div class="form_column_field_row">
+                                        <input type="text" class="form_input" id="login_form_02" placeholder="비밀번호를 입력해주세요">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="form_props_control_wrap">
+                            <ul class="form_props_list">
                                 <li>
-                                    <div class="form_column_item">
-                                        <label for="login_form_01" class="form_column_label">아이디</label>
-                                        <div class="form_column_field_row">
-                                            <input type="text" class="form_input size2" id="login_form_01" placeholder="아이디를 입력해주세요">
-                                        </div>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="props_form_01">
+                                        <label for="props_form_01" class="props_label">자동로그인</label>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="form_column_item">
-                                        <label for="login_form_02" class="form_column_label">비밀번호</label>
-                                        <div class="form_column_field_row">
-                                            <input type="text" class="form_input" id="login_form_02" placeholder="비밀번호를 입력해주세요">
-                                        </div>
+                                    <div class="props_item">
+                                        <input type="checkbox" class="props_form" id="props_form_02">
+                                        <label for="props_form_02" class="props_label">아이디저장</label>
                                     </div>
                                 </li>
                             </ul>
-                            <div class="form_props_control_wrap">
-                                <ul class="form_props_list">
-                                    <li>
-                                        <div class="props_item">
-                                            <input type="checkbox" class="props_form" id="props_form_01">
-                                            <label for="props_form_01" class="props_label">자동로그인</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="props_item">
-                                            <input type="checkbox" class="props_form" id="props_form_02">
-                                            <label for="props_form_02" class="props_label">아이디저장</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="btn_form_submit_wrap">
-                                <a href="#" class="btn_form_submit primary"><span class="btn_form_submit_text">로그인</span></a>
-                            </div>
-                            <div class="form_etc_menu_zone">
-                                <ul class="form_text_menu_list">
-                                    <li><a href="#" class="form_text_menu">아이디</a></li>
-                                    <li><a href="#" class="form_text_menu">비밀번호 찾기</a></li>
-                                    <li><a href="#" class="form_text_menu">회원가입</a></li>
-                                </ul>
-                                <div class="hr_line">
-                                    <span class="hr_text">OR</span>
-                                </div>
-                                <ul class="form_sns_menu_list">
-                                    <li><a href="#" class="form_sns_menu ico_kakao" title="새창 열림"><span class="hdtext">KAKAOTALK</span></a></li>
-                                    <li><a href="#" class="form_sns_menu ico_naver" title="새창 열림"><span class="hdtext">NAVER</span></a></li>
-                                    <li><a href="#" class="form_sns_menu ico_google" title="새창 열림"><span class="hdtext">GOOGLE</span></a></li>
-                                    <li><a href="#" class="form_sns_menu ico_face" title="새창 열림"><span class="hdtext">FACEBOOK</span></a></li>
-                                    <li><a href="#" class="form_sns_menu ico_apple" title="새창 열림"><span class="hdtext">APPLE</span></a></li>
-                                </ul>
-                            </div>
-                            <div class="btn_form_submit_wrap">
-                                <a href="#" class="btn_form_submit type3"><i class="ico finger"></i><span class="btn_form_submit_text">디지털원패스</span></a>
-                                <a href="#" class="btn_form_submit"><span class="btn_form_submit_text">비회원 로그인</span></a>
-                            </div>
-                            
                         </div>
-                    </div>
-                    <div class="middle_bottom_contents mtype2">
-                        <div class="form_note_box">
-                            개인정보 보호를 위해 비밀번호 5회 이상 오류 시,<br>
-                            비밀번호 재설정이 필요합니다.<br>
-                            비밀번호는 주기적(6개월)으로 변경하시고, <br>
-                            서비스 이용 후 반드시 로그아웃하시기 바랍니다.
+                        <div class="btn_form_submit_wrap">
+                            <a href="#" class="btn_form_submit primary"><span class="btn_form_submit_text">로그인</span></a>
                         </div>
+                        <div class="form_etc_menu_zone">
+                            <ul class="form_text_menu_list">
+                                <li><a href="#" class="form_text_menu">아이디</a></li>
+                                <li><a href="#" class="form_text_menu">비밀번호 찾기</a></li>
+                                <li><a href="#" class="form_text_menu">회원가입</a></li>
+                            </ul>
+                            <div class="hr_line">
+                                <span class="hr_text">OR</span>
+                            </div>
+                            <ul class="form_sns_menu_list">
+                                <li><a href="#" class="form_sns_menu ico_kakao" title="새창 열림"><span class="hdtext">KAKAOTALK</span></a></li>
+                                <li><a href="#" class="form_sns_menu ico_naver" title="새창 열림"><span class="hdtext">NAVER</span></a></li>
+                                <li><a href="#" class="form_sns_menu ico_google" title="새창 열림"><span class="hdtext">GOOGLE</span></a></li>
+                                <li><a href="#" class="form_sns_menu ico_face" title="새창 열림"><span class="hdtext">FACEBOOK</span></a></li>
+                                <li><a href="#" class="form_sns_menu ico_apple" title="새창 열림"><span class="hdtext">APPLE</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="btn_form_submit_wrap">
+                            <a href="#" class="btn_form_submit type3"><i class="ico finger"></i><span class="btn_form_submit_text">디지털원패스</span></a>
+                            <a href="#" class="btn_form_submit"><span class="btn_form_submit_text">비회원 로그인</span></a>
+                        </div>
+                        
                     </div>
                 </div>
-            </section>
-            <!-- popup -->
-            <div class="popup_wrap" id="noticeMessagePopup">
-                <div class="bg_dim"></div>
-                <div class="popup_box_item">
-                    <div class="popup_box_contents_row">
-                        <p class="popup_box_message_para">3개월간 비밀번호를 변경하지 않으셨습니다. 개인정보보호를 위해 비밀번호를 변경해 주십시요.</p>
-                    </div>
-                    <div class="popup_box_btn_row type2">
-                        <!-- close_trigger 클릭시 팝업 닫기 -->
-                        <a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">지금 변경하기</span></a>
-                        <a href="#" class="btn_popup_submit close_trigger"><span class="btn_popup_submit_text">3개월후 변경하기</span></a>
+                <div class="middle_bottom_contents mtype2">
+                    <div class="form_note_box">
+                        개인정보 보호를 위해 비밀번호 5회 이상 오류 시,<br>
+                        비밀번호 재설정이 필요합니다.<br>
+                        비밀번호는 주기적(6개월)으로 변경하시고, <br>
+                        서비스 이용 후 반드시 로그아웃하시기 바랍니다.
                     </div>
                 </div>
             </div>
-            <div class="popup_wrap" id="noticeMessagePopup02">
-                <div class="bg_dim"></div>
-                <div class="popup_box_item">
-                    <div class="popup_box_contents_row">
-                        <p class="popup_box_message_para">서비스 운영 정책으로 인해 <br>로그인이 제한되었습니다.</p>
-                        <p class="popup_box_message_para subcopy">문의사항은 복지000사업단<br>(042-2345-3456)로 문의 주시기 바랍니다.</p>
-                    </div>
-                    <div class="popup_box_btn_row type2">
-                        <!-- close_trigger 클릭시 팝업 닫기 -->
-                        <a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">확인</span></a>
-                    </div>
+        </main>
+        <!-- popup -->
+        <div class="popup_wrap" id="noticeMessagePopup">
+            <div class="bg_dim"></div>
+            <div class="popup_box_item">
+                <div class="popup_box_contents_row">
+                    <p class="popup_box_message_para">3개월간 비밀번호를 변경하지 않으셨습니다. 개인정보보호를 위해 비밀번호를 변경해 주십시요.</p>
+                </div>
+                <div class="popup_box_btn_row type2">
+                    <!-- close_trigger 클릭시 팝업 닫기 -->
+                    <a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">지금 변경하기</span></a>
+                    <a href="#" class="btn_popup_submit close_trigger"><span class="btn_popup_submit_text">3개월후 변경하기</span></a>
                 </div>
             </div>
-            <!-- // popup -->
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    // 인스턴스 선언
-                    let noticeMessagePopup = new DesignPopup({
-                        selector: "#noticeMessagePopup",
-                        beforeCallback(){
-    
-                        },
-                        callback(){
-    
-                        },
-                        closeCallback(){
-                        }
-                    });
-                    let noticeMessagePopup02 = new DesignPopup({
-                        selector: "#noticeMessagePopup02",
-                        beforeCallback(){
-    
-                        },
-                        callback(){
-    
-                        },
-                        closeCallback(){
-                        }
-                    });
-                    
-                    // 퍼블확인용
-                    let url = window.location.href.split('?')[1];
-                    let url_2 = url !== undefined ? url.split('#')[0] : null;
-                    if(url_2 === "popup"){
-                        noticeMessagePopup.popupShow(); // show
-                    }else if(url_2 === "popup2"){
-                        noticeMessagePopup02.popupShow(); // show
-                    }
-                    // noticeMessagePopup.popupShow(); // hide
-    
-                });
-            </script>
         </div>
-    </main>
+        <div class="popup_wrap" id="noticeMessagePopup02">
+            <div class="bg_dim"></div>
+            <div class="popup_box_item">
+                <div class="popup_box_contents_row">
+                    <p class="popup_box_message_para">서비스 운영 정책으로 인해 <br>로그인이 제한되었습니다.</p>
+                    <p class="popup_box_message_para subcopy">문의사항은 복지000사업단<br>(042-2345-3456)로 문의 주시기 바랍니다.</p>
+                </div>
+                <div class="popup_box_btn_row type2">
+                    <!-- close_trigger 클릭시 팝업 닫기 -->
+                    <a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">확인</span></a>
+                </div>
+            </div>
+        </div>
+        <!-- // popup -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // 인스턴스 선언
+                let noticeMessagePopup = new DesignPopup({
+                    selector: "#noticeMessagePopup",
+                    beforeCallback(){
+
+                    },
+                    callback(){
+
+                    },
+                    closeCallback(){
+                    }
+                });
+                let noticeMessagePopup02 = new DesignPopup({
+                    selector: "#noticeMessagePopup02",
+                    beforeCallback(){
+
+                    },
+                    callback(){
+
+                    },
+                    closeCallback(){
+                    }
+                });
+                
+                // 퍼블확인용
+                let url = window.location.href.split('?')[1];
+                let url_2 = url !== undefined ? url.split('#')[0] : null;
+                if(url_2 === "popup"){
+                    noticeMessagePopup.popupShow(); // show
+                }else if(url_2 === "popup2"){
+                    noticeMessagePopup02.popupShow(); // show
+                }
+                // noticeMessagePopup.popupShow(); // hide
+
+            });
+        </script>
+    </div>
 </body>
 </html>

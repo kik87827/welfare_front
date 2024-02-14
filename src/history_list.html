@@ -4,56 +4,177 @@
         "title" : "알림 이력 | 복지위기알림"
     })
 <body>
-    <main class="front_body">
-        <!-- skip menu -->
-        @@include('./include/_skip.html')
-        <!-- //skip menu -->
-        <div class="page_wrap">
-            @@include('./include/_header.html')
-            <!-- mobile --> 
-            @@include('./include/_gnb_before.html')
-            <!-- // mobile -->
-            <section class="middle_wrap" id="contents">
-                <div class="middle_title_row">
-                    <h2 class="middle_title">알림 이력</h2>
-                </div>
-                <div class="middle_contents_row">
-                    <div class="middle_contents">
-                        내용이 들어갑니다.
+    <!-- skip menu -->
+    @@include('./include/_skip.html')
+    <!-- //skip menu -->
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        <!-- mobile --> 
+        @@include('./include/_gnb_before.html')
+        <!-- // mobile -->
+        <main class="middle_wrap" id="contents">
+            <div class="middle_title_row">
+                <h2 class="middle_title">알림 이력</h2>
+            </div>
+            <div class="middle_contents_row">
+                <div class="middle_contents">
+                    <div class="sort_field_zone">
+                        <div class="sort_field_row">
+                            <div class="sort_field_label_row"><label for="month_picker" class="sort_field_label">날짜선택</label></div>
+                            <div class="sort_field_container">
+                                <div class="sort_field_cols">
+                                    <input type="date" class="form_input calendar type2" id="month_picker" value="2023-01-01">
+                                </div>
+                                <div class="sort_field_cols else">
+                                    <span class="sort_else_text">~</span>
+                                </div>
+                                <div class="sort_field_cols">
+                                    <input type="date" class="form_input calendar type2" value="2023-02-01">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="btn_form_submit_wrap bottom_pos">
-                        <a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">더보기</span></a>
+                    <div class="board_sort_field_wrap">
+                        <div class="board_sort_field_cols short_wid">
+                            <select class="board_select" title="검색 항목 선택"><option>전체</option></select>
+                        </div>
+                        <div class="board_sort_field_cols">
+                            <div class="input_sort_wrap">
+                                <label for="keyword_search" class="hdtext">검색어</label>
+                                <input type="text" class="input_sort" id="keyword_search" placeholder="검색어를 입력하세요">
+                            </div>
+                            <a href="#" class="btn_board_sort"><span class="hdtext">검색</span></a>
+                        </div>
+                    </div>
+                    <div class="count_obj_list_wrap mtype2">
+                        <ul class="count_obj_list">
+                            <li>
+                                <div class="count_obj_item">
+                                    <p class="count_obj_key size2">알림 취소</p>
+                                    <p class="count_obj_value">5</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="count_obj_item">
+                                    <p class="count_obj_key size2">진행</p>
+                                    <p class="count_obj_value">2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="count_obj_item">
+                                    <p class="count_obj_key size2">완료</p>
+                                    <p class="count_obj_value">3</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="count_obj_item">
+                                    <p class="count_obj_key size2">임시저장</p>
+                                    <p class="count_obj_value">3</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="board_item_list_wrap">
+                        <ul class="board_item_list">
+                            <li>
+                                <a href="#" class="board_item">
+                                    <div class="board_flag_row">
+                                        <span class="flag_box skin2 size2" style="background-color:#FEB700;">진행</span>
+                                    </div>
+                                    <div class="board_main_title">복지위기알림서비스 서비스 개시 안내</div>
+                                    <div class="board_else_row">
+                                        <ul class="board_else_data_list">
+                                            <li><span class="board_else_data">2023.12.02</span></li>
+                                            <li class="type2">
+                                                <span class="board_else_data">IOSY00202311023</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="board_item">
+                                    <div class="board_flag_row">
+                                        <span class="flag_box skin2 size2" style="background-color:#00D4E9;">완료</span>
+                                    </div>
+                                    <div class="board_main_title">복지위기알림서비스 서비스 개시 안내</div>
+                                    <div class="board_else_row">
+                                        <ul class="board_else_data_list">
+                                            <li><span class="board_else_data">2023.12.02</span></li>
+                                            <li class="type2">
+                                                <span class="board_else_data">IOSY00202311023</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="board_item">
+                                    <div class="board_flag_row">
+                                        <span class="flag_box skin2 size2" style="background-color:#999999;">임시저장</span>
+                                    </div>
+                                    <div class="board_main_title">복지위기알림서비스 서비스 개시 안내</div>
+                                    <div class="board_else_row">
+                                        <ul class="board_else_data_list">
+                                            <li><span class="board_else_data">2023.12.02</span></li>
+                                            <li class="type2">
+                                                <span class="board_else_data">IOSY00202311023</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="board_item">
+                                    <div class="board_flag_row">
+                                        <span class="flag_box skin2 size2" style="background-color:#333333;">취소</span>
+                                    </div>
+                                    <div class="board_main_title">복지위기알림서비스 서비스 개시 안내</div>
+                                    <div class="board_else_row">
+                                        <ul class="board_else_data_list">
+                                            <li><span class="board_else_data">2023.12.02</span></li>
+                                            <li class="type2">
+                                                <span class="board_else_data">IOSY00202311023</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <!-- 바텀 메뉴 -->
-            <div class="bottom_layer_wrap">
-                <h3 class="hdtext">바로가기 메뉴</h3>
-                <div class="bottom_menu_list_wrap">
-                    <ul class="bottom_menu_list">
-                        <li>
-                            <a href="#" class="bottom_menu">
-                                <i class="ico_bottom ico_home"></i>
-                                <div class="bottom_menu_text">홈</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="bottom_menu">
-                                <i class="ico_bottom ico_docu"></i>
-                                <div class="bottom_menu_text">알림보기</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="bottom_menu">
-                                <i class="ico_bottom ico_my"></i>
-                                <div class="bottom_menu_text">나의 정보</div>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="btn_form_submit_wrap bottom_pos">
+                    <a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">더보기</span></a>
                 </div>
             </div>
-            <!-- // 바텀 메뉴 -->
+        </main>
+        <!-- 바텀 메뉴 -->
+        <div class="bottom_layer_wrap">
+            <h3 class="hdtext">바로가기 메뉴</h3>
+            <div class="bottom_menu_list_wrap">
+                <ul class="bottom_menu_list">
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_home"></i>
+                            <div class="bottom_menu_text">홈</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom_menu active">
+                            <i class="ico_bottom ico_docu"></i>
+                            <div class="bottom_menu_text">알림보기</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_my"></i>
+                            <div class="bottom_menu_text">나의 정보</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </main>
+        <!-- // 바텀 메뉴 -->
+    </div>
 </body>
 </html>

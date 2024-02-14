@@ -4,76 +4,74 @@
         "title" : "회원가입 | 복지위기알림"
     })
 <body>
-    <main class="front_body">
-        <!-- skip menu -->
-        @@include('./include/_skip.html')
-        <!-- //skip menu -->
-        <div class="page_wrap">
-            @@include('./include/_header.html')
-            <!-- mobile --> 
-            @@include('./include/_gnb_before.html')
-            <!-- // mobile -->
-            <section class="middle_wrap" id="contents">
-                <div class="middle_title_row">
-                    <h2 class="middle_title">회원가입</h2>
+    <!-- skip menu -->
+    @@include('./include/_skip.html')
+    <!-- //skip menu -->
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        <!-- mobile --> 
+        @@include('./include/_gnb_before.html')
+        <!-- // mobile -->
+        <main class="middle_wrap" id="contents">
+            <div class="middle_title_row">
+                <h2 class="middle_title">회원가입</h2>
+            </div>
+            <div class="middle_contents_row type2">
+                <div class="gate_message_group">
+                    <p class="gate_message_main">해당하는 <strong>회원가입 방식</strong>을 <br>선택해 주세요.</p>
+                    <p class="gate_message_sub">회원구분에 따라 가입절차에 차이가 있으니 반드시 본인에 해당하는 경우를 선택해 주시기 바랍니다.</p>
                 </div>
-                <div class="middle_contents_row type2">
-                   <div class="gate_message_group">
-                        <p class="gate_message_main">해당하는 <strong>회원가입 방식</strong>을 <br>선택해 주세요.</p>
-                        <p class="gate_message_sub">회원구분에 따라 가입절차에 차이가 있으니 반드시 본인에 해당하는 경우를 선택해 주시기 바랍니다.</p>
-                   </div>
-                   <div class="gate_item_wrap">
-                        <ul class="btn_gate_box_list">
-                            <li>
-                                <a href="#" class="btn_gate_box type2">
-                                    <div class="btn_gate_box_primary">14세 미만</div>
-                                    <div class="btn_gate_box_secondary">만 14세 미만 가입 희망자</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn_gate_box type2">
-                                    <div class="btn_gate_box_primary">일반 회원</div>
-                                    <div class="btn_gate_box_secondary">만 14세 이상 가입 희망자</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn_gate_box type2">
-                                    <div class="btn_gate_box_primary">외국인 회원</div>
-                                    <div class="btn_gate_box_secondary">Foreign member</div>
-                                </a>
-                            </li>
-                        </ul>
-                   </div>
-                </div>
-            </section>
-            <!-- 바텀 메뉴 -->
-            <div class="bottom_layer_wrap">
-                <h3 class="hdtext">바로가기 메뉴</h3>
-                <div class="bottom_menu_list_wrap">
-                    <ul class="bottom_menu_list">
+                <div class="gate_item_wrap">
+                    <ul class="btn_gate_box_list">
                         <li>
-                            <a href="#" class="bottom_menu">
-                                <i class="ico_bottom ico_home"></i>
-                                <div class="bottom_menu_text">홈</div>
+                            <a href="#" class="btn_gate_box type2">
+                                <div class="btn_gate_box_primary">14세 미만</div>
+                                <div class="btn_gate_box_secondary">만 14세 미만 가입 희망자</div>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="bottom_menu">
-                                <i class="ico_bottom ico_docu"></i>
-                                <div class="bottom_menu_text">알림보기</div>
+                            <a href="#" class="btn_gate_box type2">
+                                <div class="btn_gate_box_primary">일반 회원</div>
+                                <div class="btn_gate_box_secondary">만 14세 이상 가입 희망자</div>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="bottom_menu">
-                                <i class="ico_bottom ico_my"></i>
-                                <div class="bottom_menu_text">나의 정보</div>
+                            <a href="#" class="btn_gate_box type2">
+                                <div class="btn_gate_box_primary">외국인 회원</div>
+                                <div class="btn_gate_box_secondary">Foreign member</div>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <!-- // 바텀 메뉴 -->
+        </main>
+        <!-- 바텀 메뉴 -->
+        <div class="bottom_layer_wrap">
+            <h3 class="hdtext">바로가기 메뉴</h3>
+            <div class="bottom_menu_list_wrap">
+                <ul class="bottom_menu_list">
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_home"></i>
+                            <div class="bottom_menu_text">홈</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_docu"></i>
+                            <div class="bottom_menu_text">알림보기</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_my"></i>
+                            <div class="bottom_menu_text">나의 정보</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </main>
+        <!-- // 바텀 메뉴 -->
+    </div>
 </body>
 </html>
