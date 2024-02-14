@@ -6682,7 +6682,7 @@ textarea.form_textarea {
   margin-top: 16px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .btn_form_submit_wrap.bottom_pos {
   margin: 20px;
@@ -6693,6 +6693,10 @@ textarea.form_textarea {
 .btn_form_submit_wrap.mtype3 {
   margin-top: 0px;
 }
+.btn_form_submit_wrap > .btn_action_box_group {
+  padding: 0;
+}
+
 .form_etc_menu_zone {
   margin-top: 20px;
 }

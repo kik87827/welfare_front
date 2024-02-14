@@ -640,11 +640,12 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
     > li{}
 }
 .btn_form_submit_wrap{
-    margin-top:16px; display:flex; flex-direction: column; gap:10px;
+    margin-top:16px; display:flex; flex-direction: column; gap:20px;
     &.bottom_pos{margin:20px;}
     &.mtype2{margin-top:40px;}
     &.mtype3{margin-top:0px;}
     & + .form_etc_menu_zone{}
+    > .btn_action_box_group{padding:0;}
 }
 .form_etc_menu_zone{
     margin-top:20px;
