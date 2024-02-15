@@ -942,3 +942,10 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
 }
 .upload_file_text{color:$primary;font-size:14px; font-weight:500;line-height:1.4;}
 .ico_upload{flex:0 0 20px;width:20px;height:20px;background:url("../images/ico_addfile.svg") no-repeat 0 0/100% auto;}
+
+
+.view_middle_wrap{
+    height:100%;
+    .middle_title_row{}
+    .view_contents_wrap{}
+}

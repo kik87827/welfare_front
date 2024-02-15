@@ -1062,6 +1062,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .middle_contents_row {
   flex: 1;
   min-height: 0;
@@ -7496,4 +7497,8 @@ textarea.form_textarea {
   width: 20px;
   height: 20px;
   background: url("../images/ico_addfile.svg") no-repeat 0 0/100% auto;
+}
+
+.view_middle_wrap {
+  height: 100%;
 }
