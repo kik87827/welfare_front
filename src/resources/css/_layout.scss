@@ -23,13 +23,13 @@ body{overflow-x:hidden;}
 
 .page_wrap{
     position:relative; min-height:100vh; display:flex;flex-direction: column; max-width: 720px; margin:0 auto; box-sizing: border-box; overflow-x:hidden;
-    &.main{
+    /* &.main{
         .header_wrap{
             .toplogo{position:relative;top:0;left:0;transform: translateX(0);padding:0 16px;}
             .toplogo_link{background-image:url("../images/toplogo.svg")}
         }
         .btn_gnb_opener{background-image:url("../images/ico_menu.svg");}
-    }
+    } */
     .bg_full{
         position:absolute;top:0;left:0;width:100%;height:calc(100% - 62px); 
         &:after{display:block;content:'';width:100%;height:100%;position:absolute;top:0;left:0;background:#000;opacity:.4;}
@@ -40,7 +40,13 @@ body{overflow-x:hidden;}
         background: linear-gradient(162.44deg, #FEB700 0%, #FF6D00 100%);
     }
 }
-.header_wrap{flex:0 0 48px;position:relative;z-index:20;height:48px;display:flex;align-items: center;}
+.header_wrap{flex:0 0 48px;position:relative;z-index:20;height:48px;display:flex;align-items: center;
+    &.main{
+        .toplogo{position:relative;top:0;left:0;transform: translateX(0);padding:0 16px;}
+        .toplogo_link{background-image:url("../images/toplogo.svg")}
+        .btn_gnb_opener{background-image:url("../images/ico_menu.svg");}
+    }
+}
 .toplogo{padding:0;position:absolute;top:0;left:50%;transform: translateX(-50%);width:100px;height:100%;display:flex;flex-direction: column;align-items: center;justify-content: center;}
 .toplogo_link{display:block;width:100px;height:16px;background:url("../images/toplogo2.svg") no-repeat 0 0/100% auto;}
 .header_layer{
