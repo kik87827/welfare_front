@@ -812,6 +812,9 @@ body {
   align-items: center;
   background: #fff;
 }
+.header_wrap.main {
+  background: transparent;
+}
 .header_wrap.main .toplogo {
   position: relative;
   top: 0;
