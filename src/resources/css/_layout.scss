@@ -22,7 +22,7 @@ html{
 body{overflow-x:hidden;}
 
 .page_wrap{
-    position:relative; min-height:100vh; display:flex;flex-direction: column; max-width: 720px; margin:0 auto; box-sizing: border-box; overflow-x:hidden;
+    position:relative; min-height:100vh; display:flex;flex-direction: column; max-width: 720px; margin:0 auto; box-sizing: border-box; /* overflow-x:hidden; */
     /* &.main{
         .header_wrap{
             .toplogo{position:relative;top:0;left:0;transform: translateX(0);padding:0 16px;}
@@ -40,7 +40,7 @@ body{overflow-x:hidden;}
         background: linear-gradient(162.44deg, #FEB700 0%, #FF6D00 100%);
     }
 }
-.header_wrap{flex:0 0 48px;position:relative;z-index:20;height:48px;display:flex;align-items: center;
+.header_wrap{flex:0 0 48px;position:sticky;top:0;z-index:20;height:48px;display:flex;align-items: center;background:#fff;
     &.main{
         .toplogo{position:relative;top:0;left:0;transform: translateX(0);padding:0 16px;}
         .toplogo_link{background-image:url("../images/toplogo.svg")}

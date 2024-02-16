@@ -759,8 +759,7 @@ body {
   flex-direction: column;
   max-width: 720px;
   margin: 0 auto;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  box-sizing: border-box; /* overflow-x:hidden; */
   /* &.main{
       .header_wrap{
           .toplogo{position:relative;top:0;left:0;transform: translateX(0);padding:0 16px;}
@@ -804,11 +803,14 @@ body {
 
 .header_wrap {
   flex: 0 0 48px;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   z-index: 20;
   height: 48px;
   display: flex;
   align-items: center;
+  background: #fff;
 }
 .header_wrap.main .toplogo {
   position: relative;
