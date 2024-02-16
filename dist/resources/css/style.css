@@ -814,6 +814,7 @@ body {
 }
 .header_wrap.main {
   background: transparent;
+  position: relative;
 }
 .header_wrap.main .toplogo {
   position: relative;

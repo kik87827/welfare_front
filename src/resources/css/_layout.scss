@@ -42,7 +42,7 @@ body{overflow-x:hidden;}
 }
 .header_wrap{flex:0 0 48px;position:sticky;top:0;z-index:20;height:48px;display:flex;align-items: center;background:#fff;
     &.main{
-        background:transparent;
+        background:transparent;position:relative;
         .toplogo{position:relative;top:0;left:0;transform: translateX(0);padding:0 16px;}
         .toplogo_link{background-image:url("../images/toplogo.svg")}
         .btn_gnb_opener{background-image:url("../images/ico_menu.svg");}
