@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "외국인 회원가입 | 복지위기알림"
+        "title" : "14세 미만 회원가입 | 복지위기알림"
     })
 <body>
     <!-- skip menu -->
@@ -14,17 +14,16 @@
         <!-- // mobile -->
         <main class="middle_wrap" id="contents">
             <div class="middle_title_row">
-                <h2 class="middle_title">외국인 회원가입</h2>
+                <h2 class="middle_title">14세 미만 회원가입</h2>
             </div>
             <div class="middle_contents_row">
                 <div class="form_step_list_wrap">
+                    <!-- 20240222 변경 -->
                     <ul class="form_step_list">
                         <li class="active">
                             <div class="form_step_item">
                                 <span class="form_step_number">1</span>
                                 <span class="form_step_text">본인인증</span>
-                                
-                                
                                 <span class="hdtext">활성화</span>
                             </div>
                         </li>
@@ -47,18 +46,57 @@
                             </div>
                         </li>
                     </ul>
+                    <!-- // 20240222 변경 -->
                 </div>
                 <div class="form_step_contents_wrap">
-                    <div class="step_guide_copy_zone">
-                        <div class="step_guide_copy_img"><img src="./resources/images/ico_message_phone.png" alt="" aria-hidden="true"></div>
-                        <div class="step_guide_copy_group type2">
-                            <p class="step_guide_copy">본인 확인을 위해 <br><strong>휴대폰 인증</strong>을 해주시기 바랍니다.</p>
+                    <div class="form_step_agree_wrap">
+                        <div class="fs_props_row">
+                            <div class="props_item align2">
+                                <input type="checkbox" class="props_form" id="join_agree_01">
+                                <label for="join_agree_01" class="props_label">14세 미만으로 “복지위기 알림서비스＂회원 가입하는 것을 동의합니다. </label>
+                            </div>
                         </div>
                     </div>
+                    <!--  -->
+                    <div class="form_column_container">
+                        <ul class="form_column_table">
+                            <li>
+                                <div class="form_column_item">
+                                    <label for="kids_form_item_01" class="form_column_label">이름</label>
+                                    <div class="form_column_field_row">
+                                        <input type="text" class="form_input" id="kids_form_item_01">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form_column_item">
+                                    <label for="kids_form_item_02" class="form_column_label">전화번호</label>
+                                    <div class="form_column_field_row">
+                                        <input type="text" class="form_input" id="kids_form_item_02">
+                                        <div class="form_column_control_cols">
+                                            <button class="btn_control_box">휴대폰 인증</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form_column_item">
+                                    <label for="id_form_item_03" class="hdtext">인증 번호</label>
+                                    <div class="form_column_field_row">
+                                        <input type="text" class="form_input" id="id_form_item_03">
+                                        <div class="form_column_control_cols">
+                                            <button class="btn_control_box">인증 번호</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // -->
                 </div>
             </div>
             <div class="btn_form_submit_wrap bottom_pos">
-                <a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">휴대폰 인증</span></a>
+                <a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">다음</span></a>
             </div>
         </main>
         <!-- 바텀 메뉴 -->
@@ -89,73 +127,5 @@
         </div>
         <!-- // 바텀 메뉴 -->
     </div>
-    <!-- popup -->
-    <div class="popup_wrap" id="idenAlertPopup">
-        <div class="bg_dim"></div>
-        <div class="popup_box_item">
-            <div class="popup_box_contents_row">
-                <p class="popup_box_message_para">인증에 실패하였습니다.<br>다시 시도해 주세요.</p>
-            </div>
-            <div class="popup_box_btn_row">
-                <!-- close_trigger 클릭시 팝업 닫기 -->
-                <a href="#" class="btn_popup_submit primary"><span class="btn_popup_submit_text">이동하기</span></a>
-            </div>
-        </div>
-    </div>
-    <div class="popup_wrap" id="idenAlertPopup02">
-        <div class="bg_dim"></div>
-        <div class="popup_box_item">
-            <div class="popup_box_contents_row">
-                <p class="popup_box_message_para">
-                    회원가입이 되어 있습니다.<br>
-                    아이디/비밀번호 찾기 화면으로 <br>
-                    이동하시겠습니까?
-                </p>
-            </div>
-            <div class="popup_box_btn_row type2">
-                <!-- close_trigger 클릭시 팝업 닫기 -->
-                <a href="#" class="btn_popup_submit primary"><span class="btn_popup_submit_text">이동하기</span></a>
-                <a href="#" class="btn_popup_submit"><span class="btn_popup_submit_text">취소</span></a>
-            </div>
-        </div>
-    </div>
-    <!-- // popup -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // 인스턴스 선언
-            let idenAlertPopup = new DesignPopup({
-                selector: "#idenAlertPopup",
-                beforeCallback(){
-
-                },
-                callback(){
-
-                },
-                closeCallback(){
-                }
-            });
-            let idenAlertPopup02 = new DesignPopup({
-                selector: "#idenAlertPopup02",
-                beforeCallback(){
-
-                },
-                callback(){
-
-                },
-                closeCallback(){
-                }
-            });
-
-            // 퍼블확인용
-            let url = window.location.href.split('?')[1];
-            let url_2 = url !== undefined ? url.split('#')[0] : null;
-            if(url_2 === "popup"){
-                idenAlertPopup.popupShow(); // show
-            }else if(url_2 === "popup2"){
-                idenAlertPopup02.popupShow(); // show
-            }
-
-        });
-    </script>
 </body>
 </html>

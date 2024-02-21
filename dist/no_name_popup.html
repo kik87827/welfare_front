@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./resources/css/style.css" rel="stylesheet">
+	<script src="./resources/js/dynamicListener.min.js"></script><!-- 20240212 추가 -->
+	<script src="./resources/js/jquery-3.4.1.min.js"></script>
+	<script src="./resources/js/jquery-ui.js"></script>
+	<script src="./resources/js/swiper.min.js"></script>
+	<script src="./resources/js/ui.js"></script>
+	<script src="./resources/js/main.js"></script>
+	<title>비회원 로그인 | 복지위기알림</title>
+</head>
+
+<body>
+	<!-- skip menu -->
+	<ul class="skiplist">
+		<li class="skip mb_skip"><a href="#mobile_gnb">주메뉴 바로가기</a></li>
+		<li class="skip"><a href="#contents">본문내용으로 바로가기</a></li>
+	</ul>
+	<!-- //skip menu -->
+	<div class="page_wrap">
+
+	</div>
+	<!-- popup -->
+	<div class="popup_wrap" id="guidePopup">
+		<div class="bg_dim"></div>
+		<div class="popup_box_item">
+			<div class="popup_box_contents_row">
+				<h3 class="popup_box_title">익명 신고  개인정보 처리 안내</h3>
+				<div class="popup_box_article">
+					익명알림 시 개인정보는 저장되지 않습니다.<br><br>
+
+					알림내용은 국민참여형 복지위기 알림서비스에만 활용되고 접수여부, 처리결과는 회신하지 않습니다.
+				</div>
+			</div>
+			<div class="popup_box_btn_row">
+				<!-- close_trigger 클릭시 팝업 닫기 -->
+				<a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">확인</span></a>
+			</div>
+		</div>
+	</div>
+	<!-- // popup -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// 인스턴스 선언
+			let guidePopup = new DesignPopup({
+				selector: "#guidePopup",
+				beforeCallback() {
+
+				},
+				callback() {
+
+				},
+				closeCallback() {
+
+				}
+			});
+
+			guidePopup.popupShow(); // show
+			// guidePopup.popupShow(); // hide
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "비회원 로그인 | 복지위기알림"
+    })
+<body>
+    <!-- skip menu -->
+    @@include('./include/_skip.html')
+    <!-- //skip menu -->
+    <div class="page_wrap">
+       
+    </div>
+    <!-- popup -->
+    <div class="popup_wrap" id="guidePopup">
+        <div class="bg_dim"></div>
+        <div class="popup_box_item">
+            <div class="popup_box_contents_row">
+                <h3 class="popup_box_title">익명 신고  개인정보 처리 안내</h3>
+                <div class="popup_box_article">
+                    익명알림 시 개인정보는 저장되지 않습니다.<br><br>
+
+                    알림내용은 국민참여형 복지위기 알림서비스에만 활용되고 접수여부, 처리결과는 회신하지 않습니다. 
+                </div>
+            </div>
+            <div class="popup_box_btn_row">
+                <!-- close_trigger 클릭시 팝업 닫기 -->
+                <a href="#" class="btn_popup_submit primary close_trigger"><span class="btn_popup_submit_text">확인</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- // popup -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 인스턴스 선언
+            let guidePopup = new DesignPopup({
+                selector: "#guidePopup",
+                beforeCallback(){
+
+                },
+                callback(){
+
+                },
+                closeCallback(){
+                    
+                }
+            });
+
+            guidePopup.popupShow(); // show
+            // guidePopup.popupShow(); // hide
+        });
+    </script>
+</body>
+</html>
