@@ -90,7 +90,8 @@
 				<h2 class="middle_title">로그인</h2>
 			</div>
 			<div class="middle_contents_row">
-				<div class="form_column_zone">
+				<!-- 20240224 type2 추가 -->
+				<div class="form_column_zone type2">
 					<div class="form_column_container">
 						<ul class="form_column_table gap_type2">
 							<li>
@@ -100,6 +101,11 @@
 										<input type="text" class="form_input size2" id="login_form_01" placeholder="아이디를 입력해주세요">
 									</div>
 								</div>
+								<!-- 20240224 추가 -->
+								<ul class="form_note_list">
+									<li>아이디는 5자~20자 이내 영문자 또는 영문자/숫자 조합이여야 합니다.</li>
+								</ul>
+								<!-- // 20240224 추가 -->
 							</li>
 							<li>
 								<div class="form_column_item">
@@ -108,6 +114,11 @@
 										<input type="text" class="form_input" id="login_form_02" placeholder="비밀번호를 입력해주세요">
 									</div>
 								</div>
+								<!-- 20240224 추가 -->
+								<ul class="form_note_list">
+									<li>비밀번호는 알파벳, 숫자, 특수문자를 조합하여 사용해야 하며 9자~ 20자 이하이여야 합니다.</li>
+								</ul>
+								<!-- // 20240224 추가 -->
 							</li>
 						</ul>
 						<div class="form_props_control_wrap">
@@ -138,18 +149,19 @@
 							<div class="hr_line">
 								<span class="hr_text">OR</span>
 							</div>
-							<ul class="form_sns_menu_list">
-								<li><a href="#" class="form_sns_menu ico_kakao" title="새창 열림"><span class="hdtext">KAKAOTALK</span></a></li>
-								<li><a href="#" class="form_sns_menu ico_naver" title="새창 열림"><span class="hdtext">NAVER</span></a></li>
-								<!--     <li><a href="#" class="form_sns_menu ico_google" title="새창 열림"><span class="hdtext">GOOGLE</span></a></li>
-                                <li><a href="#" class="form_sns_menu ico_face" title="새창 열림"><span class="hdtext">FACEBOOK</span></a></li> -->
-								<li><a href="#" class="form_sns_menu ico_apple" title="새창 열림"><span class="hdtext">APPLE</span></a></li>
-							</ul>
+							<div class="btn_form_submit_wrap">
+								<a href="#" class="btn_form_submit type4"><span class="btn_form_submit_text">SNS 간편로그인</span></a>
+							</div>
+							<div class="form_submit_message_wrap">
+								<p class="form_submit_message">이미 회원가입하신분은 <br>소셜네트워크를 통해서도 로그인을 하실 수 있습니다. </p>
+							</div>
+							<!-- 20240224 삭제 <ul class="form_sns_menu_list">
+                                <li><a href="#" class="form_sns_menu ico_kakao" title="새창 열림"><span class="hdtext">KAKAOTALK</span></a></li>
+                                <li><a href="#" class="form_sns_menu ico_naver" title="새창 열림"><span class="hdtext">NAVER</span></a></li>
+                                <li><a href="#" class="form_sns_menu ico_apple" title="새창 열림"><span class="hdtext">APPLE</span></a></li>
+                            </ul> -->
 						</div>
-						<div class="btn_form_submit_wrap">
-							<a href="#" class="btn_form_submit"><span class="btn_form_submit_text">비회원 로그인</span></a>
-						</div>
-						<div class="form_note_box">
+						<div class="form_note_box type2">
 							개인정보 보호를 위해 비밀번호 5회 이상 오류 시,<br>
 							비밀번호 재설정이 필요합니다.<br>
 							비밀번호는 주기적(6개월)으로 변경하시고, <br>
@@ -157,9 +169,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="middle_bottom_contents">
-
 			</div>
 		</main>
 		<div class="bottom_layer_wrap">

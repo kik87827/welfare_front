@@ -175,6 +175,12 @@
     &.align_type2{
         align-items: center; justify-content: center;
     }
+    .form_note_box{
+        &.type2{
+            margin-left:-20px;margin-right:-20px;
+        }
+    }
+    &.type2{padding-bottom:0;}
     .step_guide_copy_zone{margin:0;padding: 0 0 0 0;}
 }
 .form_column_block_group{
@@ -739,7 +745,7 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
 .gate_note_para{font-size:14px; color:#999999;  letter-spacing: -0.5px; line-height:1.4; word-break: keep-all;}
 
 
-.form_props_control_wrap{margin-top:16px;}
+.form_props_control_wrap{margin-top:20px;}
 .form_props_list{
     display:flex; flex-wrap:wrap; gap:16px;
     > li{}
@@ -789,8 +795,14 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
     &.ico_apple{background-image:url("../images/ico_sns_box_apple.png");}
 }
 
-.form_note_box{margin-top:30px;background:#eee;border-radius:8px; text-align: center; padding:10px;color:#999999; letter-spacing: -0.05em;line-height:1.4; word-break: keep-all;}
+.form_note_box{margin-top:30px;background:#eee;border-radius:8px; text-align: center; padding:10px;color:#999999; letter-spacing: -0.05em;line-height:1.4; word-break: keep-all; font-size:12px;
+    &.type2{
+        border-radius:0;margin-top:17px;
+    }
+}
 
+.form_submit_message_wrap{margin:12px 0 0;text-align: center;}
+.form_submit_message{font-weight:700;color:$primary;line-height:1.4;}
 
 .count_obj_list_wrap{margin:16px 20px 20px;background:$primary;border-radius:8px;
     &.mtype2{margin-bottom:0;}

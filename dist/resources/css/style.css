@@ -4231,7 +4231,7 @@ button.swiper-pagination-bullet {
   align-items: center;
   border: 1px solid #333;
   border-radius: 8px;
-  min-height: 50px;
+  min-height: 60px;
   box-sizing: border-box;
   padding: 10px;
   gap: 12px;
@@ -5625,6 +5625,13 @@ select.combo_select:hover {
   align-items: center;
   justify-content: center;
 }
+.form_column_zone .form_note_box.type2 {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.form_column_zone.type2 {
+  padding-bottom: 0;
+}
 .form_column_zone .step_guide_copy_zone {
   margin: 0;
   padding: 0 0 0 0;
@@ -6996,7 +7003,7 @@ textarea.form_textarea {
 }
 
 .form_props_control_wrap {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .form_props_list {
@@ -7136,6 +7143,22 @@ textarea.form_textarea {
   letter-spacing: -0.05em;
   line-height: 1.4;
   word-break: keep-all;
+  font-size: 12px;
+}
+.form_note_box.type2 {
+  border-radius: 0;
+  margin-top: 17px;
+}
+
+.form_submit_message_wrap {
+  margin: 12px 0 0;
+  text-align: center;
+}
+
+.form_submit_message {
+  font-weight: 700;
+  color: #FEB700;
+  line-height: 1.4;
 }
 
 .count_obj_list_wrap {
