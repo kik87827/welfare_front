@@ -855,7 +855,9 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
 .data_noitem_para{font-size:16px;color:#333333; font-weight:500;}
 
 .sort_field_zone{margin:12px 20px 20px;}
-.sort_field_row{}
+.sort_field_row{
+    &.type2{border-bottom:2px solid #333333;}
+}
 .sort_field_label_row{padding:0 12px;}
 .sort_field_label{color:#999999;font-size:12px;line-height:1;}
 .sort_field_container{display:flex;gap:8px;align-items: center;}

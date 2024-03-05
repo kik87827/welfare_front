@@ -360,6 +360,7 @@ input.form_input{font-size:16px;line-height:1; box-sizing:border-box;height:43px
     &.size2{
         font-size:16px;
     }
+    &.skin2{border-bottom:2px solid #333;}
     &::-webkit-input-placeholder{color:#ddd;font-family: 'Pretendard';}
     &::-moz-input-placeholder{color:#ddd;font-family: 'Pretendard';}
     &:-ms-input-placeholder{color:#ddd;font-family: 'Pretendard';}
@@ -423,7 +424,11 @@ select.combo_select{color:#333;cursor:pointer;font-size:16px; font-weight:500; b
         color:#333 !important;
     }
 }
-
+.combo_picker{
+    color:#333;cursor:pointer;font-size:16px; font-weight:500; border:0;height: 43px;padding: 0 28px 0 12px;border-radius:0;box-sizing:border-box; width:100%; display:block;
+    background: #fff url("../images/ico_select2.svg") no-repeat calc(100% - 12px) 50%/16px auto;line-height:43px;-webkit-appearance:none;-moz-appearance:none;appearance:none; border-bottom:2px solid #333333;
+}
+.combo_picker_placeholder{color:#ddd;}
 .text_emp_flag{display:inline-block;color:#00D4E9; font-size:14px; font-weight:700; line-height:1;}
 
 

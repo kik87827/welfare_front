@@ -11,6 +11,7 @@
 	<script src="./resources/js/dynamicListener.min.js"></script><!-- 20240212 추가 -->
 	<script src="./resources/js/jquery-3.4.1.min.js"></script>
 	<script src="./resources/js/jquery-ui.js"></script>
+	<script src="./resources/js/jquery.mtz.monthpicker.js"></script>
 	<script src="./resources/js/swiper.min.js"></script>
 	<script src="./resources/js/ui.js"></script>
 	<script src="./resources/js/main.js"></script>
@@ -95,44 +96,23 @@
 					<ul class="tab_list">
 						<li><a href="#" class="tab_item"><span class="tab_item_text">나의 통계</span></a></li>
 						<li><a href="#" class="tab_item"><span class="tab_item_text">일별</span></a></li>
-						<li><a href="#" class="tab_item"><span class="tab_item_text">월별</span> <span class="hdtext">활성화</span></a></li>
+						<li><a href="#" class="tab_item active"><span class="tab_item_text">월별</span> <span class="hdtext">활성화</span></a></li>
 					</ul>
 				</div>
 				<!-- // tab -->
 				<h3 class="hdtext">월별</h3>
 				<div class="sort_field_zone">
 					<div class="sort_field_row">
-						<div class="sort_field_label_row"><label for="month_picker" class="sort_field_label">날짜선택</label></div>
 						<div class="sort_field_container">
 							<div class="sort_field_cols">
-								<select class="combo_select placeholder" id="month_picker">
-									<option value="">월 선택</option>
-									<option value="1">1월</option>
-									<option value="2">2월</option>
-									<option value="3">3월</option>
-									<option value="4">4월</option>
-									<option value="5">5월</option>
-									<option value="6">6월</option>
-									<option value="7">7월</option>
-									<option value="8">8월</option>
-									<option value="9">9월</option>
-									<option value="10">10월</option>
-									<option value="11">11월</option>
-									<option value="12">12월</option>
-								</select>
+								<!-- 20240306 수정 -->
+								<input type="text" class="form_input calendar skin2 month" id="month_picker" placeholder="월 선택">
+								<!-- // 20240306 수정 -->
 							</div>
 							<div class="sort_field_cols">
-								<select class="combo_select placeholder" id="day_picker">
-									<option value="">일 선택</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-								</select>
+								<!-- 20240306 수정 -->
+								<input type="text" class="form_input calendar skin2" id="day_picker" placeholder="일 선택">
+								<!-- // 20240306 수정 -->
 							</div>
 						</div>
 					</div>

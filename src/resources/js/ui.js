@@ -6,6 +6,9 @@ window.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", () => {
   bottomLayer();
 });
+$(function(){
+  datePicker();
+});
 
   
   /**
@@ -408,4 +411,35 @@ function formFunc(){
       thisTarget.classList.remove("placeholder");
     }
   });
+}
+
+
+
+function datePicker(){
+	var $datepicker = $(".form_input.calendar").not(".month");
+	var $monthpicker = $(".form_input.month");
+  if($monthpicker.length){
+    $monthpicker.monthpicker({
+      pattern: 'yyyy-mm', 
+      startYear: 2015,
+      finalYear: 2024,
+      monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+			monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    });
+  }
+	if($datepicker.length){
+		$datepicker.each(function(){
+			var $dateThis = $(this);
+			$(this).datepicker({
+				monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+				monthNamesShort: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+				dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+        showOtherMonths: true,
+        selectOtherMonths: true,
+				/* changeMonth: true,
+				changeYear: true, */
+				dateFormat: 'yy-mm-dd'
+			});
+		});
+	}
 }
