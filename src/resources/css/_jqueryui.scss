@@ -96,9 +96,18 @@
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
 	padding: 20px 0;
-	&.mtz-monthpicker{padding:10px 0 0 0;}
+	&.mtz-monthpicker{padding:15px 0;}
 }
-.mtz-monthpicker-year{display:none;}
+select.mtz-monthpicker-year{color:#333;cursor:pointer;font-size:16px; font-weight:500; border:0;height: 36px;padding: 0 28px 0 12px;border-radius:0;box-sizing:border-box; width:100%; max-width:120px; margin:0 auto;
+    background: #fff url("../images/ico_select2.svg") no-repeat calc(100% - 12px) 50%/16px auto;line-height:36px;-webkit-appearance:none;-moz-appearance:none;appearance:none; border:1px solid #BBBBBB; border-radius:8px;
+    &::-ms-value {background: none; color:#333;}
+    &::-ms-expand {display: none;}
+    &.placeholder{color:#ddd;}
+    &:focus{border-bottom-color:$primary;}
+    &:hover{
+        color:#333 !important;
+    }
+}
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
 	position: absolute;

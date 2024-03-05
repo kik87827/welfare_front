@@ -1805,11 +1805,45 @@ button.swiper-pagination-bullet {
   padding: 20px 0;
 }
 .ui-datepicker .ui-datepicker-header.mtz-monthpicker {
-  padding: 10px 0 0 0;
+  padding: 15px 0;
 }
 
-.mtz-monthpicker-year {
+select.mtz-monthpicker-year {
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  height: 36px;
+  padding: 0 28px 0 12px;
+  border-radius: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 120px;
+  margin: 0 auto;
+  background: #fff url("../images/ico_select2.svg") no-repeat calc(100% - 12px) 50%/16px auto;
+  line-height: 36px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #BBBBBB;
+  border-radius: 8px;
+}
+select.mtz-monthpicker-year::-ms-value {
+  background: none;
+  color: #333;
+}
+select.mtz-monthpicker-year::-ms-expand {
   display: none;
+}
+select.mtz-monthpicker-year.placeholder {
+  color: #ddd;
+}
+select.mtz-monthpicker-year:focus {
+  border-bottom-color: #FEB700;
+}
+select.mtz-monthpicker-year:hover {
+  color: #333 !important;
 }
 
 .ui-datepicker .ui-datepicker-prev,
