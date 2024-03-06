@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "알림하기 | 복지위기알림"
+    })
+<body>
+    <!-- skip menu -->
+    @@include('./include/_skip.html')
+    <!-- //skip menu -->
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        <!-- mobile --> 
+        @@include('./include/_gnb_before.html')
+        <!-- // mobile -->
+        <main class="middle_wrap" id="contents">
+            <div class="middle_title_row">
+                <h2 class="middle_title">알림하기</h2>
+            </div>
+            <div class="middle_contents_row">
+                <div class="gate_item_wrap">
+                    <ul class="btn_gate_box_list">
+                        <li><a href="#" class="btn_gate_box"><span class="btn_gate_box_text">로그인 하기</span></a></li>
+                        <li><a href="#" class="btn_gate_box"><span class="btn_gate_box_text">바로 알림하기</span></a></li>
+                    </ul>
+                    <div class="gate_note_row"><p class="gate_note_para">바로 알림하기를 진행하실 경우 휴대폰 인증이 필요하며, 알림 이후 로그인화면에서 비회원(휴대폰 인증) 로그인 후 알림 진행상황을 확인할 수 있습니다.</p></div>
+                </div>
+            </div>
+        </main>
+        <!-- 바텀 메뉴 -->
+        <div class="bottom_layer_wrap">
+            <h3 class="hdtext">바로가기 메뉴</h3>
+            <div class="bottom_menu_list_wrap">
+                <ul class="bottom_menu_list">
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_home"></i>
+                            <div class="bottom_menu_text">홈</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom_menu active">
+                            <i class="ico_bottom ico_docu"></i>
+                            <div class="bottom_menu_text">알림보기</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="bottom_menu">
+                            <i class="ico_bottom ico_my"></i>
+                            <div class="bottom_menu_text">나의 정보</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- // 바텀 메뉴 -->
+    </div>
+</body>
+</html>
