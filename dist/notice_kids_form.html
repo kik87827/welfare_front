@@ -15,7 +15,7 @@
 	<script src="./resources/js/swiper.min.js"></script>
 	<script src="./resources/js/ui.js"></script>
 	<script src="./resources/js/main.js"></script>
-	<title>알림하기 | 복지위기알림</title>
+	<title>14세 미만 알림하기 | 복지위기알림</title>
 </head>
 
 <body>
@@ -88,18 +88,54 @@
 		<!-- // mobile -->
 		<main class="middle_wrap" id="contents">
 			<div class="middle_title_row">
-				<h2 class="middle_title">알림하기</h2>
+				<h2 class="middle_title">14세 미만 알림하기</h2>
 			</div>
 			<div class="middle_contents_row">
-				<div class="gate_item_wrap">
-					<ul class="btn_gate_box_list">
-						<li><a href="#" class="btn_gate_box"><span class="btn_gate_box_text">로그인 하기</span></a></li>
-						<li><a href="#" class="btn_gate_box"><span class="btn_gate_box_text">바로 알림하기</span></a></li>
-					</ul>
-					<div class="gate_note_row">
-						<p class="gate_note_para">바로 알림하기를 진행하실 경우 휴대폰 인증이 필요하며, 알림 이후 로그인화면에서 비회원(휴대폰 인증) 로그인 후 알림 진행상황을 확인할 수 있습니다.</p>
+				<div class="form_step_agree_wrap type3">
+					<p class="fs_props_title">법정대리인 동의</p>
+					<div class="fs_props_row">
+						<div class="props_item align2">
+							<input type="checkbox" class="props_form" id="join_agree_01">
+							<label for="join_agree_01" class="props_label">14세 미만으로 “복지위기 알림서비스＂회원 가입하는 것을 동의합니다.&nbsp;</label>
+						</div>
 					</div>
 				</div>
+				<!--  -->
+				<div class="form_column_container type2">
+					<ul class="form_column_table">
+						<li>
+							<div class="form_column_item">
+								<label for="kids_form_item_01" class="form_column_label">이름</label>
+								<div class="form_column_field_row">
+									<input type="text" class="form_input" id="kids_form_item_01">
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="form_column_item">
+								<label for="kids_form_item_02" class="form_column_label">전화번호</label>
+								<div class="form_column_field_row">
+									<input type="text" class="form_input" id="kids_form_item_02">
+									<div class="form_column_control_cols">
+										<button class="btn_control_box min_wid2">휴대폰 인증</button>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="form_column_item">
+								<label for="id_form_item_03" class="hdtext">인증 번호</label>
+								<div class="form_column_field_row">
+									<input type="text" class="form_input" id="id_form_item_03">
+									<div class="form_column_control_cols">
+										<button class="btn_control_box min_wid2">인증 번호</button>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- // -->
 			</div>
 		</main>
 		<!-- 바텀 메뉴 -->
@@ -114,7 +150,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="bottom_menu active">
+						<a href="#" class="bottom_menu">
 							<i class="ico_bottom ico_docu"></i>
 							<div class="bottom_menu_text">알림보기</div>
 						</a>

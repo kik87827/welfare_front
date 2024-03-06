@@ -5684,7 +5684,24 @@ select.combo_select:hover {
   border-bottom: 1px solid #eee;
   margin: 0 -20px;
   padding: 8px 20px 20px;
-  text-align: center;
+}
+.form_step_agree_wrap.type2 {
+  margin: 0;
+  padding: 20px;
+}
+.form_step_agree_wrap.type3 {
+  margin: 0;
+  padding: 12px 20px 20px;
+}
+.form_step_agree_wrap .fs_props_title {
+  margin-bottom: 12px;
+}
+
+.fs_props_title {
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.05em;
 }
 
 .fs_main_agree_copy {
@@ -5923,6 +5940,9 @@ select.combo_select:hover {
 .form_column_container.form_column_block.mtype2 {
   margin: 0 0;
 }
+.form_column_container.type2 {
+  padding: 30px 20px 60px;
+}
 
 .form_column_block_title {
   font-size: 14px;
@@ -6011,11 +6031,16 @@ select.combo_select:hover {
   display: inline-block;
   padding: 7px 10px;
   border-radius: 4px;
+  box-sizing: border-box;
   background-color: #FEB700;
   color: #fff;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
+  text-align: center;
+}
+.btn_control_box.min_wid2 {
+  min-width: 72px;
 }
 
 .form_each_message_wrap {
@@ -6142,6 +6167,9 @@ select.combo_select:hover {
 .form_note_list {
   margin-top: 12px;
 }
+.form_note_list.mtype2 {
+  margin-top: 16px;
+}
 .form_note_list > li {
   position: relative;
   padding-left: 20px;
@@ -6164,6 +6192,24 @@ select.combo_select:hover {
 }
 .form_note_list > li:last-of-type {
   margin-bottom: 0;
+}
+.form_note_list.align2 {
+  text-align: center;
+}
+.form_note_list.align2 > li {
+  padding-left: 0;
+}
+.form_note_list.align2 > li:before {
+  position: relative;
+  top: 3.5px;
+  display: inline-block;
+  margin-right: 3px;
+}
+.form_note_list.skin2 > li {
+  color: #00D4E9;
+}
+.form_note_list.skin2 > li:before {
+  background-image: url("../images/ico_info2.svg");
 }
 
 .form_props_wrap {
