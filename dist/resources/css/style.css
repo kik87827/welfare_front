@@ -4144,6 +4144,23 @@ span.ui-datepicker-month {
 .popup_title_row + .popup_contents_row {
   padding-top: 0;
 }
+.popup_title_row.type2 {
+  justify-content: flex-start;
+  padding: 0 16px 0 20px;
+  flex-basis: 50px;
+}
+.popup_title_row.type2 .popup_title {
+  font-size: 20px;
+  flex: 1;
+}
+
+.popup_title_else_wrap {
+  flex: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
 
 .popup_title {
   font-size: 16px;
@@ -4164,6 +4181,22 @@ span.ui-datepicker-month {
 }
 .popup_contents_row + .popup_btn_row {
   padding-top: 0;
+}
+.popup_contents_row > .board_item_list_wrap {
+  margin: 0;
+  padding: 0 0 0;
+}
+.popup_contents_row > .board_sort_field_wrap {
+  margin: 10px 0 0 0;
+}
+.popup_contents_row > .guide_board_box {
+  margin: 20px 0 0 0;
+}
+.popup_contents_row > .paging_wrap {
+  margin-top: 28px;
+}
+.popup_contents_row.api_render_wrap {
+  padding: 0;
 }
 
 .popup_box_item {
@@ -4401,6 +4434,30 @@ span.ui-datepicker-month {
   left: 0;
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 46%, rgba(255, 255, 255, 0) 100%);
+}
+.popup_btn_row.type2 {
+  padding: 0;
+}
+.popup_btn_row.type2:after {
+  display: none;
+}
+
+.btn_popup_box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+  min-height: 60px;
+  padding: 10px;
+}
+
+.btn_popup_box_text {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
 .btn_popup_close {
@@ -5062,6 +5119,10 @@ input.form_input::input-placeholder {
 }
 .btn_control_quad.type2 {
   background: #00D4E9;
+}
+.btn_control_quad:focus {
+  outline: 1px dashed #000;
+  outline-offset: 1px;
 }
 
 textarea.form_textarea {
@@ -6507,6 +6568,21 @@ input.input_sort {
   font-weight: 600;
   letter-spacing: -0.05em;
 }
+input.input_sort::-webkit-input-placeholder {
+  font-size: 14px;
+}
+input.input_sort::-moz-input-placeholder {
+  font-size: 14px;
+}
+input.input_sort:-ms-input-placeholder {
+  font-size: 14px;
+}
+input.input_sort::-ms-input-placeholder {
+  font-size: 14px;
+}
+input.input_sort::input-placeholder {
+  font-size: 14px;
+}
 
 .btn_board_sort {
   display: block;
@@ -7570,6 +7646,10 @@ textarea.form_textarea {
 }
 .bottom_toggle_content_row.hidden {
   display: none;
+}
+
+.api_result_btn_row {
+  padding: 0 20px 20px;
 }
 
 .btn_api_result {

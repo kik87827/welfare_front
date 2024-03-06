@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "위치찾기 | 복지위기알림"
+    })
+    <body>
+        <div class="page_wrap">
+            <main class="middle_wrap" id="contents">
+                <div style="padding:20px;">
+                    <a href="#" class="btn_box size_submit" id="btnCall"><span class="btn_box_text">팝업 호출</span></a>
+                </div>
+            </main>
+    
+            <!-- popup -->
+            <div class="popup_wrap full_type" id="addressPopup">
+                <!-- <div class="bg_dim"></div> -->
+                <div class="popup_item">
+                    <div class="popup_title_row type2">
+                        <h3 class="popup_title">위치찾기</h3>
+                        <div class="popup_title_else_wrap">
+                            <a href="#" class="btn_control_quad">주소찾기</a>
+                            <a href="#" class="btn_control_quad type2">장소 검색</a>
+                        </div>
+                    </div>
+                    <div class="popup_contents_row api_render_wrap">
+                        <div style="flex:1;background:#ddd;width:100%;height:100%; display:flex; justify-content: center; align-items: center;">
+                            API Rendar
+                        </div>
+                        <!-- marker 예시 -->
+                        <span style="display:inline-block;width:24px;height:24px;position:absolute;top:50px;left:50px;"><img src="./resources/images/ico_api_marker.png" alt=""></span>
+                        <span style="display:inline-block;width:68px;height:68px;position:absolute;top:100px;left:150px;"><img src="./resources/images/ico_api_marker2.png" alt=""></span>
+                        <!-- // marker 예시 -->
+    
+                    </div>
+                    <div class="api_result_item_list_row">
+                        <ul class="api_result_item_list">
+                            <li>
+                                <a href="#" class="btn_api_result">
+                                    <strong class="api_result_main">올림픽오피스텔</strong>
+                                    <span class="api_result_sub">서울시 방이2동</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="api_result_btn_row">
+                            <a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">위치 검색</span></a>
+                        </div>
+                    </div>
+                    <div class="popup_btn_row type2">
+                        <a href="javascript:;" class="btn_popup_box close_trigger"><span class="btn_popup_box_text">닫기</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- // popup -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    // 인스턴스 선언
+                    let addressPopup = new DesignPopup({
+                        selector: "#addressPopup",
+                        beforeCallback(){
+    
+                        },
+                        callback(){
+    
+                        },
+                        closeCallback(){
+                            
+                        }
+                    });
+    
+                    addressPopup.popupShow(); // show
+                    // addressPopup.popupShow(); // hide
+    
+                    // event
+                    document.querySelector("#btnCall").addEventListener("click",()=>{
+                        addressPopup.popupShow(); // show
+                    });
+                });
+            </script>
+        </div>
+    </body>
+</html>

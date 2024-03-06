@@ -15,7 +15,7 @@
 	<script src="./resources/js/swiper.min.js"></script>
 	<script src="./resources/js/ui.js"></script>
 	<script src="./resources/js/main.js"></script>
-	<title>팝업 샘플 | 복지위기알림</title>
+	<title>장소검색 | 복지위기알림</title>
 </head>
 
 <body>
@@ -27,28 +27,42 @@
 		</main>
 
 		<!-- popup -->
-		<div class="popup_wrap full_type" id="sampleFullPopup">
+		<div class="popup_wrap full_type" id="addressPopup">
 			<!-- <div class="bg_dim"></div> -->
 			<div class="popup_item">
 				<div class="popup_title_row type2">
-					<h3 class="popup_title">위치찾기</h3>
+					<h3 class="popup_title">장소검색</h3>
 					<div class="popup_title_else_wrap">
 						<a href="#" class="btn_control_quad">주소 찾기</a>
 						<a href="#" class="btn_control_quad type2">장소 검색</a>
 					</div>
 				</div>
 				<div class="popup_contents_row">
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.
+					<div class="board_sort_field_wrap">
+						<div class="board_sort_field_cols">
+							<div class="input_sort_wrap">
+								<label for="keyword_search" class="hdtext">검색어</label>
+								<input type="text" class="input_sort" id="keyword_search" placeholder="찾으시는 장소를 입력해주세요">
+							</div>
+							<a href="#" class="btn_board_sort"><span class="hdtext">검색</span></a>
+						</div>
+					</div>
+					<div class="guide_board_box">
+						<div class="guide_board_title_wrap">
+							<p class="guide_board_title">TIP</p>
+						</div>
+						<p class="guide_board_caption">아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.</p>
+						<div class="guide_board_summary_group">
+							<div class="guide_board_summary_item">
+								<p class="guide_board_summary emp">관광, 명소</p>
+								<p class="guide_board_summary">예) 광화문, 청계천</p>
+							</div>
+							<div class="guide_board_summary_item">
+								<p class="guide_board_summary emp">행정기관, 공공기관</p>
+								<p class="guide_board_summary">예) 행정안전부, 국민연금공단</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="popup_btn_row type2">
 					<a href="javascript:;" class="btn_popup_box close_trigger"><span class="btn_popup_box_text">닫기</span></a>
@@ -59,8 +73,8 @@
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				// 인스턴스 선언
-				let designPopup = new DesignPopup({
-					selector: "#sampleFullPopup",
+				let addressPopup = new DesignPopup({
+					selector: "#addressPopup",
 					beforeCallback() {
 
 					},
@@ -68,16 +82,16 @@
 
 					},
 					closeCallback() {
-						document.querySelector("#btnCall").focus(); // 접근성 키보드 이슈로 이벤트 발생 버튼에 포커스
+
 					}
 				});
 
-				designPopup.popupShow(); // show
-				// designPopup.popupShow(); // hide
+				addressPopup.popupShow(); // show
+				// addressPopup.popupShow(); // hide
 
 				// event
 				document.querySelector("#btnCall").addEventListener("click", () => {
-					designPopup.popupShow(); // show
+					addressPopup.popupShow(); // show
 				});
 			});
 		</script>
