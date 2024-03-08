@@ -7145,6 +7145,15 @@ textarea.form_textarea {
   flex-direction: column;
   gap: 16px;
 }
+.btn_gate_box_list > li.active .btn_gate_box {
+  background: #FEB700;
+  color: #000;
+  border-color: #FEB700;
+}
+.btn_gate_box_list > li.active .btn_gate_box * {
+  color: #000;
+}
+
 .gate_message_group {
   text-align: center;
   margin: 57px 20px 20px;

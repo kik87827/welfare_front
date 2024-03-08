@@ -752,7 +752,15 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
 }
 .btn_gate_box_list{
     display:flex; flex-direction: column; gap:16px;
-    > li{}
+    > li{
+        &.active{
+            .btn_gate_box{background:$primary;color:#000;border-color:$primary;
+                *{
+                    color:#000;
+                }
+            }
+        }
+    }
 }
 
 .gate_message_group{text-align: center;margin:57px 20px 20px;
@@ -764,6 +772,8 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
     strong{color:$primary;word-break: keep-all;font-weight:700;}
 }
 .gate_message_sub{font-size:14px;color:#999999;word-break: keep-all;margin-top:16px;line-height:1.4;}
+
+
 
 .btn_gate_box{display:flex; align-items: center; justify-content: center;min-height:90px;box-sizing: border-box; border:1px solid #999; border-radius:8px;box-sizing: border-box; padding:15px;
     &.type2{
