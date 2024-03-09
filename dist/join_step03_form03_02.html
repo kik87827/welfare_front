@@ -123,33 +123,36 @@
 				<div class="form_step_contents_wrap">
 					<div class="form_step_contents">
 						<div class="form_column_container form_column_block">
-							<p class="form_column_block_title">종사 업종여부 선택</p>
+							<p class="form_column_block_title type2">알림방식 선택</p>
 							<ul class="form_column_table">
 								<li>
 									<div class="form_column_item type2">
-										<label for="job_type_01" class="form_column_label">종사 업종여부</label>
 										<div class="form_column_field_row">
-											<select class="combo_select placeholder" id="job_type_01">
-												<option value="">종사 업종여부</option>
-												<option value="1">옵션 01</option>
-												<option value="2">옵션 02</option>
-												<option value="3">옵션 03</option>
-											</select>
+											<!-- 20240309 skin2 추가 -->
+											<div class="form_props_wrap skin2">
+												<div class="form_props_cols">
+													<input type="radio" name="notice_choice" id="notice_choice_01" class="form_props">
+													<label for="notice_choice_01" class="form_props_label">국가 및 지방 공무원</label>
+												</div>
+												<div class="form_props_cols">
+													<input type="radio" name="notice_choice" id="notice_choice_02" class="form_props" checked>
+													<label for="notice_choice_02" class="form_props_label">기타 신고의무자</label>
+												</div>
+											</div>
+											<!-- // 20240309 skin2 추가 -->
 										</div>
 									</div>
 								</li>
-								<!-- 20240309 -->
 								<li>
 									<div class="form_column_item">
 										<label for="etc_form_item" class="form_column_label">기타</label>
 										<div class="form_column_field_row">
 											<div class="form_column_field_row">
-												<input type="text" class="form_input" id="etc_form_item" placeholder="기타 입력">
+												<input type="text" class="form_input" id="etc_form_item" placeholder="기타 신고의무자 입력">
 											</div>
 										</div>
 									</div>
 								</li>
-								<!-- // 20240309 -->
 							</ul>
 						</div>
 						<div class="form_column_container form_column_block">
@@ -242,6 +245,24 @@
 						</div>
 						<div class="form_column_container form_column_block">
 							<ul class="form_column_table">
+								<!-- 20240309 -->
+								<li>
+									<div class="form_column_item">
+										<label for="form_item03_01" class="form_column_label">소속기관</label>
+										<div class="form_column_field_row">
+											<input type="text" class="form_input" value="소속기관 이름" id="form_item03_01">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form_column_item">
+										<label for="form_item03_02" class="form_column_label">부서</label>
+										<div class="form_column_field_row">
+											<input type="text" class="form_input" value="부서 이름" id="form_item03_02">
+										</div>
+									</div>
+								</li>
+								<!-- // 20240309 -->
 								<li>
 									<div class="form_column_item type2">
 										<label for="" class="form_column_label">알림방식 선택</label>

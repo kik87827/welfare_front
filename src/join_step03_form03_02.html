@@ -57,11 +57,11 @@
                                             <!-- 20240309 skin2 추가 -->
                                             <div class="form_props_wrap skin2">
                                                 <div class="form_props_cols">
-                                                    <input type="radio" name="notice_choice" id="notice_choice_01" class="form_props" checked>
+                                                    <input type="radio" name="notice_choice" id="notice_choice_01" class="form_props">
                                                     <label for="notice_choice_01" class="form_props_label">국가 및 지방 공무원</label>
                                                 </div>
                                                 <div class="form_props_cols">
-                                                    <input type="radio" name="notice_choice" id="notice_choice_02" class="form_props">
+                                                    <input type="radio" name="notice_choice" id="notice_choice_02" class="form_props" checked>
                                                     <label for="notice_choice_02" class="form_props_label">기타 신고의무자</label>
                                                 </div>
                                             </div>
@@ -70,15 +70,12 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="form_column_item type2">
-                                        <label for="job_choice_item" class="form_column_label">국가 및 공무원 선택</label>
+                                    <div class="form_column_item">
+                                        <label for="etc_form_item" class="form_column_label">기타</label>
                                         <div class="form_column_field_row">
-                                            <select class="combo_select placeholder" id="job_choice_item">
-                                                <option value="">국가 및 공무원 선택</option>
-                                                <option value="1">옵션 01</option>
-                                                <option value="2">옵션 02</option>
-                                                <option value="3">옵션 03</option>
-                                            </select>
+                                            <div class="form_column_field_row">
+                                                <input type="text" class="form_input" id="etc_form_item" placeholder="기타 신고의무자 입력">
+                                            </div>
                                         </div>
                                     </div>
                                 </li>

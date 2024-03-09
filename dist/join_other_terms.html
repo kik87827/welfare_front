@@ -19,127 +19,71 @@
 </head>
 
 <body>
-	<!-- skip menu -->
-	<ul class="skiplist">
-		<li class="skip mb_skip"><a href="#mobile_gnb">주메뉴 바로가기</a></li>
-		<li class="skip"><a href="#contents">본문내용으로 바로가기</a></li>
-	</ul>
-	<!-- //skip menu -->
 	<div class="page_wrap">
-		<header class="header_wrap">
-			<h1 class="toplogo">
-				<a href="#" class="toplogo_link">
-					<span class="hdtext">복지위기알림</span>
-				</a>
-			</h1>
-			<div class="header_layer pos_left">
-				<a href="javascript:;" class="btn_back"><span class="hdtext">이전 페이지 보기</span></a>
-			</div>
-			<div class="header_layer pos_right">
-				<a href="javascript:;" class="btn_gnb_opener"><span class="hdtext">메인메뉴 열기</span></a>
-			</div>
-		</header>
-		<!-- mobile -->
-		<div class="mobile_mainmenu_zone" id="mobile_gnb">
-			<div class="mainmenu_dim"></div>
-			<div class="mobile_mainmenu_wrap">
-				<div class="mobile_main_menu_row">
-					<!--  <div class="mobile_util_wrap vhidden">
-                <p class="mobile_util_para">안녕하세요.</p>
-            </div> -->
-					<nav class="gnb_menu_list_wrap">
-						<ul class="gnb_menu_list">
-							<li><a href="#" class="gnb_menu">신고하기</a></li>
-							<li><a href="#" class="gnb_menu">공지사항</a></li>
-							<li><a href="#" class="gnb_menu">설문조사</a></li>
-							<li><a href="#" class="gnb_menu">자주 묻는 질문</a></li>
-							<li><a href="#" class="gnb_menu">신고 통계</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="mobile_sub_menu_row">
-					<ul class="mobile_util_list">
-						<li><a href="#" class="mobile_util">로그인</a></li>
-						<li><a href="#" class="mobile_util">회원가입</a></li>
-					</ul>
-				</div>
-				<div class="mobile_util_row">
-					<ul class="mb_util_menu_list">
-						<li><a href="#" class="mb_util_menu">개인정보 처리방침</a></li>
-						<li><a href="#" class="mb_util_menu">이용약관</a></li>
-					</ul>
-					<div class="mb_util_copy_wrap">
-						<p class="mb_util_copy">보건복지부</p>
-						<address class="mb_util_copy">(30113) 세종특별자치시 도움4로 <br>13(어진동) 정부세종청사 10동</address>
-						<p class="mb_util_copy">
-							한국사회보장정보원<br>
-							(04933) 서울특별시 광진구 능동로 400(중곡동)<br>
-							보건복지행정타운
-						</p>
-						<p class="mb_util_copy emp">
-							COPYRIGHT① by MOHW & SSIS<br>
-							ALL RIGHTS RESERVED
-						</p>
-					</div>
-				</div>
-				<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
-			</div>
-		</div>
-		<!-- // mobile -->
 		<main class="middle_wrap" id="contents">
-			<div class="middle_title_row">
-				<h2 class="middle_title">제3자 제공 동의</h2><span class="text_emp_flag">필수</span>
+			<div style="padding:20px;">
+				<a href="#" class="btn_box size_submit" id="btnCall"><span class="btn_box_text">팝업 호출</span></a>
 			</div>
-			<div class="middle_contents_row">
-				<div class="terms_box_wrap">
-					<div class="terms_box">
-						<div class="terms_cont_group">
-							<p class="terms_cont_title">제1조(목적)</p>
-							<p class="terms_cont_article">이 약관은 한국사회보장정보원에서 운영하는 국민참여형 복지위기 알림서비스(이하 "복지위기 알림서비스"라 한다)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 앱 사용과 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
-						</div>
-						<div class="terms_cont_group">
-							<p class="terms_cont_title">제2조(정의)</p>
-							<div class="terms_cont_article">
-								<p class="terms_cont_para">①"복지위기 알림서비스"란 국민 누구나 현장에서 즉시 신고할 수 있는 신고채널 , 위기변수 빅데이터와 현장 정보를 결합한 정보를 제공하기 위한 컴퓨터시스템을 말하여 아울러 동 시스템을 운영하는 기관 및 부서의 의미로도 사용합니다.</p>
-								<p class="terms_cont_para">②"사용자"란 "복지위기 알림서비스"에 접속하여 이 약관에 따라 "복지위기 알림서비스"에서 제공하는 서비스를 받는 회원 및 비회원을 말합니다.</p>
-								<p class="terms_cont_para">③'회원'이라 함은 "복지위기 알림서비스"에 개인정보를 제공하여 회원등록을 한 자로서, "복지위기 알림서비스"의 정보를 지속적으로 제공받으며, "복지위기 알림서비스"가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.</p>
-								<p class="terms_cont_para">④'비회원'이라 함은 회원에 가입하지 않고 "복지위기 알림서비스"가 제공하는 서비스를 이용하는 자를 말합니다.</p>
+		</main>
+
+		<!-- popup -->
+		<div class="popup_wrap full_type" id="otherTermsPopup">
+			<!-- <div class="bg_dim"></div> -->
+			<div class="popup_item">
+				<div class="popup_title_row">
+					<h3 class="popup_title">제3자 제공 동의</h3><span class="text_emp_flag">필수</span>
+				</div>
+				<div class="popup_contents_row">
+					<div class="terms_box_wrap">
+						<div class="terms_box">
+							<div class="terms_cont_group">
+								<p class="terms_cont_title">제1조(목적)</p>
+								<p class="terms_cont_article">이 약관은 한국사회보장정보원에서 운영하는 국민참여형 복지위기 알림서비스(이하 "복지위기 알림서비스"라 한다)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 앱 사용과 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+							</div>
+							<div class="terms_cont_group">
+								<p class="terms_cont_title">제2조(정의)</p>
+								<div class="terms_cont_article">
+									<p class="terms_cont_para">①"복지위기 알림서비스"란 국민 누구나 현장에서 즉시 신고할 수 있는 신고채널 , 위기변수 빅데이터와 현장 정보를 결합한 정보를 제공하기 위한 컴퓨터시스템을 말하여 아울러 동 시스템을 운영하는 기관 및 부서의 의미로도 사용합니다.</p>
+									<p class="terms_cont_para">②"사용자"란 "복지위기 알림서비스"에 접속하여 이 약관에 따라 "복지위기 알림서비스"에서 제공하는 서비스를 받는 회원 및 비회원을 말합니다.</p>
+									<p class="terms_cont_para">③'회원'이라 함은 "복지위기 알림서비스"에 개인정보를 제공하여 회원등록을 한 자로서, "복지위기 알림서비스"의 정보를 지속적으로 제공받으며, "복지위기 알림서비스"가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.</p>
+									<p class="terms_cont_para">④'비회원'이라 함은 회원에 가입하지 않고 "복지위기 알림서비스"가 제공하는 서비스를 이용하는 자를 말합니다.</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="btn_form_submit_wrap bottom_pos">
-				<a href="javascript:;" class="btn_form_submit primary skin2 size2"><span class="btn_form_submit_text">닫기</span></a>
-			</div>
-		</main>
-		<!-- 바텀 메뉴 -->
-		<div class="bottom_layer_wrap">
-			<h3 class="hdtext">바로가기 메뉴</h3>
-			<div class="bottom_menu_list_wrap">
-				<ul class="bottom_menu_list">
-					<li>
-						<a href="#" class="bottom_menu">
-							<i class="ico_bottom ico_home"></i>
-							<div class="bottom_menu_text">홈</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="bottom_menu">
-							<i class="ico_bottom ico_docu"></i>
-							<div class="bottom_menu_text">알림보기</div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="bottom_menu">
-							<i class="ico_bottom ico_my"></i>
-							<div class="bottom_menu_text">나의 정보</div>
-						</a>
-					</li>
-				</ul>
+				<div class="popup_btn_row type2">
+					<a href="javascript:;" class="btn_popup_box close_trigger"><span class="btn_popup_box_text">닫기</span></a>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
 			</div>
 		</div>
-		<!-- // 바텀 메뉴 -->
+		<!-- // popup -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				// 인스턴스 선언
+				let otherTermsPopup = new DesignPopup({
+					selector: "#otherTermsPopup",
+					beforeCallback() {
+
+					},
+					callback() {
+
+					},
+					closeCallback() {
+						document.querySelector("#btnCall").focus(); // 접근성 키보드 이슈로 이벤트 발생 버튼에 포커스
+					}
+				});
+
+				otherTermsPopup.popupShow(); // show
+				// otherTermsPopup.popupShow(); // hide
+
+				// event
+				document.querySelector("#btnCall").addEventListener("click", () => {
+					otherTermsPopup.popupShow(); // show
+				});
+			});
+		</script>
 	</div>
 </body>
 

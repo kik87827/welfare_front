@@ -4140,6 +4140,7 @@ span.ui-datepicker-month {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
 }
 .popup_title_row + .popup_contents_row {
   padding-top: 0;
@@ -6217,6 +6218,18 @@ select.combo_select:hover {
   gap: 10px;
   width: 100%;
 }
+.form_props_wrap.skin2 .form_props_label {
+  border: 1px solid #BBBBBB;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.form_props_wrap.skin2 .form_props_label:before {
+  display: none;
+}
+.form_props_wrap.skin2 input.form_props:checked + .form_props_label {
+  background-color: #FEB700;
+  border-color: #FEB700;
+}
 
 .form_props_cols {
   flex: 1;
@@ -7147,11 +7160,11 @@ textarea.form_textarea {
 }
 .btn_gate_box_list > li.active .btn_gate_box {
   background: #FEB700;
-  color: #000;
+  color: #fff;
   border-color: #FEB700;
 }
 .btn_gate_box_list > li.active .btn_gate_box * {
-  color: #000;
+  color: #fff;
 }
 
 .gate_message_group {

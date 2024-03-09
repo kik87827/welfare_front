@@ -27,7 +27,7 @@
 .bg_dim{display:block;width:720px;height:100%;position:fixed;top:0;left:50%;z-index:0;background:#000;opacity:0;transition:.5s opacity;transform: translateX(-50%);
     &.no_transition{transition:0s;opacity:.6;transform:none;}
 }
-.popup_title_row{flex:0 0 48px;padding:0 48px; display:flex; align-items: center; justify-content: center;
+.popup_title_row{flex:0 0 48px;padding:0 48px; display:flex; align-items: center; justify-content: center; gap:5px;
     & + .popup_contents_row{padding-top:0;}
     &.type2{
         justify-content: flex-start; padding:0 16px 0 20px; flex-basis:50px;

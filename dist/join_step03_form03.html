@@ -128,16 +128,18 @@
 								<li>
 									<div class="form_column_item type2">
 										<div class="form_column_field_row">
-											<div class="form_props_wrap">
+											<!-- 20240309 skin2 추가 -->
+											<div class="form_props_wrap skin2">
 												<div class="form_props_cols">
-													<input type="checkbox" id="notice_choice_01" class="form_props" checked>
+													<input type="radio" name="notice_choice" id="notice_choice_01" class="form_props" checked>
 													<label for="notice_choice_01" class="form_props_label">국가 및 지방 공무원</label>
 												</div>
 												<div class="form_props_cols">
-													<input type="checkbox" id="notice_choice_02" class="form_props">
+													<input type="radio" name="notice_choice" id="notice_choice_02" class="form_props">
 													<label for="notice_choice_02" class="form_props_label">기타 신고의무자</label>
 												</div>
 											</div>
+											<!-- // 20240309 skin2 추가 -->
 										</div>
 									</div>
 								</li>
@@ -246,6 +248,24 @@
 						</div>
 						<div class="form_column_container form_column_block">
 							<ul class="form_column_table">
+								<!-- 20240309 -->
+								<li>
+									<div class="form_column_item">
+										<label for="form_item03_01" class="form_column_label">소속기관</label>
+										<div class="form_column_field_row">
+											<input type="text" class="form_input" value="소속기관 이름" id="form_item03_01">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form_column_item">
+										<label for="form_item03_02" class="form_column_label">부서</label>
+										<div class="form_column_field_row">
+											<input type="text" class="form_input" value="부서 이름" id="form_item03_02">
+										</div>
+									</div>
+								</li>
+								<!-- // 20240309 -->
 								<li>
 									<div class="form_column_item type2">
 										<label for="" class="form_column_label">알림방식 선택</label>

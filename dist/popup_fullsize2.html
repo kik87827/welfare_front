@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./resources/css/style.css" rel="stylesheet">
+	<script src="./resources/js/dynamicListener.min.js"></script><!-- 20240212 추가 -->
+	<script src="./resources/js/jquery-3.4.1.min.js"></script>
+	<script src="./resources/js/jquery-ui.js"></script>
+	<script src="./resources/js/jquery.mtz.monthpicker.js"></script>
+	<script src="./resources/js/swiper.min.js"></script>
+	<script src="./resources/js/ui.js"></script>
+	<script src="./resources/js/main.js"></script>
+	<title>팝업 샘플 | 복지위기알림</title>
+</head>
+
+<body>
+	<div class="page_wrap">
+		<main class="middle_wrap" id="contents">
+			<div style="padding:20px;">
+				<a href="#" class="btn_box size_submit" id="btnCall"><span class="btn_box_text">팝업 호출</span></a>
+			</div>
+		</main>
+
+		<!-- popup -->
+		<div class="popup_wrap full_type" id="sampleFullPopup">
+			<!-- <div class="bg_dim"></div> -->
+			<div class="popup_item">
+				<div class="popup_title_row">
+					<h3 class="popup_title">위치찾기</h3>
+				</div>
+				<div class="popup_contents_row">
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.
+				</div>
+				<div class="popup_btn_row type2">
+					<a href="javascript:;" class="btn_popup_box close_trigger"><span class="btn_popup_box_text">닫기</span></a>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<!-- // popup -->
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				// 인스턴스 선언
+				let designPopup = new DesignPopup({
+					selector: "#sampleFullPopup",
+					beforeCallback() {
+
+					},
+					callback() {
+
+					},
+					closeCallback() {
+						document.querySelector("#btnCall").focus(); // 접근성 키보드 이슈로 이벤트 발생 버튼에 포커스
+					}
+				});
+
+				designPopup.popupShow(); // show
+				// designPopup.popupShow(); // hide
+
+				// event
+				document.querySelector("#btnCall").addEventListener("click", () => {
+					designPopup.popupShow(); // show
+				});
+			});
+		</script>
+	</div>
+</body>
+
+</html>
