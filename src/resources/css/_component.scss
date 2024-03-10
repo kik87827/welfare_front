@@ -48,7 +48,7 @@
     &.api_render_wrap{padding:0;}
 }
 .popup_box_item{
-    box-shadow: 0px 16px 24px rgba(51, 51, 51, 0.2); max-width:300px; border-radius: 16px; box-sizing: border-box; width:100%; z-index:20; position:relative; background:#fff; gap:24px;
+    box-shadow: 0px 16px 24px rgba(51, 51, 51, 0.2); max-width:300px; border-radius: 16px; box-sizing: border-box; width:100%; z-index:20;  background:#fff; gap:24px;
     opacity:0;transition:.4s opacity; margin:30px auto; max-height:calc(100% - 60px);  position:relative; display:flex; flex-direction: column;
     &.type2{padding:24px;
         .popup_box_btn_row{padding:0;}
@@ -156,6 +156,11 @@
 
 @media (max-width:1023px) {
     .bg_dim{width:100%;left:0;transform: translateX(0);}
+    .popup_wrap{
+        &.full_type{
+            .popup_item{width:100%; max-width:100%;}
+        }
+    }
     .popup_box_item{margin:0 30px;max-width:100%;width:100%;}
 }
 @media (max-width:360px) {
@@ -471,3 +476,25 @@ select.combo_select{color:#333;cursor:pointer;font-size:16px; font-weight:500; b
 }
 
 .btn_inline_control{display:inline-flex;white-space: nowrap;min-height:26px;background:$primary;align-items: center;padding:0 10px;font-size:12px;font-weight:900;color:#fff;border-radius:4px;}
+
+
+/* combobox */
+.combobox_wrap{}
+.combobox{}
+
+.combobox{color:#ddd;cursor:pointer;border:0;min-height: 43px;padding: 5px 35px 5px 12px;border-radius:0;box-sizing:border-box; width:100%; display:flex; align-items: center;
+    background: #fff url("../images/ico_select2.svg") no-repeat calc(100% - 12px) 50%/16px auto; border-bottom:2px solid #333333;
+    &.has_value{color:#333;}
+}
+
+.combobox_text{font-size:16px; font-weight:500; text-align: left;}
+.combobox_option_wrap{position:absolute;top:0;left:0;width:100%;display:none; overflow:hidden; overflow-y:auto;
+    &.active{display: block;}
+}
+.popup_box_contents_row{
+    .combobox_option_wrap{position:static;}
+}
+.combobox_option_list{
+    >li{}
+}
+.combobox_option{display:block;background:#EEEEEE;border-bottom:1px solid #DDDDDD;font-size:16px; font-weight:500; text-align: center;padding:14px;}

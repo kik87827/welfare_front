@@ -227,7 +227,6 @@ $(function(){
         }
         //remove
         this.selector.classList.remove("motion_end");
-        console.log(this.popup_box_item);
         if(!!this.popup_box_item){
           this.popup_box_item.removeAttribute("tabIndex");
         }
@@ -442,4 +441,117 @@ function datePicker(){
 			});
 		});
 	}
+}
+
+
+class ComboSelect {
+  constructor (option){
+     // variable
+     this.option = option;
+     this.selector = document.querySelector(this.option.selector);
+     this.middle_contents_row = document.querySelector(".middle_contents_row");
+     this.header_wrap = document.querySelector(".header_wrap");
+     this.middle_wrap = document.querySelector(".middle_wrap");
+     this.popup_box_contents_row = document.querySelector(".popup_box_contents_row");
+     this.popup_contents_row = document.querySelector(".popup_contents_row");
+     this.combobox_target = null;
+     this.combobox_target_text = null;
+     this.combobox_option_wrap = null;
+     this.combobox_option = null;
+     if (!this.selector) {
+       return;
+     }
+     this.combobox_target = this.selector.querySelector(".combobox");
+     this.combobox_target_text = this.selector.querySelector(".combobox_text");
+     this.combobox_option_wrap = this.selector.querySelector(".combobox_option_wrap");
+     this.combobox_option = this.selector.querySelectorAll(".combobox_option");
+     this.option_active = false;
+     this.bindEvent();
+  }
+  bindEvent(){
+    this.combobox_target.addEventListener("click",(e)=>{
+      e.preventDefault();
+      this.combobox_option_wrap.setAttribute("data-optiongroup",this.selector.getAttribute("id"));
+      if(!!this.selector.closest(".popup_box_contents_row")){
+        // this.popup_box_contents_row.append(this.combobox_option_wrap);
+      }else if(!!this.selector.closest(".popup_contents_row")){
+        this.popup_contents_row.append(this.combobox_option_wrap);
+      }else {
+        this.middle_wrap.append(this.combobox_option_wrap);
+      }
+
+      
+      this.positionAction();
+
+      if(this.option_active){
+        this.optionHide();
+      }else{
+        this.optionShow();
+      }
+
+      this.option_active = !this.option_active;
+    });
+    this.combobox_option.forEach((eventItem)=>{
+      eventItem.addEventListener("click",(e)=>{
+        e.preventDefault();
+        let eventTarget = e.currentTarget;
+        this.combobox_target_text.textContent = eventTarget.textContent;
+        this.combobox_target.classList.add("has_value");
+        this.optionHide();
+        this.option_active = false;
+        if(!!this.option.callback){
+          this.option.callback(eventTarget.getAttribute("data-value"));
+        }
+      });
+    });
+    window.addEventListener("resize",()=>{
+      this.positionAction();
+    });
+  }
+  optionShow(){
+   
+    this.combobox_option_wrap.classList.add("active");
+    this.ariaCheck();
+    this.combobox_option_wrap.setAttribute("tabindex","0");
+    this.combobox_option_wrap.focus();
+    this.optionScroll();
+  }
+  optionScroll(){
+    let optionList = this.combobox_option_wrap.dataset.scroll;
+    let optionDefault = 3;
+    if(!optionList){
+      optionList = optionDefault;
+    }
+    this.combobox_option_wrap.style.maxHeight = this.combobox_option[optionList].getBoundingClientRect().top - this.combobox_option_wrap.getBoundingClientRect().top - window.scrollY + "px";
+  }
+  optionHide(){
+    this.combobox_option_wrap.classList.remove("active");
+    this.ariaCheck();
+  }
+  ariaCheck(){
+    this.combobox_target.setAttribute("aria-expanded",this.combobox_option_wrap.classList.contains("active"));
+  }
+  positionAction(){
+    let header_height_value = this.header_wrap.getBoundingClientRect().height;
+    let pos_top_value = this.combobox_target.getBoundingClientRect().top;
+    let pos_left_value = this.combobox_target.offsetLeft;
+    let pos_width_value = this.combobox_target.getBoundingClientRect().width;
+    let height_value = this.combobox_target.getBoundingClientRect().height;
+    
+    
+    this.combobox_option_wrap.removeAttribute('style');
+    this.combobox_option_wrap.style.top = (pos_top_value + height_value + window.scrollY - header_height_value) + "px";
+    this.combobox_option_wrap.style.left = pos_left_value + "px";
+    this.combobox_option_wrap.style.width = pos_width_value + "px";
+
+    if(!!this.selector.closest(".popup_box_contents_row")){
+      this.combobox_option_wrap.style.top = (pos_top_value + height_value)-(this.popup_box_contents_row.getBoundingClientRect().top + this.popup_box_contents_row.scrollTop) + "px";
+    }else if(!!this.selector.closest(".popup_contents_row")){
+      this.combobox_option_wrap.style.top = (pos_top_value + height_value)-(this.popup_contents_row.getBoundingClientRect().top + this.popup_contents_row.scrollTop) + "px";
+    }else {
+      this.combobox_option_wrap.style.top = (pos_top_value + height_value + window.scrollY - header_height_value) + "px";
+    }
+
+    this.optionScroll();
+  }
 }

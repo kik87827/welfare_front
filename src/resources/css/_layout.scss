@@ -121,7 +121,7 @@ body{overflow-x:hidden;}
     display:flex; flex-direction: column;
     
 }
-.middle_contents_row{flex:1;min-height:0;display:flex; flex-direction: column;
+.middle_contents_row{flex:1;min-height:0;display:flex; flex-direction: column; position:relative;
     &.type2{flex:none;}
 }
 
