@@ -279,6 +279,9 @@
 .form_column_field_wrap{
     .form_column_field_row{
         border-bottom:2px solid #333333;margin-bottom:10px;
+        &.type2{
+            border-bottom:0;
+        }
         &:last-of-type{margin-bottom:0;}
     }
 }

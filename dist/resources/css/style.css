@@ -6085,6 +6085,9 @@ select.combo_select:hover {
   border-bottom: 2px solid #333333;
   margin-bottom: 10px;
 }
+.form_column_field_wrap .form_column_field_row.type2 {
+  border-bottom: 0;
+}
 .form_column_field_wrap .form_column_field_row:last-of-type {
   margin-bottom: 0;
 }
