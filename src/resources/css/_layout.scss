@@ -75,9 +75,10 @@ body{overflow-x:hidden;}
 .mobile_sub_menu_row{flex:0;}
 .btn_mbmenuclose{position:absolute;top:40px;right:40px;background:url("../images/ico_close.svg") no-repeat 50% 50%/18px auto;width:24px;height:24px;}
 
-.mobile_util_wrap{margin-bottom:20px;}
+.mobile_util_wrap{margin-bottom:20px;padding-top:2px;}
 .mobile_util_para{font-size:20px;color:#999999;font-weight:500;
     strong{color:$primary;font-weight:700;}
+    .btn_inline_box{position:relative;top:-3px;left:10px;margin:5px 0 0 5px;}
 }
 .gnb_menu_list_wrap{}
 .gnb_menu_list{
@@ -85,7 +86,9 @@ body{overflow-x:hidden;}
         &:last-of-type{}
     }
 }
-.gnb_menu{display:flex;min-height:54px;box-sizing: border-box;color:#333333;font-weight:500; font-size:16px; letter-spacing: -0.05em;padding:17px 17px 17px 8px;}
+.gnb_menu{display:flex;min-height:54px;box-sizing: border-box;color:#333333;font-weight:500; font-size:16px; letter-spacing: -0.05em;padding:17px 17px 17px 8px;
+    &:focus{outline-offset: -1px;}
+}
 .mobile_util_list{
     display:flex;gap:16px;padding:40px 0 20px 48px;
     > li{

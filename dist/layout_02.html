@@ -45,7 +45,10 @@
 			<div class="mobile_mainmenu_wrap">
 				<div class="mobile_main_menu_row">
 					<div class="mobile_util_wrap">
-						<p class="mobile_util_para"><strong>유상욱</strong>님 안녕하세요.</p>
+						<p class="mobile_util_para">
+							<strong>유상욱</strong>님 안녕하세요.
+							<a href="#" class="btn_inline_box">로그아웃</a>
+						</p>
 					</div>
 					<nav class="gnb_menu_list_wrap">
 						<ul class="gnb_menu_list">
@@ -96,6 +99,38 @@
 		<div class="bottom_layer_wrap">
 			<a href="#" class="btn_submit_box"><span class="btn_submit_box_text">더보기</span></a>
 		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+
+				// 퍼블확인용
+				var touchstart = "ontouchstart" in window;
+				var mobile_mainmenu_zone = document.querySelector(".mobile_mainmenu_zone")
+				mobile_mainmenu_wrap = document.querySelector(".mobile_mainmenu_wrap");
+				domHtml = document.querySelector("html");
+
+				let url = window.location.href.split('?')[1];
+				let url_2 = url !== undefined ? url.split('#')[0] : null;
+				if (url_2 === "menu") {
+
+
+
+					mobile_mainmenu_zone.classList.add("active");
+
+					setTimeout(function() {
+						mobile_mainmenu_zone.classList.add("motion");
+						setTimeout(function() {
+							if (!!mobile_mainmenu_wrap) {
+								setTabControl(".mobile_mainmenu_wrap");
+							}
+						}, 500);
+						if (touchstart) {
+							domHtml.classList.add("touchDis");
+						}
+					}, 30);
+				}
+			});
+		</script>
 	</div>
 </body>
 

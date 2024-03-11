@@ -89,6 +89,37 @@
             </div>
         </div>
         <!-- // 바텀 메뉴 -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+
+                // 퍼블확인용
+                var touchstart = "ontouchstart" in window;
+                var mobile_mainmenu_zone = document.querySelector(".mobile_mainmenu_zone")
+                    mobile_mainmenu_wrap = document.querySelector(".mobile_mainmenu_wrap");
+                    domHtml = document.querySelector("html");
+                
+                let url = window.location.href.split('?')[1];
+                let url_2 = url !== undefined ? url.split('#')[0] : null;
+                if(url_2 === "menu"){
+                    
+
+
+                    mobile_mainmenu_zone.classList.add("active");
+        
+                    setTimeout(function() {
+                        mobile_mainmenu_zone.classList.add("motion");
+                        setTimeout(function() {
+                            if(!!mobile_mainmenu_wrap){
+                                setTabControl(".mobile_mainmenu_wrap");
+                            }
+                        },500);
+                        if (touchstart) {
+                            domHtml.classList.add("touchDis");
+                        }
+                    }, 30);
+                }
+            });
+        </script>
     </div>
 </body>
 </html>

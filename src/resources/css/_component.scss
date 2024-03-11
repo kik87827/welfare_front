@@ -288,6 +288,10 @@ input.props_form{
 }
 .btn_quad_box_text{font-size:16px;color:#fff;font-weight:700;line-height:1;}
 
+.btn_inline_box{display:inline-block;background:$primary;border-radius:4px;text-align: center;padding:7px 10px;line-height:1;box-sizing: border-box;color:#fff;font-size:12px;font-weight:800;vertical-align: middle;
+    outline-offset: -1px;
+}
+
 
 /* paging */
 .paging_wrap {margin:15px 20px 0; display:flex;justify-content: center; align-items: center;gap:8px;}

@@ -296,6 +296,11 @@
     display:block; position:relative; padding:1px 0 0 18px;
     &:before{display:block;content:'';width:16px;height:16px;background:url("../images/ico_info_sky.svg") no-repeat 50% 50%/100% auto; position:absolute;top:0;left:0;}
     color:#00D4E9; font-weight:600; font-size:12px;
+
+    &.type2{
+        &:before{background-image:url("../images/ico_info.svg")}
+        color:#999; font-weight:600; font-size:12px;
+    }
 }
 
 .form_column_message_wrap{margin:24px 0 0 0;}
@@ -952,6 +957,15 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
 .guide_board_box{
     border:1px solid #EEEEEE; border-radius:8px; padding:20px;margin:30px 20px 60px;
 }
+.data_guide_para_wrap{
+    text-align: center;
+    &:before{width:48px;height:48px;border-radius:100%; display:block; content:''; background:#333 url("../images/ico_search_off.svg") no-repeat 50% 50%/28px auto;margin:0 auto 20px;}
+}
+.data_guide_main_para{
+    font-size:18px;color:#333333; line-height:1.2; word-break: keep-all;
+    strong{font-size:20px;font-weight:700;word-break: keep-all;}
+}
+.data_guide_sub_para{font-size:16px;color:#999999;margin-top:10px;word-break: keep-all;}
 .guide_board_title_wrap{
     display:flex; align-items: center; justify-content: center; gap:5px;
     &:before{display:block;content:'';width:24px;height:24px;background:url("../images/ico_tip.svg") no-repeat 0 0/100% auto; flex:0 0 24px;}
