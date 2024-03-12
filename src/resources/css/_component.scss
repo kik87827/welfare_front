@@ -230,6 +230,10 @@ input.props_form{
     display:flex; flex-direction: column; gap:12px;
     >li{}
 }
+.props_add_form_wrap{
+    margin-top:6px;
+    .props_add_form{}
+}
 .props_add_form{
     flex:0 0 100%; border-bottom:2px solid #333333;
     input.form_input{}
