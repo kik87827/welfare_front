@@ -469,8 +469,24 @@ select.combo_select{color:#333;cursor:pointer;font-size:16px; font-weight:500; b
 .combo_picker_placeholder{color:#ddd;}
 .text_emp_flag{display:inline-block;color:#00D4E9; font-size:14px; font-weight:700; line-height:1;}
 
+.motion_props_item{display:flex;
 
-.motion_props_item{display:flex;}
+    &.btn_type{
+        &.disabled{
+            opacity:.5; 
+            cursor: default;
+            *{
+                cursor: default;
+            }
+        }
+        &.checked{
+            .motion_props_label{
+                border-color:$primary;
+                &:before{left:21px;background:$primary;}
+            }
+        }
+    }
+}
 .motion_props_form{overflow:hidden;width:0;height:0;appearance: none;opacity: 0;flex:0;
     &:checked{
         & + .motion_props_label{

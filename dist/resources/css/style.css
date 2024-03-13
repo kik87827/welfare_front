@@ -5305,6 +5305,20 @@ select.combo_select:hover {
 .motion_props_item {
   display: flex;
 }
+.motion_props_item.btn_type.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.motion_props_item.btn_type.disabled * {
+  cursor: default;
+}
+.motion_props_item.btn_type.checked .motion_props_label {
+  border-color: #FEB700;
+}
+.motion_props_item.btn_type.checked .motion_props_label:before {
+  left: 21px;
+  background: #FEB700;
+}
 
 .motion_props_form {
   overflow: hidden;
