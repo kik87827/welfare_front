@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "비회원 알림 | 복지위기알림"
+        "title" : "비회원 알림"
     })
 <body>
     <!-- skip menu -->
@@ -54,7 +54,9 @@
                             <ul class="form_column_table">
                                 <li>
                                     <div class="form_column_item type2">
-                                        <span class="form_column_label">성별</span>
+                                        <!-- 20240317 추가 -->
+                                        <span class="form_column_label">성별 <span class="import_flag"><span class="hdtext">필수입력</span></span></span>
+                                        <!-- // 20240317 추가 -->
                                         <div class="form_column_field_row">
                                             <div class="form_props_wrap">
                                                 <div class="form_props_cols">
@@ -71,11 +73,21 @@
                                 </li>
                                 <li>
                                     <div class="form_column_item">
-                                        <label for="data_form_02" class="form_column_label">이름</label>
+                                        <!-- 20240317 추가 -->
+                                        <label for="data_form_02" class="form_column_label">이름 <span class="import_flag"><span class="hdtext">필수입력</span></span></label>
+                                        <!-- // 20240317 추가 -->
                                         <div class="form_column_field_row">
                                             <input type="text" class="form_input" id="data_form_02" value="김지민">
                                         </div>
                                     </div>
+                                    <!-- 20240317 추가 -->
+                                    <div class="form_column_sub_item">
+                                        <div class="props_item">
+                                            <input type="checkbox" class="props_form" id="name_check">
+                                            <label for="name_check" class="props_label">이름 모름</label>
+                                        </div>
+                                    </div>
+                                    <!-- // 20240317 추가 -->
                                 </li>
                                 <li>
                                     <div class="form_column_item">
@@ -97,11 +109,15 @@
                                 </li>
                                 <li>
                                     <div class="form_column_item">
-                                        <label for="data_form_06" class="form_column_label">신고 위치 및 대상자 주소</label>
+                                        <!-- 20240317 수정 -->
+                                        <label for="data_form_06" class="form_column_label">알림 위치 및 대상자 주소 입력
+                                            <span class="import_flag"><span class="hdtext">필수입력</span></span>
+                                        </label>
+                                        <!-- // 20240317 수정 -->
                                         <!-- 20240311 수정 -->
                                         <div class="form_column_field_wrap">
                                             <div class="form_column_field_row">
-                                                <input type="text" class="form_input" id="data_form_06" placeholder="신고 위치 및 대상자 주소">
+                                                <input type="text" class="form_input" id="data_form_06" placeholder="알림 위치 및 대상자 주소">
                                                 <div class="form_column_control_cols">
                                                     <button class="btn_icoform_control"><span class="hdtext">주소 찾기</span></button>
                                                 </div>
@@ -150,7 +166,11 @@
                                 </li>
                                 <li>
                                     <div class="form_column_item">
-                                        <label for="help_form_07" class="form_column_label">신고내용</label>
+                                        <!-- 20240317 수정 -->
+                                        <label for="help_form_07" class="form_column_label">신고내용
+                                            <span class="import_flag"><span class="hdtext">필수입력</span></span>
+                                        </label>
+                                        <!-- // 20240317 수정 -->
                                         <div class="form_column_field_row type2">
                                             <div class="form_textarea_wrap">
                                                 <textarea rows="10" cols="10" class="form_textarea" placeholder="신고내용 입력">

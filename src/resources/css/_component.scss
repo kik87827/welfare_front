@@ -397,11 +397,10 @@ input.form_input{font-size:16px;line-height:1; box-sizing:border-box;height:43px
         font-size:16px;
     }
     &.skin2{border-bottom:2px solid #333;}
-    &::-webkit-input-placeholder{color:#ddd;font-family: 'Pretendard';}
-    &::-moz-input-placeholder{color:#ddd;font-family: 'Pretendard';}
-    &:-ms-input-placeholder{color:#ddd;font-family: 'Pretendard';}
-    &::-ms-input-placeholder{color:#ddd;font-family: 'Pretendard';}
-    &::input-placeholder{color:#ddd;font-family: 'Pretendard';}
+    &::placeholder{color:#ddd;font-family: 'Pretendard';}
+}
+.form_view_field{font-size:16px;line-height:1; color:$primary; box-sizing:border-box;min-height:43px;border:0;appearance: none;width:100%;font-weight:500;color:$primary; padding:15px 12px 10px; display:flex; align-items: center;
+    &.number{@include rubik;}
 }
 .btn_icoform_control{display:inline-block;width:20px;height:20px;background:url("../images/ico_location.svg") no-repeat 50% 50%/20px auto;}
 
