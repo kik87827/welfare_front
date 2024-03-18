@@ -1103,3 +1103,34 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
 .middle_notice_short_cols{
     .btn_quad_box{}
 }
+
+.clause_box{border:1px solid #EEEEEE;border-radius: 8px;padding:20px;margin:20px 20px 0;}
+.clause_block{
+    color:#333333; margin-bottom:30px; font-weight:700; font-size:14px;letter-spacing:-0.05em; line-height:1.6;
+    &:last-of-type{margin-bottom:0;}
+}
+
+.clause_brick{
+    margin-bottom:30px; line-height:1.6;
+    &:last-of-type{margin-bottom:0;}
+}
+
+.clause_brick_title{
+    margin-bottom:10px; color:#333333; font-size:14px; font-weight:700;
+    &.big{
+        font-size: 16px;
+        & + .clause_brick_title{margin-top:20px;}
+    }
+}
+
+.clause_brick_tsub{font-size:14px;color:$primary;}
+
+.clause_brick_content{font-size:12px;color:#999999; font-weight:500;}
+
+
+.clause_liquid_wrap{margin:20px 20px 20px;}
+.clause_liquid{margin-bottom:30px;
+    &:last-of-type{margin-bottom:0;}
+}
+.clause_liquid_title{font-size:14px;color:$primary;font-weight:700;margin-bottom:5px;}
+.clause_liquid_content{font-size:16px;color:#333333}
