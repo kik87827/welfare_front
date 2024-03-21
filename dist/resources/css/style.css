@@ -5266,6 +5266,9 @@ select.combo_select:focus {
 select.combo_select:hover {
   color: #333 !important;
 }
+select.combo_select.type2 {
+  border-bottom: 0;
+}
 
 .combo_picker {
   color: #333;

@@ -86,11 +86,22 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="form_column_item">
+                                    <div class="form_column_item type2">
                                         <label for="data_form_04" class="form_column_label">주민등록번호</label>
-                                        <div class="form_column_field_row">
+                                        <!-- <div class="form_column_field_row">
                                             <input type="text" class="form_input number" id="data_form_04" value="075123-186132">
+                                        </div> -->
+                                        <!-- 20240321 수정 -->
+                                        <div class="form_column_field_row">
+                                            <div class="inline_form_container">
+                                                <div class="inline_form_cols"><input type="text" class="form_input number" id="data_form_04" value="075123" title="주민등록번호 앞자리 입력"></div>
+                                                <div class="inline_form_cols else"><span class="inline_form_else_text">-</span></div>
+                                                <!-- 20240321 수정 -->
+                                                <div class="inline_form_cols"><input type="text" class="form_input number" value="186132" title="주민등록번호 뒷자리 입력"></div>
+                                                <!-- // 20240321 수정 -->
+                                            </div>
                                         </div>
+                                        <!-- // 20240321 수정 -->
                                     </div>
                                 </li>
                                 <li>
