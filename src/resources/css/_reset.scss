@@ -36,11 +36,9 @@ textarea{font-family: 'Pretendard';color:#000;border:1px solid #c8c8c8;-webkit-a
 input:focus + label{
     outline: 1px dashed #000;
 }
-::-webkit-input-placeholder{color:#999999;font-family: 'Pretendard';}
-::-moz-input-placeholder{color:#999999;font-family: 'Pretendard';}
-:-ms-input-placeholder{color:#999999;font-family: 'Pretendard';}
-::-ms-input-placeholder{color:#999999;font-family: 'Pretendard';}
-::input-placeholder{color:#999999;font-family: 'Pretendard';}
+input{
+    &::placeholder{color:#999999;font-family: 'Pretendard';}
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "비회원 알림 | 복지위기알림"
+        "title" : "비회원 알림"
     })
 <body>
     <!-- skip menu -->
@@ -53,32 +53,62 @@
                     <div class="form_step_title_wrap">
                         <h3 class="form_step_title">내 정보 확인 및 동의</h3>
                         <div class="props_item">
-                            <input type="checkbox" class="props_form" id="notice_item">
-                            <label for="notice_item" class="props_label">익명알림</label>
+                            <input type="checkbox" class="props_form" id="name_notice_check" data-target="#form_container">
+                            <label for="name_notice_check" class="props_label">익명알림</label>
                         </div>
                     </div>
                     <!-- // 20240222 수정 -->
                     <div class="form_step_contents">
-                        <div class="form_column_container">
+                        <!-- 20240317 수정 -->
+                        <div class="form_column_container" id="form_container">
                             <ul class="form_column_table">
                                 <li>
                                     <div class="form_column_item">
                                         <label for="mydata_form_01" class="form_column_label">이름</label>
-                                        <div class="form_column_field_row">
-                                            <input type="text" class="form_input" id="mydata_form_01" value="유상욱">
+                                        <div class="form_column_field_wrap type2">
+                                            <div class="form_column_field_row origin">
+                                                <input type="text" class="form_input" id="mydata_form_01" value="유상욱">
+                                            </div>
+                                            <div class="form_column_field_row view">
+                                                <p class="hdtext">익명알림 이름</p>
+                                                <div class="form_view_field">***</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form_column_item">
                                         <label for="mydata_form_02" class="form_column_label">전화번호</label>
-                                        <div class="form_column_field_row">
-                                            <input type="text" class="form_input number" id="mydata_form_02" value="010-8741-2007">
+                                        <div class="form_column_field_wrap type2">
+                                            <div class="form_column_field_row origin">
+                                                <input type="text" class="form_input number" id="mydata_form_02" value="010-8741-2007">
+                                            </div>
+                                            <div class="form_column_field_row view">
+                                                <p class="hdtext">익명알림 전화번호</p>
+                                                <div class="form_view_field number">***-****-****</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                        <script>
+                            $(function(){
+                                /* 익명알림 */
+                                $("#name_notice_check").on("click",function(){
+                                    var $this = $(this);
+                                    var $t_form_container = $($this.attr("data-target"));
+
+                                    if($this.prop("checked")){
+                                        $t_form_container.addClass("view_mode");
+                                    }else{
+                                        $t_form_container.removeClass("view_mode");
+                                    }
+                                });
+                                /* // 익명알림 */
+                            });
+                        </script>
+                        <!-- // 20240317 수정 -->
                         <!-- 20240222 수정 -->
                         <div class="clauses_terms_wrap">
                             <p class="cterms_para">개인정보보호법 제 15조 제 1항 제 3호에 따라 아래와 같이 개인정보를 수집 이용합니다.</p>

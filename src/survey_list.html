@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('./include/_head.html',{
-        "title" : "설문 조사 | 복지위기알림"
+        "title" : "설문 조사"
     })
 <body>
     <!-- skip menu -->
@@ -26,7 +26,9 @@
                             <label for="keyword_search" class="hdtext">검색어</label>
                             <input type="text" class="input_sort" id="keyword_search" placeholder="검색어를 입력하세요">
                         </div>
-                        <a href="#" class="btn_board_sort"><span class="hdtext">검색</span></a>
+                        <!-- 20240318 [접근성] tag 변경 -->
+                        <button class="btn_board_sort"><span class="hdtext">검색</span></button>
+                        <!-- // 20240318 [접근성] tag 변경 -->
                     </div>
                 </div>
                 <div class="board_item_list_wrap">
