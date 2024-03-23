@@ -1125,7 +1125,9 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
 
 .clause_brick_tsub{font-size:14px;color:$primary;}
 
-.clause_brick_content{font-size:12px;color:#999999; font-weight:500;}
+.clause_brick_content{font-size:12px;color:#999999; font-weight:500;
+    > .clause_copy_para{}
+}
 
 
 .clause_liquid_wrap{margin:20px 20px 20px;}
@@ -1134,3 +1136,134 @@ textarea.form_textarea{height:240px;font-size:16px;color:#333333;font-weight:500
 }
 .clause_liquid_title{font-size:14px;color:$primary;font-weight:700;margin-bottom:5px;}
 .clause_liquid_content{font-size:16px;color:#333333}
+
+
+.clause_box_wrap{
+    .clause_box{}
+}
+.clause_copy_para_wrap{
+    .clause_copy_para{
+        &:last-of-type{}
+    }
+}
+.clause_copy_vitem{
+
+    .clause_copy_para{}
+}
+.clause_copy_para{}
+.clause_ico_item_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+.clause_ico_item{
+    &:before{}
+    &.ico_01{
+        &:before{}
+    }
+    &.ico_02{
+        &:before{}
+    }
+    &.ico_03{
+        &:before{}
+    }
+    &.ico_04{
+        &:before{}
+    }
+    &.ico_05{
+        &:before{}
+    }
+    &.ico_06{
+        &:before{}
+    }
+}
+.clause_ico_text{}
+
+.clause_tb_wrap{}
+.clause_tb{
+    th,td{}
+    th{}
+    td{}
+}
+.clause_thtext{}
+.clause_tdtext_wrap{
+
+}
+.clause_tdtext{
+    &:last-of-type{}
+}
+
+.clause_guide_box_wrap{
+
+}
+.clause_guide_box_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+.gbox_dt{
+
+}
+.gbox_dd{
+    &:last-of-type{}
+}
+
+.clause_process_map_wrap{}
+.clause_process_map_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+
+.cpmap_one{
+}
+.cpmap_two_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+.cpmap_two{
+    &:before{}
+}
+.cpmap_dep_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+.cpmap_dep{
+    &:before{}
+}
+.cpmap_deptail_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+.cpmap_deptail_item{
+    &:before{}
+}
+
+.clause_emp_box{
+
+}
+.clause_eb_para{
+
+}
+.clause_eb_imp_para{}
+
+.clause_emp_box_list{
+    >li{
+        &:last-of-type{}
+    }
+}
+.clause_emp_box{}
+.clause_emp_title{}
+.clause_emp_contents{}
+
+.clause_inner_block_wrap{}
+.clause_inner_block{
+    &:last-of-type{}
+}
+.clause_inner_title{}
+.clause_inner_contents{
+    .clause_tb_wrap{}
+}
