@@ -27,7 +27,7 @@
 .bg_dim{display:block;width:720px;height:100%;position:fixed;top:0;left:50%;z-index:0;background:#000;opacity:0;transition:.5s opacity;transform: translateX(-50%);
     &.no_transition{transition:0s;opacity:.6;transform:none;}
 }
-.popup_title_row{flex:0 0 48px;padding:0 48px; display:flex; align-items: center; justify-content: center; gap:5px;
+.popup_title_row{flex:0 0 48px;padding:0 48px; display:flex; align-items: center; justify-content: center; gap:5px; text-align: center;
     & + .popup_contents_row{padding-top:0;}
     &.type2{
         justify-content: flex-start; padding:0 16px 0 20px; flex-basis:50px;
@@ -37,13 +37,16 @@
 .popup_title_else_wrap{
     flex:0;display:flex; align-items: center; gap:8px; white-space: nowrap;
 }
-.popup_title{font-size:16px;color:#333;font-weight:700;letter-spacing: -0.05em;line-height:1.3;}
+.popup_title{font-size:16px;color:#333;font-weight:700;letter-spacing: -0.05em;line-height:1.3;word-break: keep-all;}
 .popup_contents_row{position:relative;overflow:hidden;overflow-y:auto;flex:1;font-size:14px;color:#333333;padding:20px 20px 50px;
     & + .popup_btn_row{padding-top:0;}
     > .board_item_list_wrap{margin:0;padding:0 0 0;}
     > .board_sort_field_wrap{margin:10px 0 0 0;}
     > .guide_board_box{margin:20px 0 0 0;}
     > .paging_wrap{margin-top:28px;}
+    .clause_box,
+    .clause_liquid_wrap{margin-left:0; margin-right:0;}
+    .clause_liquid_wrap{margin-bottom:0;}
     
     &.api_render_wrap{padding:0;}
 }

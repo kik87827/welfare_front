@@ -4137,6 +4137,7 @@ span.ui-datepicker-month {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  text-align: center;
 }
 .popup_title_row + .popup_contents_row {
   padding-top: 0;
@@ -4165,6 +4166,7 @@ span.ui-datepicker-month {
   font-weight: 700;
   letter-spacing: -0.05em;
   line-height: 1.3;
+  word-break: keep-all;
 }
 
 .popup_contents_row {
@@ -4191,6 +4193,14 @@ span.ui-datepicker-month {
 }
 .popup_contents_row > .paging_wrap {
   margin-top: 28px;
+}
+.popup_contents_row .clause_box,
+.popup_contents_row .clause_liquid_wrap {
+  margin-left: 0;
+  margin-right: 0;
+}
+.popup_contents_row .clause_liquid_wrap {
+  margin-bottom: 0;
 }
 .popup_contents_row.api_render_wrap {
   padding: 0;
