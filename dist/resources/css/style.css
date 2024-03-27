@@ -5607,6 +5607,7 @@ select.combo_select.type2 {
 .bottom_menu_list {
   display: flex;
   text-align: center;
+  padding-bottom: 16px;
 }
 .bottom_menu_list > li {
   flex: 1;
