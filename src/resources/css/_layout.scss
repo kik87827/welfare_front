@@ -142,9 +142,11 @@ body{overflow-x:hidden;}
         }
     }
 }
-.mb_util_menu{display:inline-block;font-size:14px;color:#333333;line-height:1;}
+.mb_util_menu{display:inline-block;font-size:14px;color:#333333;line-height:1;
+    &.emp{color:#00D4E9; font-weight:700;}
+}
 .mb_util_copy_wrap{margin-top:16px;}
-.mb_util_copy{font-size:11px;color:#999999; margin-bottom:16px;
+.mb_util_copy{font-size:11px;color:#999999; margin-bottom:10px;
     &.emp{color:$primary;}
     &:last-child{margin-bottom:0;}
 }

@@ -1113,6 +1113,10 @@ body {
   color: #333333;
   line-height: 1;
 }
+.mb_util_menu.emp {
+  color: #00D4E9;
+  font-weight: 700;
+}
 
 .mb_util_copy_wrap {
   margin-top: 16px;
@@ -1121,7 +1125,7 @@ body {
 .mb_util_copy {
   font-size: 11px;
   color: #999999;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .mb_util_copy.emp {
   color: #FEB700;
